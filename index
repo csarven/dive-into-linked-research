@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Dive into Linked Research</title>
-        <link rel="stylesheet" href="https://dokie.li/media/css/lncs.css" media="all" title="LNCS" />
-        <link rel="stylesheet alternate" href="https://dokie.li/media/css/acm.css" media="all" title="ACM" />
+        <link rel="stylesheet alternate" href="https://dokie.li/media/css/lncs.css" media="all" title="LNCS" />
+        <link rel="stylesheet" href="https://dokie.li/media/css/acm.css" media="all" title="ACM" />
         <link rel="stylesheet" href="https://dokie.li/media/css/lr.css" media="all" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all" />
         <link rel="stylesheet" href="https://dokie.li/media/css/medium-editor.css" media="all" />
@@ -51,6 +51,16 @@
                     <dd><a href="http://csarven.ca/dive-into-linked-research">http://csarven.ca/dive-into-linked-research</a></dd>
                 </dl>
 
+                <dl id="document-inbox">
+                    <dt>Notifications Inbox</dt>
+                    <dd><a rel="as:replies" href="http://csarven.ca/dive-into-linked-research/inbox/">http://csarven.ca/dive-into-linked-research/inbox/</a></dd>
+                </dl>
+
+                <dl id="document-in-reply-to">
+                    <dt>In Reply To</dt>
+                    <dd><a rel="sioc:reply_of" href="http://www.jcdl2016.org/Call-for-Proposals">JCDL2016 Call for Papers</a></dd>
+                </dl>
+
                 <dl id="document-published">
                     <dt>Published</dt>
                     <dd><time datetime="2015-12-19T00:00:00Z" property="schema:datePublished" datatype="xsd:dateTime">2015-12-19</time></dd>
@@ -66,15 +76,6 @@
                     <dd><a rel="schema:license" href="http://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 Unported">CC BY-SA 4.0</a></dd>
                 </dl>
 
-                <dl id="document-in-reply-to">
-                    <dt>In Reply To</dt>
-                    <dd><a rel="sioc:reply_of" href="http://www.jcdl2016.org/Call-for-Proposals">JCDL2016 Call for Papers</a></dd>
-                </dl>
-
-                <dl id="document-notifications">
-                    <dt>Notifications Inbox</dt>
-                    <dd><a rel="as:replies" href="http://csarven.ca/dive-into-linked-research/inbox/">http://csarven.ca/dive-into-linked-research/inbox/</a></dd>
-                </dl>
 
                 <div id="content">
                     <section id="abstract">
