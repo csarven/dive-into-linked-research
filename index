@@ -28,16 +28,21 @@
                     <dl id="author-name">
                         <dt>Authors</dt>
                         <dd id="author-1" rel="bibo:authorList" inlist="" resource="http://csarven.ca/#i"><span about="" rel="schema:contributor schema:creator schema:publisher schema:author"><a about="http://csarven.ca/#i" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://csarven.ca/">Sarven Capadisli</a></span><sup><a about="http://csarven.ca/#i" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-1">✊</a></sup></dd>
-                        <dd id="author-3" rel="bibo:authorList" inlist="" resource="#SörenAuer"><span about="" rel="schema:contributor"><a about="#SörenAuer" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://www.iai.uni-bonn.de/~auer/">Sören Auer</a></span><sup><a about="#SörenAuer" rel="fabouschema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-3">⚛</a></sup></dd>
+                        <dd id="author-2" rel="bibo:authorList" inlist="" resource="#Anchalee-Panigabutra-Roberts"><span about="" rel="schema:contributor"><a about="Anchalee-Panigabutra-Roberts" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://aucegypt.edu/fac/anchaleepanigabutra-roberts">Anchalee Panigabutra-Roberts</a></span><sup><a about="Anchalee-Panigabutra-Roberts" rel="schema:memberOf" resource="http://dbpedia.org/resource/American_University_in_Cairo" href="#author-org-2">2</a></sup><sup><a href="#author-email-2">📖</a></sup></dd>
+                        <dd id="author-3" rel="bibo:authorList" inlist="" resource="http://eis.iai.uni-bonn.de/ChristophLange"><span about="" rel="schema:contributor"><a about="http://eis.iai.uni-bonn.de/ChristophLange" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://langec.wordpress.com/about/">Christoph Lange</a></span><sup><a about="http://eis.iai.uni-bonn.de/ChristophLange" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-3">∫</a></sup></dd>
+                        <dd id="author-4" rel="bibo:authorList" inlist="" resource="http://eis.iai.uni-bonn.de/SoerenAuer"><span about="" rel="schema:contributor"><a about="http://eis.iai.uni-bonn.de/SoerenAuer" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://eis.iai.uni-bonn.de/SoerenAuer.html">Sören Auer</a></span><sup><a about="http://eis.iai.uni-bonn.de/SoerenAuer" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-4">⚛</a></sup></dd>
                     </dl>
 
                     <ul id="author-org">
                         <li id="author-org-1"><sup>1</sup><a about="http://dbpedia.org/resource/University_of_Bonn" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://uni-bonn.de/">University of Bonn</a>, Enterprise Information Systems Department, Bonn, Germany</li>
+                        <li id="author-org-2"><sup>2</sup><a about="http://dbpedia.org/resource/American_University_in_Cairo" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://aucegypt.edu/">American University in Cairo</a>, Enterprise Information Systems Department, Bonn, Cairo</li>
                     </ul>
 
                     <ul id="author-email">
                         <li id="author-email-1"><sup>✊</sup><a about="http://csarven.ca/#i" rel="schema:email" href="mailto:info@csarven.ca">info@csarven.ca</a></li>
-                        <li id="author-email-3"><sup>⚛</sup><a about="#SörenAuer" rel="schema:email" href="mailto:auer@cs.uni-bonn.de">auer@cs.uni-bonn.de</a></li>
+                        <li id="author-email-2"><sup>📖</sup><a about="Anchalee-Panigabutra-Roberts" rel="schema:email" href="mailto:anchalee.proberts@aucegypt.edu">anchalee.proberts@aucegypt.edu</a></li>
+                        <li id="author-email-3"><sup>∫</sup><a about="http://eis.iai.uni-bonn.de/ChristophLange" rel="schema:email" href="mailto:math.semantic.web@gmail.com">math.semantic.web@gmail.com</a></li>
+                        <li id="author-email-4"><sup>⚛</sup><a about="http://eis.iai.uni-bonn.de/SoerenAuer" rel="schema:email" href="mailto:auer@cs.uni-bonn.de">auer@cs.uni-bonn.de</a></li>
                     </ul>
                 </div>
 
