@@ -41,7 +41,7 @@
                     <ul id="author-email">
                         <li id="author-email-1"><sup>✊</sup><a about="http://csarven.ca/#i" rel="schema:email" href="mailto:info@csarven.ca">info@csarven.ca</a></li>
                         <li id="author-email-2"><sup>📖</sup><a about="Anchalee-Panigabutra-Roberts" rel="schema:email" href="mailto:anchalee.proberts@aucegypt.edu">anchalee.proberts@aucegypt.edu</a></li>
-                        <li id="author-email-3"><sup>∫</sup><a about="http://eis.iai.uni-bonn.de/ChristophLange" rel="schema:email" href="mailto:math.semantic.web@gmail.com">math.semantic.web@gmail.com</a></li>
+                        <li id="author-email-3"><sup>∫</sup><a about="http://eis.iai.uni-bonn.de/ChristophLange" rel="schema:email" href="mailto:langec@cs.uni-bonn.de">langec@cs.uni-bonn.de</a></li>
                         <li id="author-email-4"><sup>⚛</sup><a about="http://eis.iai.uni-bonn.de/SoerenAuer" rel="schema:email" href="mailto:auer@cs.uni-bonn.de">auer@cs.uni-bonn.de</a></li>
                     </ul>
                 </div>
