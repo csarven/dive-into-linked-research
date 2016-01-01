@@ -27,15 +27,21 @@
                 <div id="authors">
                     <dl id="author-name">
                         <dt>Authors</dt>
-                        <dd id="author-1" rel="bibo:authorList" inlist="" resource="http://csarven.ca/#i"><span about="" rel="schema:contributor schema:creator schema:publisher schema:author"><a about="http://csarven.ca/#i" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://csarven.ca/">Sarven Capadisli</a></span><sup><a about="http://csarven.ca/#i" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-1">✊</a></sup></dd>
-                        <dd id="author-2" rel="bibo:authorList" inlist="" resource="https://aproberts.databox.me/profile/card#me"><span about="" rel="schema:contributor"><a about="https://aproberts.databox.me/profile/card#me" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://aucegypt.edu/fac/anchaleepanigabutra-roberts">Anchalee Panigabutra-Roberts</a></span><sup><a about="https://aproberts.databox.me/profile/card#me" rel="schema:memberOf" resource="http://dbpedia.org/resource/American_University_in_Cairo" href="#author-org-2">2</a></sup><sup><a href="#author-email-2">📖</a></sup></dd>
-                        <dd id="author-3" rel="bibo:authorList" inlist="" resource="http://eis.iai.uni-bonn.de/ChristophLange"><span about="" rel="schema:contributor"><a about="http://eis.iai.uni-bonn.de/ChristophLange" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://langec.wordpress.com/about/">Christoph Lange</a></span><sup><a about="http://eis.iai.uni-bonn.de/ChristophLange" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-3">∫</a></sup></dd>
-                        <dd id="author-4" rel="bibo:authorList" inlist="" resource="http://eis.iai.uni-bonn.de/SoerenAuer"><span about="" rel="schema:contributor"><a about="http://eis.iai.uni-bonn.de/SoerenAuer" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://eis.iai.uni-bonn.de/SoerenAuer.html">Sören Auer</a></span><sup><a about="http://eis.iai.uni-bonn.de/SoerenAuer" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-4">⚛</a></sup></dd>
+                        <dd id="Sarven-Capadisli" rel="bibo:authorList" inlist="" resource="http://csarven.ca/#i"><span about="" rel="schema:contributor schema:creator schema:publisher schema:author"><a about="http://csarven.ca/#i" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://csarven.ca/">Sarven Capadisli</a></span><sup><a about="http://csarven.ca/#i" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-1">✊</a></sup></dd>
+                        <dd id="Anchalee-Panigabutra-Roberts" rel="bibo:authorList" inlist="" resource="https://aproberts.databox.me/profile/card#me"><span about="" rel="schema:contributor"><a about="https://aproberts.databox.me/profile/card#me" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://aucegypt.edu/fac/anchaleepanigabutra-roberts">Anchalee Panigabutra-Roberts</a></span><sup><a about="https://aproberts.databox.me/profile/card#me" rel="schema:memberOf" resource="http://dbpedia.org/resource/American_University_in_Cairo" href="#author-org-2">2</a></sup><sup><a href="#author-email-2">📖</a></sup></dd>
+                        <dd id="Christoph-Lange" rel="bibo:authorList" inlist="" resource="http://eis.iai.uni-bonn.de/ChristophLange"><span about="" rel="schema:contributor"><a about="http://eis.iai.uni-bonn.de/ChristophLange" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://langec.wordpress.com/about/">Christoph Lange</a></span><sup><a about="http://eis.iai.uni-bonn.de/ChristophLange" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-3">∫</a></sup></dd>
+                        <dd id="Sören-Auer" rel="bibo:authorList" inlist="" resource="http://eis.iai.uni-bonn.de/SoerenAuer"><span about="" rel="schema:contributor"><a about="http://eis.iai.uni-bonn.de/SoerenAuer" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://eis.iai.uni-bonn.de/SoerenAuer.html">Sören Auer</a></span><sup><a about="http://eis.iai.uni-bonn.de/SoerenAuer" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Bonn" href="#author-org-1">1</a></sup><sup><a href="#author-email-4">⚛</a></sup></dd>
+                        <dd id="Paul-Groth" rel="bibo:authorList" inlist="" resource="http://"><span about="" rel="schema:contributor"><a about="http://" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://">Paul Groth</a></span><sup><a about="http://" rel="schema:memberOf" resource="http://dbpedia.org/resource/Elsevier" href="#author-org-3">3</a></sup><sup><a href="#author-email-5">a</a></sup></dd>
+                        <dd id="Bertram-Bruce" rel="bibo:authorList" inlist="" resource="http://"><span about="" rel="schema:contributor"><a about="http://" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://">Bertram Bruce</a></span><sup><a about="http://" rel="schema:memberOf" resource="http://dbpedia.org/resource/University_of_Illinois" href="#author-org-4">4</a></sup><sup><a href="#author-email-5">b</a></sup></dd>
                     </dl>
 
                     <ul id="author-org">
                         <li id="author-org-1"><sup>1</sup><a about="http://dbpedia.org/resource/University_of_Bonn" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://uni-bonn.de/">University of Bonn</a>, Enterprise Information Systems Department, Bonn, Germany</li>
-                        <li id="author-org-2"><sup>2</sup><a about="http://dbpedia.org/resource/American_University_in_Cairo" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://aucegypt.edu/">American University in Cairo</a>, Enterprise Information Systems Department, Bonn, Cairo</li>
+                        <li id="author-org-2"><sup>2</sup><a about="http://dbpedia.org/resource/American_University_in_Cairo" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://aucegypt.edu/">American University in Cairo</a>, <span>Libraries</span>, Cairo, Egypt</li>
+                        <li></li>
+                        <li></li>
+                        <li id="author-org-3"><sup>3</sup><a about="http://dbpedia.org/resource/Elsevier" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://">Elsevier</a>, Labs, Amsterdam, Netherlands</li>
+                        <li id="author-org-4"><sup>4</sup><a about="http://dbpedia.org/resource/University_of_Illinois" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://illinois.edu/">University of Illinois</a>, Library and Information Science, Illinois, US</li>
                     </ul>
 
                     <ul id="author-email">
@@ -43,6 +49,9 @@
                         <li id="author-email-2"><sup>📖</sup><a about="Anchalee-Panigabutra-Roberts" rel="schema:email" href="mailto:anchalee.proberts@aucegypt.edu">anchalee.proberts@aucegypt.edu</a></li>
                         <li id="author-email-3"><sup>∫</sup><a about="http://eis.iai.uni-bonn.de/ChristophLange" rel="schema:email" href="mailto:langec@cs.uni-bonn.de">langec@cs.uni-bonn.de</a></li>
                         <li id="author-email-4"><sup>⚛</sup><a about="http://eis.iai.uni-bonn.de/SoerenAuer" rel="schema:email" href="mailto:auer@cs.uni-bonn.de">auer@cs.uni-bonn.de</a></li>
+                        <li id="author-email-5"><sup>a</sup><a about="http://" rel="schema:email" href="mailto:paul">paul @</a></li>
+                        <li id="author-email-6"><sup>b</sup><a about="http://" rel="schema:email" href="mailto:bertram">bertram @</a></li>
+
                     </ul>
                 </div>
 
@@ -81,7 +90,7 @@
                     <section id="abstract">
                         <h2>Abstract</h2>
                         <div property="schema:abstract" datatype="rdf:HTML">
-                            <p>This document defines the Linked Research initiative and project. It is intended to <strong>enable researchers</strong>.</p>
+                            <p>This document defines the Linked Research initiative and project. It is intended to <strong>enable researchers</strong>. We call for a community-wide effort to develop more effective means to change and shape the scholarly communication given the state of the Web.</p>
                         </div>
                     </section>
 
@@ -92,7 +101,7 @@
                         </div>
                     </section>
 
-                    <section id="strategy" rel="schema:hasPart" resource="#strategy">
+                    <section id="strategy" rel="schema:hasPart" resource="#strategy" inlist="">
                         <h2 property="schema:name">Strategy</h2>
                         <div property="schema:description">
                             <p>Our strategy is as follows (adopted from <cite><a href="http://xml.fido.gov/stratml/references/WhyStratML.pdf">StratML</a></cite>):</p>
@@ -114,7 +123,7 @@
                             <section id="strategy-results" rel="schema:hasPart" resource="#strategy-results">
                                 <h3 property="schema:name">Results</h3>
                                 <div property="schema:description">
-                                    <p><em>How do we know whether we are making progress and when we have succeeded?</em> </p>
+                                    <p><em>How do we know whether we are making progress and when we have succeeded?</em></p>
                                 </div>
                             </section>
                         </div>
@@ -181,13 +190,13 @@
                     </section>
 
                     <section id="interactions" rel="schema:hasPart" resource="#interactions" inlist="">
-                        <h2 about="#interactions" property="schema:name">Interactions</h2>
-                        <div about="#interactions" property="schema:description">
+                        <h2 property="schema:name">Interactions</h2>
+                        <div property="schema:description">
                             <p>XXX: Restructure so that it covers notifications/pingback, annotations, social-web stuff..</p>
 
                             <section id="annotations" rel="schema:hasPart" resource="#annotations">
-                                <h3 about="#annotations" property="schema:name">Annotations</h3>
-                                <div about="#annotations" property="schema:description">
+                                <h3 property="schema:name">Annotations</h3>
+                                <div property="schema:description">
                                     <p>foo bar</p>
                                     <ul>
                                         <li>hypothes.is</li>
@@ -197,8 +206,8 @@
                             </section>
 
                             <section id="social-web" rel="schema:hasPart" resource="#social-web">
-                                <h3 about="#social-web" property="schema:name">Social Web</h3>
-                                <div about="#social-web" property="schema:description">
+                                <h3 property="schema:name">Social Web</h3>
+                                <div property="schema:description">
                                     <p>baz qux</p>
                                 </div>
                             </section>
@@ -274,22 +283,22 @@
 
 
                     <section id="social-and-technical-impact" rel="schema:hasPart" resource="#social-and-technical-impact" inlist="">
-                        <h2 about="#social-and-technical-impact" property="schema:name">Social and Technical Impact</h2>
-                        <div about="#social-and-technical-impact" property="schema:description">
+                        <h2 property="schema:name">Social and Technical Impact</h2>
+                        <div property="schema:description">
                             <p>Social and technical impact</p>
                         </div>
                     </section>
 
                     <section id="conclusions" rel="schema:hasPart" resource="#conclusions" inlist="">
-                        <h2 about="#conclusions" property="schema:name">Conclusions</h2>
-                        <div about="#conclusions" property="schema:description" typeof="deo:Conclusion">
+                        <h2 property="schema:name">Conclusions</h2>
+                        <div property="schema:description" typeof="deo:Conclusion">
                             <p>Congrats! You are almost done.</p>
                         </div>
                     </section>
 
                     <section id="acknowledgements" rel="schema:hasPart" resource="#acknowledgements" inlist="">
-                        <h2 about="#acknowledgements" property="schema:name">Acknowledgements</h2>
-                        <div about="#acknowledgements" property="schema:description" typeof="deo:Acknowledgements">
+                        <h2 property="schema:name">Acknowledgements</h2>
+                        <div property="schema:description" typeof="deo:Acknowledgements">
                             <p>Inspired by Marshall McLuhan, Ted Nelson, James Burke, and Tim Berners-Lee.</p>
                         </div>
                     </section>
