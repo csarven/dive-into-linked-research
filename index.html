@@ -97,6 +97,8 @@
                     <section id="introduction" rel="schema:hasPart" resource="#introduction" inlist="">
                         <h2 about="#introduction" property="schema:name" typeof="deo:Introduction">Introduction</h2>
                         <div property="schema:description" datatype="rdf:HTML">
+                            <p><q about="" rel="cito:agreesWith" resource="http://example.org/quote#123" cite="http://example.org/quote#123">You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete</q> - attributed to <cite><a href="https://en.wikipedia.org/wiki/Buckminster Fuller">Buckminster Fuller</a></cite>.</p>
+
                             <p><mark>TODO: Sören, Sarven</mark></p>
                             <p>Reuse whatever from existing work: http://csarven.ca/linked-research http://csarven.ca/call-for-linked-research http://csarven.ca/enabling-accessible-knowledge http://csarven.ca/cooling-down-web-science http://csarven.ca/this-paper-is-a-demo</p>
 
@@ -141,9 +143,9 @@
 
                             <p><mark>TODO: Create SVG per UC</mark></p>
                             <figure id="figure-use-cases" about="#figure-use-cases" typeof="doco:FigureBox" rel="schema:hasPart">
-                                <img about="#figure-use-cases" typeof="doco:Figure" rel="schema:image" src="media/images/dokieli-use-cases.png" width="480" height="268"/>
+                                <img about="#figure-object-use-cases" typeof="doco:Figure" rel="schema:image" src="media/images/dokieli-use-cases.png" width="480" height="268"/>
 
-                                <figcaption about="#figure-label-use-case" typeof="doco:FigureLabel" property="schema:description">Use cases.</figcaption>
+                                <figcaption about="#figure-caption-use-case" typeof="doco:FigureLabel" property="schema:description">Use cases.</figcaption>
                             </figure>
 
                             <p>XXX: Revisit <a href="http://www.w3.org/TR/dpub-annotation-uc/">http://www.w3.org/TR/dpub-annotation-uc/</a> and see what's good for discussion.</p>
@@ -158,7 +160,12 @@
                             <p>Libraries, Archives, ..</p>
                             <p>UX via the Web </p>
 
-                            <p><mark>TODO: Figure. -Sarven</mark></p>
+                            <p><mark>TODO: Figure. -Sarven</mark> -- there are several relationships in which the diagram doesn't show yet</p>
+                            <figure id="figure-linked-research-dataspace" about="#figure-linked-research-dataspace" typeof="doco:FigureBox" rel="schema:hasPart">
+                                <object type="image/svg+xml" about="#figure-object-linked-research-dataspace" typeof="doco:Figure" rel="schema:image" data="media/images/linked-research-dataspace.svg" width="640" height="297"><a href="media/images/linked-research-dataspace.svg"></a></object>
+
+                                <figcaption about="#figure-caption-linked-research-dataspace" typeof="doco:FigureLabel" property="schema:description">Linked Research dataspace</figcaption>
+                            </figure>
                         </div>
                     </section>
 
