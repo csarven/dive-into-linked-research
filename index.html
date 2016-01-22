@@ -7,10 +7,8 @@
         <link rel="stylesheet" href="https://dokie.li/media/css/acm.css" media="all" title="ACM" />
         <link rel="stylesheet" href="https://dokie.li/media/css/do.css" media="all" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all" />
-        <link rel="stylesheet" href="https://dokie.li/media/css/medium-editor.css" media="all" />
-        <link rel="stylesheet" href="https://dokie.li/media/css/medium-editor-default.css" media="all" />
-        <link rel="stylesheet" href="https://dokie.li/media/css/medium-editor-tables.css" media="all" />
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" href="https://dokie.li/media/css/editor.css" media="all" />
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
         <script src="https://dokie.li/scripts/RDFaProcessor.min.1.4.0.js"></script>
         <script src="https://dokie.li/scripts/simplerdf.js"></script>
         <script src="https://dokie.li/scripts/html.sortable.min.js"></script>
@@ -213,12 +211,13 @@ In the following sections we explain and demonstrate each of these features.</p>
                         </div>
                     </section>
 
-                    <section id="proceedings" rel="schema:hasPart" resource="#proceedings" inlist="">
+                    <section id="call-for-papers" rel="schema:hasPart" resource="#call-for-papers" inlist="">
                         <h2 property="schema:name">Call for Papers</h2>
                         <div property="schema:description" datatype="rdf:HTML">
                             <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites</p>
                         </div>
                     </section>
+
 
                     <section id="preservation" rel="schema:hasPart" resource="#preservation" inlist="">
                         <h2 property="schema:name">Preservation</h2>
@@ -228,6 +227,33 @@ In the following sections we explain and demonstrate each of these features.</p>
                         </div>
                     </section>
 
+                    <section id="preservation" rel="schema:hasPart" resource="#preservation" inlist="">
+                        <h2 property="schema:name">Preservation</h2>
+                        <div property="schema:description" datatype="rdf:HTML">
+                            <p>As Linked Data become mainstreamed and widely adopted by the Galleries, Libraries, Museums and Archives (GLAM) communities, currently <span class="ref" about="#r-abc123" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-abc123">there are many options for identifiers systems for authors, artists and other types of creators of scholarly, popular and creative works</mark><sup class="ref-footnote"><a href="#i-abc123" rel="cito:isCitedBy">abc123</a></sup></span>. Similarly for the scientific and medical research communities, the major researcher identity systems available to date via databases are <a href="https://www.elsevier.com/solutions/scopus/support/authorprofile">Scopus Author Identifier</a> (Elsavier) and <a href="http://www.researcherid.com/Home.action">ResearcherID</a> (Thomson Reuters). However, the data are not open. Nonetheless, both can be linked to the open researcher identifier system, <a href="http://orcid.org/">ORCID</a> (Open Researcher and Contributor Identifier). <span class="ref" about="#r-def456" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-def456">Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates</mark><sup class="ref-footnote"><a href="#i-def456" rel="cito:isCitedBy">def456</a></sup></span>. Linked Research (LR) can remedy this problem as authors will have all their works connected via their unique Web identifiers embedded in their publications or creative works on the Web. Thus they just need to establish one unique Web identifier that can be applied to all of their works, instead of multiple profiles to satisfy many systems as in their current practices. It will also solve the need to disambiguate among authors or creators as their published and creative works on the Web are readily connected to their unique Web identifiers embedded in their works.  In short, LR will revolutionize and simplify the way researchers, libraries and archives will manage the researcher identifiers, once adopted and mainstreamed.</p>
+                        </div>
+
+                        <aside class="note">
+                            <dl id="i-abc123" about="#i-abc123">
+                                <dt property="schema:name">abc123</dt>
+                                <dd property="schema:description" datatype="rdf:HTML"><a href="http://id.loc.gov/">Library of Congress Linked Data Service</a> for personal and family names and corporate bodies, <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), <a href="http://isni.org/">International Standard Name Identifier</a> (ISNI) and the Getty’s <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Union List of Artist Names</a> (ULAN), for example.</dd>
+                            </dl>
+
+                            <dl id="i-def456" about="#i-def456">
+                                <dt property="schema:name">def456</dt>
+                                <dd property="schema:description" datatype="rdf:HTML">Panigabutra-Roberts, Anchalee. 2015. <a href="http://swib.org/swib15/slides/panigabutra_researchers.pdf">Researcher Identity Management in the 21st Century Networked World: A Pilot Study of American University in Cairo Faculty</a>. Presented at Semantic Web in Libraries Conference, November 24, 2015, Hamburg, Germany.</dd>
+                                <dd>CLIR report 2015 looked at expertise required in Digital Scholarships (DH and also e-social sciences). Focus more on the pros and cons, expertise needed and conditions of staff and faculty under their study. Recognizes the problem of having DS accepted at universities for promotion and tenure, but no concrete solutions provided.</dd>
+                            </dl>
+                        </aside>
+                    </section>
+
+                    <section id="preservation" rel="schema:hasPart" resource="#preservation" inlist="">
+                        <h2 property="schema:name">Preservation</h2>
+                        <div property="schema:description" datatype="rdf:HTML">
+                            <p><mark>TODO: Anyone?</mark></p>
+                            <p>Provenance and preservation</p>
+                        </div>
+                    </section>
 
                     <section id="design-and-architecture" rel="schema:hasPart" resource="#design-and-architecture" inlist="">
                         <h2 property="schema:name">Design and Architecture</h2>
