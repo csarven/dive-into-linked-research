@@ -161,6 +161,19 @@
                         </div>
                     </section>
 
+                    <section id="problem" inlist="" rel="schema:hasPart" resource="#problem">
+                        <h2 property="schema:name">Problem</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>In context of what the Web enables, we have problems:</p>
+                            <ul>
+                                <li>Open Science is on sale</li>
+                                <li>Information silos (Centralised, disconnected)</li>
+                                <li>Research and data ownership</li>
+                                <li>Researcher identity and responsibility</li>
+                            </ul>
+                        </div>
+                    </section>
+
                     <section id="requirements" inlist="" rel="schema:hasPart" resource="#requirements">
                         <h2 property="schema:name">Requirements</h2>
                         <div datatype="rdf:HTML" property="schema:description">
@@ -173,142 +186,6 @@
                             <p>Support for different levels of granularity</p>
                             <p>Support for different views (Web, presentation, print, mobile/ubiquitous devices etc.)</p>
                             <p>Decentralized authoring, publishing, reviewing/commenting, </p>
-                            <p></p>
-                        </div>
-                    </section>
-
-
-                    <section id="use-cases" inlist="" rel="schema:hasPart" resource="#use-cases">
-                        <h2 property="schema:name">Use Cases</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Sarven</mark>. Some fundamentals: Decentralization, data ownership.</p>
-
-                            <p><mark>TODO: Create SVG per UC</mark></p>
-                            <figure about="#figure-use-cases" id="figure-use-cases" rel="schema:hasPart" typeof="doco:FigureBox">
-                                <img about="#figure-object-use-cases" height="268" rel="schema:image" src="media/images/dokieli-use-cases.png" typeof="doco:Figure" width="480" />
-
-                                <figcaption about="#figure-caption-use-case" property="schema:description" typeof="doco:FigureLabel">Use cases.</figcaption>
-                            </figure>
-
-                            <p>XXX: Revisit <a href="http://www.w3.org/TR/dpub-annotation-uc/">http://www.w3.org/TR/dpub-annotation-uc/</a> and see what's good for discussion.</p>
-                        </div>
-                    </section>
-
-                    <section id="education" inlist="" rel="schema:hasPart" resource="#education">
-                        <h2 property="schema:name">Education</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Chip? Sarven</mark></p>
-                            <p>Open Science/Education , Libraries? Interactivity, Annotations</p>
-                        </div>
-                    </section>
-
-                    <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
-                        <h2 property="schema:name">Proceedings</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Christoph</mark> - CEUR-WS.org?</p>
-                        </div>
-                    </section>
-
-                    <section id="call-for-papers" inlist="" rel="schema:hasPart" resource="#call-for-papers">
-                        <h2 property="schema:name">Call for Papers</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites</p>
-                        </div>
-                    </section>
-
-
-                    <section id="preservation" inlist="" rel="schema:hasPart" resource="#preservation">
-                        <h2 property="schema:name">Preservation</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Anyone?</mark></p>
-                            <p>Provenance and preservation</p>
-                        </div>
-                    </section>
-
-                    <section id="researchers-identifiers" inlist="" rel="schema:hasPart" resource="#researchers-identifiers">
-                        <h2 property="schema:name">Researcher’s Identifiers</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p>As Linked Data become mainstreamed and widely adopted by the Galleries, Libraries, Museums and Archives (GLAM) communities, currently <span about="#r-abc123" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-abc123">there are many options for identifiers systems for authors, artists and other types of creators of scholarly, popular and creative works</mark><sup class="ref-footnote"><a href="#abc123" rel="cito:isCitedBy">abc123</a></sup></span>. Similarly for the scientific and medical research communities, the major researcher identity systems available to date via databases are <a href="https://www.elsevier.com/solutions/scopus/support/authorprofile">Scopus Author Identifier</a> (Elsavier) and <a href="http://www.researcherid.com/Home.action">ResearcherID</a> (Thomson Reuters). However, the data are not open. Nonetheless, both can be linked to the open researcher identifier system, <a href="http://orcid.org/">ORCID</a> (Open Researcher and Contributor Identifier). <span about="#r-def456" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-def456">Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates</mark><sup class="ref-footnote"><a href="#def456" rel="cito:isCitedBy">def456</a></sup></span>. Linked Research (LR) can remedy this problem as authors will have all their works connected via their unique Web identifiers embedded in their publications or creative works on the Web. Thus they just need to establish one unique Web identifier that can be applied to all of their works, instead of multiple profiles to satisfy many systems as in their current practices. It will also solve the need to disambiguate among authors or creators as their published and creative works on the Web are readily connected to their unique Web identifiers embedded in their works.  In short, LR will revolutionize and simplify the way researchers, libraries and archives will manage the researcher identifiers, once adopted and mainstreamed.</p>
-                        </div>
-
-                        <aside class="note">
-                            <dl about="#abc123" id="abc123">
-                                <dt property="schema:name">abc123</dt>
-                                <dd datatype="rdf:HTML" property="schema:description"><a href="http://id.loc.gov/">Library of Congress Linked Data Service</a> for personal and family names and corporate bodies, <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), <a href="http://isni.org/">International Standard Name Identifier</a> (ISNI) and the Getty’s <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Union List of Artist Names</a> (ULAN), for example.</dd>
-                            </dl>
-                        </aside>
-
-                        <aside class="note">
-                            <dl about="#def456" id="def456">
-                                <dt property="schema:name">def456</dt>
-                                <dd datatype="rdf:HTML" property="schema:description">Panigabutra-Roberts, Anchalee. 2015. <a href="http://swib.org/swib15/slides/panigabutra_researchers.pdf">Researcher Identity Management in the 21st Century Networked World: A Pilot Study of American University in Cairo Faculty</a>. Presented at Semantic Web in Libraries Conference, November 24, 2015, Hamburg, Germany.</dd>
-                            </dl>
-                        </aside>
-                    </section>
-
-                    <section id="preservation" inlist="" rel="schema:hasPart" resource="#preservation">
-                        <h2 property="schema:name">Preservation</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Anyone?</mark></p>
-                            <p>Provenance and preservation</p>
-                        </div>
-                    </section>
-
-                    <section id="design-and-architecture" inlist="" rel="schema:hasPart" resource="#design-and-architecture">
-                        <h2 property="schema:name">Design and Architecture</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>XXX: Sarven, Anyone?</mark> Rewrite/Simplify: http://csarven.ca/enabling-accessible-knowledge#components</p>
-                        </div>
-                    </section>
-
-                    <section id="features" inlist="" rel="schema:hasPart" resource="#features">
-                        <h2 property="schema:name">Features</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Sarven</mark> Bring this up a level. Copied form https://github.com/linkeddata/dokieli</p>
-
-                            <ul>
-                                <li>In-browser document authoring and formatting, and semantic enrichments</li>
-                                <li>Information is represented and retrieved following the Linked Data design principles</li>
-                                <li>Employs WebID + ACL and personal online datastore where applicable (compliant with <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a> and <a href="https://github.com/solid/solid-spec">Solid</a> servers)</li>
-                                <li>Using author's information from their online profile</li>
-                                <li>Creation of new documents from any dokieli document (anywhere on the Web given write access)</li>
-                                <li>Annotations and pingbacks (e.g., replies, peer-reviews, liking, resharing). Uses W3C Web Annotation and Social Web data models</li>
-                                <li>Assignment of URI fragments (to whatever is of interest) for other resources to reference</li>
-                                <li>Embedding data blocks (e.g., nanopublications)</li>
-                                <li>Embedding of media objects, tables, and interactions</li>
-                                <li>Automated references and citations</li>
-                                <li>Insertion of table of contents, figures, tables, abbreviations</li>
-                                <li>Drag and drop to reorganize the document's sections and table of contents</li>
-                                <li>In-browser local storage, and document exporting</li>
-                                <li>Document metadata</li>
-                                <li>Views for screen and print (e.g., ACM, LNCS) - yes, you can output to a paper user interface: PDF</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section id="social-interactions" inlist="" rel="schema:hasPart" resource="#social-interactions">
-                        <h2 property="schema:name">Social Interactions</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>XXX Sarven: Restructure so that it covers (Solid) notifications/pingback, annotations, social-web stuff</mark>.</p>
-
-                            <section id="annotations" rel="schema:hasPart" resource="#annotations">
-                                <h3 property="schema:name">Annotations</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p>foo bar</p>
-                                    <ul>
-                                        <li>hypothes.is</li>
-                                        <li>http://genius.com/web-annotator</li>
-                                        <li>...</li>
-                                    </ul>
-                                </div>
-                            </section>
-
-                            <section id="social-web" rel="schema:hasPart" resource="#social-web">
-                                <h3 property="schema:name">Social Web</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p>baz qux</p>
-                                </div>
-                            </section>
                         </div>
                     </section>
 
@@ -381,6 +258,117 @@
                         </div>
                     </section>
 
+                    <section id="cultural-change" inlist="" rel="schema:hasPart" resource="#cultural-change">
+                        <h2 property="schema:name">Cultural Change</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <section id="education" inlist="" rel="schema:hasPart" resource="#education">
+                                <h3 property="schema:name">Education</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Chip? Sarven</mark></p>
+                                    <p>Open Science/Education , Libraries? Interactivity, Annotations</p>
+                                </div>
+                            </section>
+
+                            <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
+                                <h3 property="schema:name">Proceedings</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Christoph</mark> - CEUR-WS.org?</p>
+                                </div>
+                            </section>
+
+                            <section id="call-for-papers" inlist="" rel="schema:hasPart" resource="#call-for-papers">
+                                <h3 property="schema:name">Call for Papers</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites</p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <section id="researchers-identifiers" inlist="" rel="schema:hasPart" resource="#researchers-identifiers">
+                        <h2 property="schema:name">Researcher’s Identifiers</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>As Linked Data become mainstreamed and widely adopted by the Galleries, Libraries, Museums and Archives (GLAM) communities, currently <span about="#r-abc123" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-abc123">there are many options for identifiers systems for authors, artists and other types of creators of scholarly, popular and creative works</mark><sup class="ref-footnote"><a href="#abc123" rel="cito:isCitedBy">abc123</a></sup></span>. Similarly for the scientific and medical research communities, the major researcher identity systems available to date via databases are <a href="https://www.elsevier.com/solutions/scopus/support/authorprofile">Scopus Author Identifier</a> (Elsevier) and <a href="http://www.researcherid.com/Home.action">ResearcherID</a> (Thomson Reuters). However, the data are not open. Nonetheless, both can be linked to the open researcher identifier system, <a href="http://orcid.org/">ORCID</a> (Open Researcher and Contributor Identifier). <span about="#r-def456" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-def456">Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates</mark><sup class="ref-footnote"><a href="#def456" rel="cito:isCitedBy">def456</a></sup></span>. Linked Research (LR) can remedy this problem as authors will have all their works connected via their unique Web identifiers embedded in their publications or creative works on the Web. Thus they just need to establish one unique Web identifier that can be applied to all of their works, instead of multiple profiles to satisfy many systems as in their current practices. It will also solve the need to disambiguate among authors or creators as their published and creative works on the Web are readily connected to their unique Web identifiers embedded in their works.  In short, LR will revolutionize and simplify the way researchers, libraries and archives will manage the researcher identifiers, once adopted and mainstreamed.</p>
+                        </div>
+
+                        <aside class="note">
+                            <dl about="#abc123" id="abc123">
+                                <dt property="schema:name">abc123</dt>
+                                <dd datatype="rdf:HTML" property="schema:description"><a href="http://id.loc.gov/">Library of Congress Linked Data Service</a> for personal and family names and corporate bodies, <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), <a href="http://isni.org/">International Standard Name Identifier</a> (ISNI) and the Getty’s <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Union List of Artist Names</a> (ULAN), for example.</dd>
+                            </dl>
+                        </aside>
+
+                        <aside class="note">
+                            <dl about="#def456" id="def456">
+                                <dt property="schema:name">def456</dt>
+                                <dd datatype="rdf:HTML" property="schema:description">Panigabutra-Roberts, Anchalee. 2015. <a href="http://swib.org/swib15/slides/panigabutra_researchers.pdf">Researcher Identity Management in the 21st Century Networked World: A Pilot Study of American University in Cairo Faculty</a>. Presented at Semantic Web in Libraries Conference, November 24, 2015, Hamburg, Germany.</dd>
+                            </dl>
+                        </aside>
+                    </section>
+
+                    <section id="preservation" inlist="" rel="schema:hasPart" resource="#preservation">
+                        <h2 property="schema:name">Preservation</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p><mark>TODO: Anyone?</mark></p>
+                            <p>Provenance and preservation</p>
+                        </div>
+                    </section>
+
+                    <section id="design-and-architecture" inlist="" rel="schema:hasPart" resource="#design-and-architecture">
+                        <h2 property="schema:name">Design and Architecture</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p><mark>XXX: Sarven, Anyone?</mark> Rewrite/Simplify: http://csarven.ca/enabling-accessible-knowledge#components</p>
+                        </div>
+                    </section>
+
+                    <section id="features" inlist="" rel="schema:hasPart" resource="#features">
+                        <h2 property="schema:name">Features</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p><mark>TODO: Sarven</mark> Bring this up a level. Copied form https://github.com/linkeddata/dokieli</p>
+
+                            <ul>
+                                <li>In-browser document authoring and formatting, and semantic enrichments</li>
+                                <li>Information is represented and retrieved following the Linked Data design principles</li>
+                                <li>Employs WebID + ACL and personal online datastore where applicable (compliant with <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a> and <a href="https://github.com/solid/solid-spec">Solid</a> servers)</li>
+                                <li>Using author's information from their online profile</li>
+                                <li>Creation of new documents from any dokieli document (anywhere on the Web given write access)</li>
+                                <li>Annotations and pingbacks (e.g., replies, peer-reviews, liking, resharing). Uses W3C Web Annotation and Social Web data models</li>
+                                <li>Assignment of URI fragments (to whatever is of interest) for other resources to reference</li>
+                                <li>Embedding data blocks (e.g., nanopublications)</li>
+                                <li>Embedding of media objects, tables, and interactions</li>
+                                <li>Automated references and citations</li>
+                                <li>Insertion of table of contents, figures, tables, abbreviations</li>
+                                <li>Drag and drop to reorganize the document's sections and table of contents</li>
+                                <li>In-browser local storage, and document exporting</li>
+                                <li>Document metadata</li>
+                                <li>Views for screen and print (e.g., ACM, LNCS) - yes, you can output to a paper user interface: PDF</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="social-interactions" inlist="" rel="schema:hasPart" resource="#social-interactions">
+                        <h2 property="schema:name">Social Interactions</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p><mark>XXX Sarven: Restructure so that it covers (Solid) notifications/pingback, annotations, social-web stuff</mark>.</p>
+
+                            <section id="annotations" rel="schema:hasPart" resource="#annotations">
+                                <h3 property="schema:name">Annotations</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p>foo bar</p>
+                                </div>
+                            </section>
+
+                            <section id="social-web" rel="schema:hasPart" resource="#social-web">
+                                <h3 property="schema:name">Social Web</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p>baz qux</p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+
+
                     <section id="connections" inlist="" rel="schema:hasPart" resource="#connections">
                         <h2 property="schema:name">Connections</h2>
                         <div datatype="rdf:HTML" property="schema:description">
@@ -449,7 +437,7 @@
                         <h2 about="#conclusions" property="schema:name" typeof="deo:Conclusion">Conclusions</h2>
                         <div datatype="rdf:HTML" property="schema:description">
                             <p>Congrats! We've revolutionized everything.</p>
-                            <p><mark>TODO Sören, Sarven</mark></p>
+                            <p><mark>TODO: All</mark></p>
                         </div>
                     </section>
 
