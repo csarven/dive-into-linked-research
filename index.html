@@ -122,65 +122,83 @@
                         <div datatype="rdf:HTML" property="schema:description">
                             <p><q about="" cite="http://example.org/quote#123" rel="cito:agreesWith" resource="http://example.org/quote#123">You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete</q> - attributed to <cite><a href="https://en.wikipedia.org/wiki/Buckminster Fuller">Buckminster Fuller</a></cite>.</p>
 
-                            <p><mark>TODO: Sören, Sarven</mark></p><p>One of the most widely debated questions in the scientific community is the impact of digitization on the scholarly communication and knowledge exchange.</p>
+                            <p><mark>This section explains the context (improving knowledge sharing in scholarly communication), why a paradigm shift is needed (the three problems to the three ideals) and that there are existing tools we can use to enable this shift. A bunch of PG's 'situating..' would fit well here.</mark></p>
 
-                            <p><mark>TODO: Sarven. Perhaps this should be the Background section? Build context from the works of: Marshall McLuhan, Ted Nelson, James Burke, and Tim Berners-Lee</mark>.</p>
+                            <p><mark>Reuse whatever from existing work: http://csarven.ca/linked-research http://csarven.ca/call-for-linked-research http://csarven.ca/enabling-accessible-knowledge http://csarven.ca/cooling-down-web-science http://csarven.ca/this-paper-is-a-demo</mark></p>
 
-                            <p>Reuse whatever from existing work: http://csarven.ca/linked-research http://csarven.ca/call-for-linked-research http://csarven.ca/enabling-accessible-knowledge http://csarven.ca/cooling-down-web-science http://csarven.ca/this-paper-is-a-demo</p>
-
-                            <p>This is an evolutionary step. Explain how it all fits together for #OpenScience given modern Web, and fostering the "Web of interconnected ideas". Touch on data ownership, decentralization... all in context of the Linked Research initiative, and technological and design decisions which may be a good candidate e.g., <a href="https://github.com/linkeddata/dokieli">dokie.li</a>.</p>
-<!--XXX: This is up for removal
-                            <section id="strategy" inlist="" rel="schema:hasPart" resource="#strategy">
-                                <h3 property="schema:name">Strategy</h3>
+                            <section id="context" inlist="" rel="schema:hasPart" resource="#context">
+                                <h3 property="schema:name">Context</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p>Our strategy is as follows (adopted from <cite><a href="http://xml.fido.gov/stratml/references/WhyStratML.pdf">StratML</a></cite>):</p>
-
-                                    <section id="strategy-intentions" rel="schema:hasPart" resource="#strategy-intentions">
-                                        <h3 property="schema:name">Intentions</h3>
-                                        <div datatype="rdf:HTML" property="schema:description">
-                                            <p><em>What do we aim to accomplish?</em> </p>
-                                        </div>
-                                    </section>
-
-                                    <section id="strategy-stakeholders" rel="schema:hasPart" resource="#strategy-stakeholders">
-                                        <h3 property="schema:name">Stakeholders</h3>
-                                        <div datatype="rdf:HTML" property="schema:description">
-                                            <p><em>Who is trying to do it and for the benefit of whom?</em> </p>
-                                        </div>
-                                    </section>
-
-                                    <section id="strategy-results" rel="schema:hasPart" resource="#strategy-results">
-                                        <h3 property="schema:name">Results</h3>
-                                        <div datatype="rdf:HTML" property="schema:description">
-                                            <p><em>How do we know whether we are making progress and when we have succeeded?</em></p>
-                                        </div>
-                                    </section>
+                                    <p><mark>TODO: Sarven. Build context from the works of: Marshall McLuhan, Ted Nelson, James Burke, and Tim Berners-Lee</mark>.</p>
                                 </div>
                             </section>
--->
+
+                            <section id="paradigm-shift" inlist="" rel="schema:hasPart" resource="#paradigm-shift">
+                                <h3 property="schema:name">Paradigm Shift</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p>Talk about paradigms, structures, models...</p>
+
+                                </div>
+                            </section>
                         </div>
                     </section>
 
-                    <section id="paradigm-shift" inlist="" rel="schema:hasPart" resource="#paradigm-shift">
-                        <h2 property="schema:name">Paradigm Shift</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p>Talk about paradigms, structures, models...</p>
+                    <section id="problems-and-ideals" inlist="" rel="schema:hasPart" resource="#problems-and-ideals">
+                        <h2 property="schema:name">Problems and Ideals</h2>
+                        <div>
+                            <p>This section expands further on the three problems and the three deals. Some of PG's 'situating..' can be repurposed here, as well. We mention that the paradigm shift requires both social and technical changes: a culture shift in academic publishing, and appropriate tools to enable publication and consumption of accessible knowledge.</p>
 
-                            <section id="problems-and-ideals" inlist="" rel="schema:hasPart" resource="#problems-and-ideals">
-                                <h3 property="schema:name">Problems and Ideals</h3>
-                                <div>
-                                    <ul>
-                                        <li>Information silos (centralism, disconnection)</li>
-                                        <li>Access, discovery and reuse of knowledge</li>
-                                        <li>User experience</li>
-                                    </ul>
+                            <ul>
+                                <li>Information silos (centralism, disconnection)</li>
+                                <li>Access, discovery and reuse of knowledge</li>
+                                <li>User experience</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="strategy" inlist="" rel="schema:hasPart" resource="#strategy">
+                        <h2 property="schema:name">Strategy</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>Our strategy is as follows (adopted from <cite><a href="http://xml.fido.gov/stratml/references/WhyStratML.pdf">StratML</a></cite>):</p>
+
+                            <dl id="strategy-intentions" rel="schema:hasPart" resource="#strategy-intentions">
+                                <dt property="schema:name">Intentions</dt>
+                                <dd datatype="rdf:HTML" property="schema:description">
+                                    <p><em>What do we aim to accomplish?</em> </p>
+                                </dd>
+                            </dl>
+
+                            <dl id="strategy-stakeholders" rel="schema:hasPart" resource="#strategy-stakeholders">
+                                <dt property="schema:name">Stakeholders</dt>
+                                <dd datatype="rdf:HTML" property="schema:description">
+                                    <p><em>Who is trying to do it and for the benefit of whom?</em> </p>
+                                </dd>
+                            </dl>
+
+                            <dl id="strategy-results" rel="schema:hasPart" resource="#strategy-results">
+                                <dt property="schema:name">Results</dt>
+                                <dd datatype="rdf:HTML" property="schema:description">
+                                    <p><em>How do we know whether we are making progress and when we have succeeded?</em></p>
+                                </dd>
+                            </dl>
+
+
+                            <section id="building-blocks" inlist="" rel="schema:hasPart" resource="#building-blocks">
+                                <h3 property="schema:name">Building Blocks</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p>We are reusing existing technologies and techniques, combining them in a way that altogether releases new potential.</p>
+
+                                    <p>The Web as a publishing platform, for distribution and consumption.</p>
+                                    <p>Social media techniques and strategies; people are used to sharing stuff and receiving notifications now, so why not harness that for research.</p>
+                                    <p>Frontend Web technologies for rich, interactive experiences.</p>
+                                    <p>Linked data for machine readable stuff.</p>
                                 </div>
                             </section>
 
                             <section id="requirements" inlist="" rel="schema:hasPart" resource="#requirements">
                                 <h3 property="schema:name">Requirements</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>Revise</mark></p>
+                                    <p><mark>We elicit requirements for the new paradigm, based on something that sounds convincing.</mark></p>
                                     <p>Human and machine-readability</p>
                                     <p>Integration of rich semantic</p>
                                     <p>World-wide unique identification of entities</p>
@@ -192,61 +210,60 @@
                                     <p>Decentralized authoring, publishing, reviewing/commenting, </p>
                                 </div>
                             </section>
-                        </div>
-                    </section>
 
-                    <section id="acid-test" rel="schema:hasPart" resource="#acid-test">
-                        <h2 property="schema:name">Acid Test</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>XXX: This is copied from <a href="http://csarven.ca/enabling-accessible-knowledge#acid-test">http://csarven.ca/enabling-accessible-knowledge#acid-test</a>. Can we improve this whole section? "Codify" so that we can verify? Can it be like a human/machine unit test(s)?</mark></p>
 
-                            <p>We propose an <em>acid test</em> in order to verify, approve, or test the openness, accessibility and flexibility of the approaches for research publication. This is along the lines of a test to distinguish gold from base metals. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
+                            <section id="acid-test" rel="schema:hasPart" resource="#acid-test">
+                                <h3 property="schema:name">Acid Test</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>We describe an acid test so that we can evaluate a system against the requirements of the new paradigm.</mark></p>
 
-                            <dl id="acid-test-challenge">
-                                <dt>Challenge</dt>
-                                <dd>
-                                    <ol>
-                                        <li id="acid-test-challenge-availability">Alice makes her research document available on the Web with the research objects available at fine granularity e.g., variables of a hypothesis.</li>
-                                        <li id="acid-test-challenge-reference">Bob wants to precisely refer to and discuss Alice’s research objects from his own research document.</li>
-                                        <li id="acid-test-challenge-discovery">Carol is interested in discovering research documents in the wild, which contain a pattern of reusable research objects like the ones in Alice, Bob or others’ documents e.g., using the <em>follow your nose</em> type of exploration, searching, or querying against a service.</li>
-                                        <li id="acid-test-challenge-interaction">Dan learns by interacting with the components inside the research document e.g., changing the parameters, rerunning an experiment.</li>
-                                        <li id="acid-test-challenge-presentation">Eve visits Frank, and displays Alice’s article on one of his devices, and prints out a copy.</li>
-                                    </ol>
-                                </dd>
-                            </dl>
+                                    <p><mark>XXX: This is copied from <a href="http://csarven.ca/enabling-accessible-knowledge#acid-test">http://csarven.ca/enabling-accessible-knowledge#acid-test</a>. Can we improve this whole section? "Codify" so that we can verify? Can it be like a human/machine unit test(s)?</mark></p>
 
-                            <p>There are some assumptions (adapted from the <cite><a href="http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/SWAT0">Social Web Acid Test - Level 0</a></cite>):</p>
+                                    <p>We propose an <em>acid test</em> in order to verify, approve, or test the openness, accessibility and flexibility of the approaches for research publication. This is along the lines of a test to distinguish gold from base metals. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
 
-                            <dl id="acid-test-assumptions">
-                                <dt>Assumptions</dt>
-                                <dd>
-                                    <ul>
-                                        <li id="acid-test-assumption-different-tools">The interactions have at least two different tool stacks.</li>
-                                        <li id="acid-test-assumption-machine-friendly">The interactions are both human and machine-friendly.</li>
-                                        <li id="acid-test-assumption-open-standards">All interactions are according to published open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
-                                        <li id="acid-test-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
-                                        <li id="acid-test-assumption-spoon" rel="schema:hasPart"><span about="acid-test-assumption-spoon" property="schema:description" typeof="doco:Sentence">There is no spoon.</span></li>
-                                    </ul>
-                                </dd>
-                            </dl>
+                                    <dl id="acid-test-challenge">
+                                        <dt>Challenge</dt>
+                                        <dd>
+                                            <ol>
+                                                <li id="acid-test-challenge-availability">Alice makes her research document available on the Web with the research objects available at fine granularity e.g., variables of a hypothesis.</li>
+                                                <li id="acid-test-challenge-reference">Bob wants to precisely refer to and discuss Alice’s research objects from his own research document.</li>
+                                                <li id="acid-test-challenge-discovery">Carol is interested in discovering research documents in the wild, which contain a pattern of reusable research objects like the ones in Alice, Bob or others’ documents e.g., using the <em>follow your nose</em> type of exploration, searching, or querying against a service.</li>
+                                                <li id="acid-test-challenge-interaction">Dan learns by interacting with the components inside the research document e.g., changing the parameters, rerunning an experiment.</li>
+                                                <li id="acid-test-challenge-presentation">Eve visits Frank, and displays Alice’s article on one of his devices, and prints out a copy.</li>
+                                            </ol>
+                                        </dd>
+                                    </dl>
+
+                                    <p>There are some assumptions (adapted from the <cite><a href="http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/SWAT0">Social Web Acid Test - Level 0</a></cite>):</p>
+
+                                    <dl id="acid-test-assumptions">
+                                        <dt>Assumptions</dt>
+                                        <dd>
+                                            <ul>
+                                                <li id="acid-test-assumption-different-tools">The interactions have at least two different tool stacks.</li>
+                                                <li id="acid-test-assumption-machine-friendly">The interactions are both human and machine-friendly.</li>
+                                                <li id="acid-test-assumption-open-standards">All interactions are according to published open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
+                                                <li id="acid-test-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
+                                                <li id="acid-test-assumption-spoon" rel="schema:hasPart"><span about="acid-test-assumption-spoon" property="schema:description" typeof="doco:Sentence">There is no spoon.</span></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </section>
                         </div>
                     </section>
 
                     <section id="cultural-change" inlist="" rel="schema:hasPart" resource="#cultural-change">
                         <h2 property="schema:name">Cultural Change</h2>
                         <div datatype="rdf:HTML" property="schema:description">
+                            <p><mark>We talk about everything we're doing to promote a culture change in scholarly publishing, starting with our own field, Web Science, as a testing ground. Raising awareness of the limitations of current publishing practices, and promoting the Linked Research principles.</mark></p>
+
                             <section id="education" inlist="" rel="schema:hasPart" resource="#education">
                                 <h3 property="schema:name">Education</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Chip? Sarven</mark></p>
-                                    <p>Open Science/Education , Libraries? Interactivity, Annotations</p>
-                                </div>
-                            </section>
-
-                            <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
-                                <h3 property="schema:name">Proceedings</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph</mark> - CEUR-WS.org?</p>
+                                    <p><mark>How people consume information and learn is not considered by current publishing practices.</mark></p>
+                                    <p><mark>Open Science/Education , Libraries? Interactivity, Annotations</mark></p>
                                 </div>
                             </section>
 
@@ -254,6 +271,13 @@
                                 <h3 property="schema:name">Call for Papers</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites</p>
+                                </div>
+                            </section>
+
+                            <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
+                                <h3 property="schema:name">Proceedings</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Christoph</mark> - CEUR-WS.org?</p>
                                 </div>
                             </section>
 
@@ -291,13 +315,11 @@
                         </div>
                     </section>
 
-                    <section id="connections" inlist="" rel="schema:hasPart" resource="#connections">
-                        <h2 property="schema:name">Connections</h2>
+                    <section id="technical-considerations" inlist="" rel="schema:hasPart" resource="#technical-considerations">
+                        <h2 property="schema:name">Technical Considerations</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Anchalee?, Chip? Sarven</mark></p>
-                            <p>Papers/Articles, CFP, Proceedings, Author profiles, Annotations/Reviews</p>
-                            <p>Libraries, Archives, ..</p>
-                            <p>UX via the Web </p>
+                            <p><mark>TODO: All</mark></p>
+                            <p><mark>Here we describe the more technical stuff that is ongoing work. There is more detail on our proposed architecture and example implementation in the dokieli paper.</mark></p>
 
                             <p><mark>TODO: Figure. -Sarven</mark> -- there are several relationships in which the diagram doesn't show yet</p>
 
@@ -307,11 +329,68 @@
                                 <figcaption about="#figure-caption-linked-research-dataspace" property="schema:description" typeof="doco:FigureLabel">Linked Research dataspace</figcaption>
                             </figure>
 
-                            <section id="design-and-architecture" inlist="" rel="schema:hasPart" resource="#design-and-architecture">
-                                <h3 property="schema:name">Design and Architecture</h3>
+                            <section id="data-ownership" inlist="" rel="schema:hasPart" resource="#data-ownership">
+                                <h3 property="schema:name">Data ownership</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>XXX: Sarven, Anyone?</mark> Rewrite/Simplify: http://csarven.ca/enabling-accessible-knowledge#components</p>
+                                    <p>Personal data stores (eg. Solid) and URLs for distribution.</p>
+                                </div>
+                            </section>
 
+                            <section id="trust-and-attribution" inlist="" rel="schema:hasPart" resource="#trust-and-attribution">
+                                <h3 property="schema:name">Trust and Attributions</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Anchalle</mark></p>
+
+                                    <p>As Linked Data become mainstreamed and widely adopted by the Galleries, Libraries, Museums and Archives (GLAM) communities, currently <span about="#r-abc123" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-abc123">there are many options for identifiers systems for authors, artists and other types of creators of scholarly, popular and creative works</mark><sup class="ref-footnote"><a href="#abc123" rel="cito:isCitedBy">abc123</a></sup></span>. Similarly for the scientific and medical research communities, the major researcher identity systems available to date via databases are <a href="https://www.elsevier.com/solutions/scopus/support/authorprofile">Scopus Author Identifier</a> (Elsevier) and <a href="http://www.researcherid.com/Home.action">ResearcherID</a> (Thomson Reuters). However, the data are not open. Nonetheless, both can be linked to the open researcher identifier system, <a href="http://orcid.org/">ORCID</a> (Open Researcher and Contributor Identifier). <span about="#r-def456" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-def456">Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates</mark><sup class="ref-footnote"><a href="#def456" rel="cito:isCitedBy">def456</a></sup></span>. Linked Research (LR) can remedy this problem as authors will have all their works connected via their unique Web identifiers embedded in their publications or creative works on the Web. Thus they just need to establish one unique Web identifier that can be applied to all of their works, instead of multiple profiles to satisfy many systems as in their current practices. It will also solve the need to disambiguate among authors or creators as their published and creative works on the Web are readily connected to their unique Web identifiers embedded in their works.  In short, LR will revolutionize and simplify the way researchers, libraries and archives will manage the researcher identifiers, once adopted and mainstreamed.</p>
+                                </div>
+
+                                <aside class="note">
+                                    <dl about="#abc123" id="abc123">
+                                        <dt property="schema:name">abc123</dt>
+                                        <dd datatype="rdf:HTML" property="schema:description"><a href="http://id.loc.gov/">Library of Congress Linked Data Service</a> for personal and family names and corporate bodies, <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), <a href="http://isni.org/">International Standard Name Identifier</a> (ISNI) and the Getty’s <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Union List of Artist Names</a> (ULAN), for example.</dd>
+                                    </dl>
+                                </aside>
+
+                                <aside class="note">
+                                    <dl about="#def456" id="def456">
+                                        <dt property="schema:name">def456</dt>
+                                        <dd datatype="rdf:HTML" property="schema:description">Panigabutra-Roberts, Anchalee. 2015. <a href="http://swib.org/swib15/slides/panigabutra_researchers.pdf">Researcher Identity Management in the 21st Century Networked World: A Pilot Study of American University in Cairo Faculty</a>. Presented at Semantic Web in Libraries Conference, November 24, 2015, Hamburg, Germany.</dd>
+                                    </dl>
+                                </aside>
+                            </section>
+
+                            <section id="license" inlist="" rel="schema:hasPart" resource="#license">
+                                <h3 property="schema:name">License</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p>CC</p>
+                                </div>
+                            </section>
+
+                            <section id="persistence" inlist="" rel="schema:hasPart" resource="#persistence">
+                                <h3 property="schema:name">Persistence</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Nicola</mark></p>
+                                </div>
+                            </section>
+
+                            <section id="preservation" inlist="" rel="schema:hasPart" resource="#preservation">
+                                <h3 property="schema:name">Preservation</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Anyone?</mark></p>
+                                    <p>Provenance and preservation (libraries, archives)</p>
+                                </div>
+                            </section>
+
+                            <section id="connections-and-interactions" inlist="" rel="schema:hasPart" resource="#connections-and-interactions">
+                                <h3 property="schema:name">Connections and interactions</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>Social notifications for collaboration, annotation, citations, linking research with CfP etc. Annotations WG stuff but not in too much depth.</mark></p>
+                                </div>
+                            </section>
+
+                            <section id="authoring-tools" inlist="" rel="schema:hasPart" resource="#authoring-tools">
+                                <h3 property="schema:name">Authoring tools</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Sarven</mark> Bring this up a level. Copied form https://github.com/linkeddata/dokieli</p>
 
                                     <ul>
@@ -331,70 +410,6 @@
                                         <li>Document metadata</li>
                                         <li>Views for screen and print (e.g., ACM, LNCS) - yes, you can output to a paper user interface: PDF</li>
                                     </ul>
-                                </div>
-                            </section>
-
-                            <section id="researchers-identifiers" inlist="" rel="schema:hasPart" resource="#researchers-identifiers">
-                                <h3 property="schema:name">Researcher’s Identifiers</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p>As Linked Data become mainstreamed and widely adopted by the Galleries, Libraries, Museums and Archives (GLAM) communities, currently <span about="#r-abc123" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-abc123">there are many options for identifiers systems for authors, artists and other types of creators of scholarly, popular and creative works</mark><sup class="ref-footnote"><a href="#abc123" rel="cito:isCitedBy">abc123</a></sup></span>. Similarly for the scientific and medical research communities, the major researcher identity systems available to date via databases are <a href="https://www.elsevier.com/solutions/scopus/support/authorprofile">Scopus Author Identifier</a> (Elsevier) and <a href="http://www.researcherid.com/Home.action">ResearcherID</a> (Thomson Reuters). However, the data are not open. Nonetheless, both can be linked to the open researcher identifier system, <a href="http://orcid.org/">ORCID</a> (Open Researcher and Contributor Identifier). <span about="#r-def456" class="ref" typeof="http://purl.org/dc/dcmitype/Text"><mark id="r-def456">Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates</mark><sup class="ref-footnote"><a href="#def456" rel="cito:isCitedBy">def456</a></sup></span>. Linked Research (LR) can remedy this problem as authors will have all their works connected via their unique Web identifiers embedded in their publications or creative works on the Web. Thus they just need to establish one unique Web identifier that can be applied to all of their works, instead of multiple profiles to satisfy many systems as in their current practices. It will also solve the need to disambiguate among authors or creators as their published and creative works on the Web are readily connected to their unique Web identifiers embedded in their works.  In short, LR will revolutionize and simplify the way researchers, libraries and archives will manage the researcher identifiers, once adopted and mainstreamed.</p>
-                                </div>
-
-                                <aside class="note">
-                                    <dl about="#abc123" id="abc123">
-                                        <dt property="schema:name">abc123</dt>
-                                        <dd datatype="rdf:HTML" property="schema:description"><a href="http://id.loc.gov/">Library of Congress Linked Data Service</a> for personal and family names and corporate bodies, <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), <a href="http://isni.org/">International Standard Name Identifier</a> (ISNI) and the Getty’s <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Union List of Artist Names</a> (ULAN), for example.</dd>
-                                    </dl>
-                                </aside>
-
-                                <aside class="note">
-                                    <dl about="#def456" id="def456">
-                                        <dt property="schema:name">def456</dt>
-                                        <dd datatype="rdf:HTML" property="schema:description">Panigabutra-Roberts, Anchalee. 2015. <a href="http://swib.org/swib15/slides/panigabutra_researchers.pdf">Researcher Identity Management in the 21st Century Networked World: A Pilot Study of American University in Cairo Faculty</a>. Presented at Semantic Web in Libraries Conference, November 24, 2015, Hamburg, Germany.</dd>
-                                    </dl>
-                                </aside>
-                            </section>
-
-                            <section id="persistence" inlist="" rel="schema:hasPart" resource="#persistence">
-                                <h3 property="schema:name">Persistence</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Nicola</mark></p>
-                                </div>
-                            </section>
-
-                            <section id="preservation" inlist="" rel="schema:hasPart" resource="#preservation">
-                                <h3 property="schema:name">Preservation</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Anyone?</mark></p>
-                                    <p>Provenance and preservation</p>
-                                </div>
-                            </section>
-
-                            <section id="social-interactions" inlist="" rel="schema:hasPart" resource="#social-interactions">
-                                <h3 property="schema:name">Social Interactions</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>XXX Sarven: Restructure so that it covers (Solid) notifications, annotations, social-web stuff</mark>.</p>
-
-                                    <section id="annotations" rel="schema:hasPart" resource="#annotations">
-                                        <h4 property="schema:name">Annotations</h4>
-                                        <div datatype="rdf:HTML" property="schema:description">
-                                            <p>foo bar</p>
-                                        </div>
-                                    </section>
-
-                                    <section id="social-web" rel="schema:hasPart" resource="#social-web">
-                                        <h4 property="schema:name">Social Web</h4>
-                                        <div datatype="rdf:HTML" property="schema:description">
-                                            <p>baz qux</p>
-                                        </div>
-                                    </section>
-                                </div>
-                            </section>
-
-                            <section id="implementation" inlist="" rel="schema:hasPart" resource="#implementation">
-                                <h3 property="schema:name">Implementation</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p>dokieli / Solid?</p>
                                 </div>
                             </section>
                         </div>
@@ -452,6 +467,9 @@
                         <div datatype="rdf:HTML" property="schema:description">
                             <p>Congrats! We've revolutionized everything.</p>
                             <p><mark>TODO: All</mark></p>
+                            <p><mark>Here way say the extent to which our implementation so far meets the acid test criteria, and what remains to be done. We also plea for promotion of the call for LR and hope that this is enough of a rallying cry to get people excited about the potential.</mark></p>
+
+                            <p><mark>Our contribution is defining these three particular problems and the building blocks that can take each of them /to a more ideal state. In combination, this change will bring about a revolution in how knowledge is generated, published, shared and consumed.</mark></p>
                         </div>
                     </section>
 
@@ -475,10 +493,8 @@
                             </ol>
                         </div>
                     </section>
-
                 </div>
             </article>
-
         </main>
     </body>
 </html>
