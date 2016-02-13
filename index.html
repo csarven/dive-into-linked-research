@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Linked Research: A Paradigm</title>
+        <title>Linked Research - Taking scholarly communication to the Web</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet alternate" title="LNCS" />
         <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet" title="ACM" />
@@ -21,7 +21,7 @@
     <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# sterms: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
         <main>
             <article about="" typeof="schema:ScholarlyArticle">
-                <h1 property="schema:name">Linked Research: A Paradigm</h1>
+                <h1 property="schema:name">Linked Research - Taking scholarly communication to the Web</h1>
 
                 <div id="authors">
                     <dl id="author-name">
@@ -128,7 +128,21 @@
 
                             <p><mark>Reuse whatever from existing work: http://csarven.ca/linked-research http://csarven.ca/call-for-linked-research http://csarven.ca/enabling-accessible-knowledge http://csarven.ca/cooling-down-web-science http://csarven.ca/this-paper-is-a-demo</mark></p>
 
-                            <p>In this article, we discuss a transition to a new paradigm in scholarly communication: <em>Linked Research</em>. This evolution is toward a higher degree of social cooperation and interconnected information. In essence, to set forth the advancement of a new generation of <cite><a href="http://web.stanford.edu/class/cs227/Readings/hendler-berners-lee-semantic-web.pdf">social machines</a></cite>.</p>
+							<p>One of the most widely debated questions in the scientific community is the impact of digitization on the scholarly communication and knowledge exchange. 
+							In this article, we present a way how scholarly communication can truly digitize by means of living, interactive publications. 
+							Despite advances such as open and digital access to publications few has been changed yet with regard to the digitization of scientific publishing. 
+							Scientists still write static documents, which do not use the possibilities of digitization, such as interactivity, multimodality or semantic content annotation and representation.</p>
+
+							<p>In this article, we present the <em>Linked Research</em> concept aiming to take scholarly communication to the decentralized, interlinked Web.
+							As such, Linked Research aims at facilitating a transition to a new paradigm in scholarly communication: The evolution towards a higher degree of social cooperation and interconnected information. In essence, to set forth the advancement of a new generation of <cite><a href="http://web.stanford.edu/class/cs227/Readings/hendler-berners-lee-semantic-web.pdf">social machines</a></cite>.</p>
+							
+							<p>We describe the realization of the Linked Research concept based on native Web technologies i.e., HTML, CSS, JavaScript, and RDFa for authoring, representing as well as linking and annotating scholarly content. 
+							We demonstrate how multimodal content such as video and audio can be embedded. 
+							Especially for computer science, code examples are an important type of content, which can be integrated with these publications. 
+							We showcase, how different views of the content can be rendered for different devices (e.g. screen, print, mobile) or audiences (e.g. slideshows). 
+							A particular strength of our approach is the integration and linking of data, which can automatically update tables and diagrams when the underlying data changes. 
+							Also, all content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration and retrieval of scholarly content. </p>
+
 
                             <p id="context"><mark>TODO:Build context from the works of: Marshall McLuhan, Ted Nelson, James Burke, and Tim Berners-Lee</mark>.</p>
 
@@ -374,7 +388,20 @@
                     <section id="technical-considerations" inlist="" rel="schema:hasPart" resource="#technical-considerations">
                         <h2 property="schema:name">Technical Considerations</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: All</mark></p>
+
+						<table>
+							<tr><th>Types of communication</th>
+								<th>Content elements</th>
+								<th>Stakeholders</th>
+							</tr>
+							<tr>
+								<td>Calls<br/>Articles<br/>Reviews<br/>Comments/Annotations<br/>Data</td>
+								<td>Semantically annotated Text<br/>Video<br/>Audio<br/>Data<br/>Source code</td>
+								<td>Researchers<br/>Reviewers<br/>Funders<br/>Editors/Program Chairs<br/>Students<br/>Citizens</td>
+							</tr>
+						</table>
+
+						<p><mark>TODO: All</mark></p>
                             <p><mark>Here we describe the more technical stuff that is ongoing work. There is more detail on our proposed architecture and example implementation in the dokieli paper.</mark></p>
 
                             <p><mark>TODO: Figure. -Sarven</mark> -- there are several relationships in which the diagram doesn't show yet</p>
