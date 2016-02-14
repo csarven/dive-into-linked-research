@@ -299,21 +299,41 @@
                             <section id="acid-test" rel="schema:hasPart" resource="#acid-test">
                                 <h3 property="schema:name">Acid Test</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>We describe an acid test so that we can evaluate a system against the requirements of the new paradigm.</mark></p>
+                                    <p>We describe an <em>acid test</em> so that systems can be evaluated against the requirements of the Linked Research paradigm. The evaluation is intended to verify, approve, or test the openness, accessibility, decentralisation, interoperability of the approaches in scholarly communication. This is along the lines of a test to distinguish gold from base metals. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
 
-                                    <p><mark>XXX: This is copied from <a href="http://csarven.ca/enabling-accessible-knowledge#acid-test">http://csarven.ca/enabling-accessible-knowledge#acid-test</a>. Can we improve this whole section? "Codify" so that we can verify? Can it be like a human/machine unit test(s)?</mark></p>
+                                    <p>This acid test is derived from <cite><a rel="prov:wasDerivedFrom" href="http://csarven.ca/enabling-accessible-knowledge#acid-test">Enabling Accessible Knowledge Acid Test</a></cite>. The non-exhaustive derivations here further describe publishing and consumption research interactions, as well as their openness and reuse.</p>
 
-                                    <p>We propose an <em>acid test</em> in order to verify, approve, or test the openness, accessibility and flexibility of the approaches for research publication. This is along the lines of a test to distinguish gold from base metals. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
+                                    <p><mark>Can we improve this whole section? "Codify" so that we can verify? Can it be like a human/machine unit test(s)?</mark></p>
 
                                     <dl id="acid-test-challenge">
                                         <dt>Challenge</dt>
                                         <dd>
                                             <ol>
-                                                <li id="acid-test-challenge-availability">Alice makes her research document available on the Web with the research objects available at fine granularity e.g., variables of a hypothesis.</li>
-                                                <li id="acid-test-challenge-reference">Bob wants to precisely refer to and discuss Alice’s research objects from his own research document.</li>
-                                                <li id="acid-test-challenge-discovery">Carol is interested in discovering research documents in the wild, which contain a pattern of reusable research objects like the ones in Alice, Bob or others’ documents e.g., using the <em>follow your nose</em> type of exploration, searching, or querying against a service.</li>
-                                                <li id="acid-test-challenge-interaction">Dan learns by interacting with the components inside the research document e.g., changing the parameters, rerunning an experiment.</li>
-                                                <li id="acid-test-challenge-presentation">Eve visits Frank, and displays Alice’s article on one of his devices, and prints out a copy.</li>
+                                                <li id="acid-test-challenge-availability">Alice makes her article available on the Web with the research objects available at fine granularity e.g., variables of a hypothesis.</li>
+
+                                                <li id="acid-test-challenge-reference">Beverly refers to and discusses Alice’s research objects from her own research article e.g., an argument against a methodological step.</li>
+
+                                                <li id="acid-test-challenge-annotation">Carol annotates Beverly’s argument on Alice’s work by suggesting that it was misinterpreted, and stores the note publicly at her own personal dataspace.</li>
+
+                                                <li id="acid-test-challenge-review">Darmok and Eve write reviews for Beverly’s article and store them at their preferred locations respectively, and notify Beverly’s inbox about the reviews.</li>
+
+                                                <li id="acid-test-challenge-call-for-contributions">Frank publicly announces an article about a call for contributions for an academic conference. He specifies the scope of the call and desired qualities of the submissions.</li>
+
+                                                <li id="acid-test-challenge-reply-to-call">Guinan notices Frank’s call for contributions to be suitable for her research article, and notifies the submissions inbox about it. In her article, Guinan states that it was a reply to the call.</li>
+
+                                                <li id="acid-test-challenge-peer-review">Frank assigns Herman, Indigo, and Jean-Luc to peer-review Guinan’s work. Herman and Indigo both write their reviews as readable only for Frank, meanwhile Jalad makes his review public.</li>
+
+                                                <li id="acid-test-challenge-proceedings">Kuhn compiles a list of articles which meet the requirements and standards of Frank’s call for contributions based on reviews and public feedback, and notifies Leo's inbox for library indexing.</li>
+
+                                                <li id="acid-test-challenge-library">Leo retrieves and catalogues the articles which were mentioned for library indexing.</li>
+
+                                                <li id="acid-test-challenge-interaction">Marshall uses the interactive components in Beverly’s article e.g., changing the parameters, rerunning an experiment.</li>
+
+                                                <li id="acid-test-challenge-views">Nelson reads Alice’s article from his handheld device, and prints a single page summary.</li>
+
+                                                <li id="acid-test-challenge-archives">Ophelia notices Leo's new index of articles and stores them for long term storage at the archives.</li>
+
+                                                <li id="acid-test-challenge-discovery">Picard wants to discover peer-reviews about Guinan’s work e.g., using the <em>follow your nose</em> type of exploration, searching, or querying against a service.</li>
                                             </ol>
                                         </dd>
                                     </dl>
@@ -324,12 +344,14 @@
                                         <dt>Assumptions</dt>
                                         <dd>
                                             <ul>
-                                                <li id="acid-test-assumption-different-tools">The interactions have at least two different tool stacks.</li>
-                                                <li id="acid-test-assumption-machine-friendly">The interactions are both human and machine-friendly.</li>
+                                                <li id="acid-test-assumption-publishing">Authoring and publishing mechanisms have at least two different tool stacks.</li>
+                                                <li id="acid-test-assumption-consuming">Consuming applications have at least two different tool stacks.</li>
+                                                <li id="acid-test-assumption-free-and-open-access">Information and interactions are available for free with open access with attribution for retrieval and reuse.</li>
+                                                <li id="acid-test-assumption-human-machine-readable">Information are both human and machine-readable.</li>
                                                 <li id="acid-test-assumption-open-standards">All interactions are according to published open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
                                                 <li id="acid-test-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
-                                                <li id="acid-test-assumption-spoon" rel="schema:hasPart"><span about="acid-test-assumption-spoon" property="schema:description" typeof="doco:Sentence">There is no spoon.</span></li>
                                             </ul>
+                                            <span rel="schema:hasPart" resource="#acid-test-assumption-spoon" property="schema:description" typeof="doco:Sentence" content="There is no spoon."></span>
                                         </dd>
                                     </dl>
                                 </div>
@@ -460,6 +482,7 @@
                                 <h3 property="schema:name">License</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p>CC</p>
+                                    <p>Technology impacts culture around sharing.</p>
                                 </div>
                             </section>
 
