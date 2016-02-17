@@ -113,59 +113,19 @@
                                 <li><a href="http://www.acm.org/about/class/ccs98-html#H.1.2" resource="http://acm.rkbexplorer.com/ontologies/acm#H.1.2">H.1.2</a> [<strong>Information Systems</strong>]: Human information processing</li>
                                 <li><a href="http://www.acm.org/about/class/ccs98-html#H.4.m" resource="http://acm.rkbexplorer.com/ontologies/acm#H.4.m">H.4.m</a> [<strong>Information Systems Applications</strong>]: Linked Data</li>
                                 <li><a href="http://www.acm.org/about/class/ccs98-html#H.5.3" resource="http://acm.rkbexplorer.com/ontologies/acm#H.5.3">H.5.3</a> [<strong>Information Interfaces and Presentation</strong>]: Web-based interaction</li>
-                                <li><a href="http://www.acm.org/about/class/ccs98-html#I.7.4" resource="http://acm.rkbexplorer.com/ontologies/acm#I.7.4">I.7.4</a> [<strong>Document and Text Processing</strong>]: Electronic Publishing</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section id="introduction" inlist="" rel="schema:hasPart" resource="#introduction">
-                        <h2 about="#introduction" property="schema:name" typeof="deo:Introduction">Introduction</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p><mark>TODO: Sarven</mark></p>
+                                <li><a href="http://www.acm.org/about/class/ccs98-html#I.7.4" resource="http://acm.rkbexplorer.com/ontologies/acm#I.7.4">I.7.4</a> [<strong>Document and Text Processing</strong>]: Electronic Publishing</li></ul></div></section><section id="introduction" inlist="" rel="schema:hasPart" resource="#introduction">
+                        <h2 about="#introduction" property="schema:name" typeof="deo:Introduction">Introduction</h2><div datatype="rdf:HTML" property="schema:description">
 
                             <p><q about="" cite="http://example.org/quote#123" rel="cito:agreesWith" resource="http://example.org/quote#123">You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete</q> - attributed to <cite><a href="https://en.wikipedia.org/wiki/Buckminster_Fuller">Buckminster Fuller</a></cite>.</p>
 
-                            <p><mark>This section explains the context (improving knowledge sharing in scholarly communication), why a paradigm shift is needed (the three problems to the three ideals) and that there are existing tools we can use to enable this shift. A bunch of PG's 'situating..' would fit well here.</mark></p>
+                            <p>One of the most widely debated questions in the scientific community is the impact of digitisation on scholarly communication and knowledge exchange.
+                            In this article, we propose that digitising, and indeed <i>Webizing </i>[cite], scholarly communication can provide greater coherency between and within academic fields, as well as make knowledge more accessible to researchers and citizens alike. Despite efforts through Open Access movements and increasing availability of online publications, researchers are still writing static documents, and surprisingly little has been done to take full advantage of either the capabilities of online media, or the cultural shift towards sharing and public commentary on social networks. </p><p>On examination, it becomes clear that there are many interrelated problems to be tackled before it will be possible to fully realise the possibilities offered by modern Web technologies in the academic space. Many of these problems are relevant in a number of domains outside of scholarly publishing, and they are each to different degrees being considered in existing or ongoing work, in both academia and industry. However, work in the different areas is often disconnected. Our first contribution is an overview of different issues, and how they relate to and depend upon one another, in the context of scholarly communication. We attempt to articulate a complete picture of the space by defining <i>requirements </i>in response to the problems described in existing literature, or observed 'in the field'. These requirements fall into three broad categories:</p><ul><li>Information silos and centralisation.</li><li>Access, discovery and reuse of knowledge and data.</li><li>User experience and tooling.<br /></li></ul>
 
-                            <p><mark>Reuse whatever from existing work: http://csarven.ca/linked-research http://csarven.ca/call-for-linked-research http://csarven.ca/enabling-accessible-knowledge http://csarven.ca/cooling-down-web-science http://csarven.ca/this-paper-is-a-demo</mark></p>
+                            <p>From these requirements, we derive user stories, and explain how these may be repurposed as an <i>acid test</i> or criteria against which to evaluate proposed solutions. Our strategy for addressing the problems identified involves building upon existing technologies, standards and common practices, each of which we discuss in detail in section 4. </p><p>Finally, we describe an implementation of tooling for authoring, publishing and annotating research articles in a decentralised manner, based on native Web technologies. We demonstrate how multimodal content such as video, audio, code examples and runnable experiments can be embedded into research publications, and showcase how different views of the content can be rendered for different devices (e.g. screen, print, mobile) or audiences (e.g. slideshows). A particular strength of our approach is the integration and linking of data, which can automatically update tables and diagrams when the underlying data changes. All content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration, retrieval and linking of concepts and ideas. Development is ongoing, and we use this as a starting point to demonstrate the feasibility of our strategy.</p>
 
-                            <p>One of the most widely debated questions in the scientific community is the impact of digitization on the scholarly communication and knowledge exchange.
-                            In this article, we present a way how scholarly communication can truly digitize by means of living, interactive publications.
-                            Despite advances such as open and digital access to publications few has been changed yet with regard to the digitization of scientific publishing.
-                            Scientists still write static documents, which do not use the possibilities of digitization, such as interactivity, multimodality or semantic content annotation and representation.</p>
+                            <p id="context"></p>
 
-                            <p>In this article, we present the <em>Linked Research</em> concept aiming to take scholarly communication to the decentralized, interlinked Web.
-                            As such, Linked Research aims at facilitating a transition to a new paradigm in scholarly communication: The evolution towards a higher degree of social cooperation and interconnected information. In essence, to set forth the advancement of a new generation of <cite><a href="http://web.stanford.edu/class/cs227/Readings/hendler-berners-lee-semantic-web.pdf">social machines</a></cite>.</p>
-
-                            <p>We describe the realization of the Linked Research concept based on native Web technologies i.e., HTML, CSS, JavaScript, and RDFa for authoring, representing as well as linking and annotating scholarly content.
-                            We demonstrate how multimodal content such as video and audio can be embedded.
-                            Especially for computer science, code examples are an important type of content, which can be integrated with these publications.
-                            We showcase, how different views of the content can be rendered for different devices (e.g. screen, print, mobile) or audiences (e.g. slideshows).
-                            A particular strength of our approach is the integration and linking of data, which can automatically update tables and diagrams when the underlying data changes.
-                            Also, all content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration and retrieval of scholarly content. </p>
-
-                            <p id="context"><mark>TODO:Build context from the works of: Marshall McLuhan, Ted Nelson, James Burke, and Tim Berners-Lee</mark>.</p>
-
-                            <p>Some context:</p>
-
-                            <p>Linked Research is a concrete effort to address the problem of x,y,z.</p>
-
-                            <p id="paradigm-shift">Talk about paradigms, structures, models...</p>
-                            <p>articulating the paradigm</p>
-                            <p>paradigms can guide the investigation</p>
-                            <p>without questioning or challenging the underlying assumptions of that theory.</p>
-                            <p>emergence of scientific discoveries</p>
-                            <p>We envision that a new paradigm will further guide scholarly communication towards autonomy.</p>
-
-                            <section id="problems-and-ideals" inlist="" rel="schema:hasPart" resource="#problems-and-ideals">
-                                <h3 property="schema:name">Problems and Ideals</h3>
-                                <div>
-                                    <p>This section expands further on the three problems and the three deals. Some of PG's 'situating..' can be repurposed here, as well. We mention that the paradigm shift requires both social and technical changes: a culture shift in academic publishing, and appropriate tools to enable publication and consumption of accessible knowledge.</p>
-
-                                    <ul>
-                                        <li>Information silos (centralism, disconnection)</li>
-                                        <li>Access, discovery and reuse of knowledge</li>
-                                        <li>User experience</li>
+                            <section id="problems-and-ideals" inlist="" rel="schema:hasPart" resource="#problems-and-ideals"><div><ul>
                                     </ul>
                                 </div>
                             </section>
