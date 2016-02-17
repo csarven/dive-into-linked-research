@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Linked Research - Taking scholarly communication to the Web</title>
+        <title>Linked Research: the next generation of scholarly communication on the Web</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet alternate" title="LNCS" />
         <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet" title="ACM" />
@@ -20,7 +20,7 @@
     <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# sterms: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
         <main>
             <article about="" typeof="schema:ScholarlyArticle">
-                <h1 property="schema:name">Linked Research - Taking scholarly communication to the Web</h1>
+                <h1 property="schema:name">Linked Research: the next generation of scholarly communication on the Web</h1>
 
                 <div id="authors">
                     <dl id="author-name">
@@ -97,9 +97,9 @@
                         <div>
                             <ul rel="schema:about">
                                 <li><a href="https://en.wikipedia.org/wiki/Human-computer_interaction" resource="http://dbpedia.org/resource/Human-computer_interaction">Human-computer interaction</a></li>
-                                <li><a href="https://en.wikipedia.org/wiki/Knowledge_acquisition" resource="http://dbpedia.org/resource/Knowledge_acquisition">Knowledge acquisition</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Linked_Data" resource="http://dbpedia.org/resource/Linked_Data">Linked Data</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Semantic_publishing" resource="http://dbpedia.org/resource/Semantic_publishing">Semantic publishing</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Social_machine" resource="http://dbpedia.org/resource/Social_machine">Social machine</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Social_web" resource="http://dbpedia.org/resource/Social_web">Social web</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Web_science" resource="http://dbpedia.org/resource/Web_science">Web science</a></li>
                             </ul>
@@ -344,6 +344,30 @@
                                 </dd>
                             </dl>
 
+                            <table>
+                                <caption><mark>TODO: Soeren, what is this supposed to convey or how is this table helpful? It also needs a caption. It compliments (or maybe overlaps with) the LR ecosystem figure below.</mark></caption>
+                                <thead>
+                                    <tr>
+                                        <th>Types of communication</th>
+                                        <th>Content elements</th>
+                                        <th>Stakeholders</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Calls<br />Articles<br />Reviews<br />Comments/Annotations<br />Data</td>
+                                        <td>Semantically annotated Text<br />Video<br />Audio<br />Data<br />Source code</td>
+                                        <td>Researchers<br />Reviewers<br />Funders<br />Editors/Program Chairs<br />Students<br />Citizens</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <figure id="figure-linked-research-ecosystem" rel="schema:hasPart" resource="#figure-linked-research-ecosystem">
+                                <object data="media/images/linked-research-ecosystem.svg" height="297" rel="schema:image" type="image/svg+xml" width="640"><a href="media/images/linked-research-ecosystem.svg"></a></object>
+
+                                <figcaption property="schema:name">Linked Research ecosystem. <mark>TODO: Sarven -- The diagram doesn't have the arrows for the relationships between the entities</mark></figcaption>
+                            </figure>
+
                             <section id="building-blocks" inlist="" rel="schema:hasPart" resource="#building-blocks">
                                 <h3 property="schema:name">Building Blocks</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
@@ -359,14 +383,14 @@
                             <section id="call-for-papers" inlist="" rel="schema:hasPart" resource="#call-for-papers">
                                 <h3 property="schema:name">Call for Papers</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites</p>
+                                    <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites: http://semstats.org/ , http://semstats.org/2013/call-for-papers</p>
                                 </div>
                             </section>
 
                             <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
                                 <h3 property="schema:name">Proceedings</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph</mark> - CEUR-WS.org?</p>
+                                    <p><mark>TODO: Christoph</mark> - CEUR-WS.org/ceur-make , http://semstats.org/2013/proceedings</p>
                                 </div>
                             </section>
 
@@ -472,32 +496,7 @@
                     <section id="realisation" inlist="" rel="schema:hasPart" resource="#realisation">
                         <h2 property="schema:name">Realisation</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Types of communication</th>
-                                        <th>Content elements</th>
-                                        <th>Stakeholders</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Calls<br />Articles<br />Reviews<br />Comments/Annotations<br />Data</td>
-                                        <td>Semantically annotated Text<br />Video<br />Audio<br />Data<br />Source code</td>
-                                        <td>Researchers<br />Reviewers<br />Funders<br />Editors/Program Chairs<br />Students<br />Citizens</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
                             <p><mark>Here we describe the more technical stuff that is ongoing work. There is more detail on our proposed architecture and example implementation in the dokieli paper.</mark></p>
-
-                            <p><mark>TODO: Figure. -Sarven</mark> -- there are several relationships in which the diagram doesn't show yet</p>
-
-                            <figure about="#figure-linked-research-dataspace" id="figure-linked-research-dataspace" rel="schema:hasPart" typeof="doco:FigureBox">
-                                <object about="#figure-object-linked-research-dataspace" data="media/images/linked-research-dataspace.svg" height="297" rel="schema:image" type="image/svg+xml" typeof="doco:Figure" width="640"><a href="media/images/linked-research-dataspace.svg"></a></object>
-
-                                <figcaption about="#figure-caption-linked-research-dataspace" property="schema:description" typeof="doco:FigureLabel">Linked Research dataspace</figcaption>
-                            </figure>
 
                             <section id="connections-and-interactions" inlist="" rel="schema:hasPart" resource="#connections-and-interactions">
                                 <h3 property="schema:name">Connections and interactions</h3>
