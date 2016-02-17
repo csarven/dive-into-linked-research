@@ -74,7 +74,7 @@
 
                 <dl id="document-modified">
                     <dt>Modified</dt>
-                    <dd><time datatype="xsd:dateTime" datetime="2016-02-08T00:00:00Z" property="schema:dateModified">2016-02-08</time></dd>
+                    <dd><time datatype="xsd:dateTime" datetime="2016-02-08T00:00:00Z" property="schema:dateModified">2016-02-17</time></dd>
                 </dl>
 
                 <dl id="document-license">
@@ -86,7 +86,7 @@
                     <section id="abstract">
                         <h2>Abstract</h2>
                         <div datatype="rdf:HTML" property="schema:abstract">
-                            <p>We call for a community-wide effort to develop more effective means to change and shape the scholarly communication given the state of the Web. We propose a paradigm shift; from information silos to data ownership, from closed and elitist access to knowledge to a sharing and open access culture, from paper user interfaces and locked data to taking advantage of <em>cool</em> human learning capacity, machine processing power, and interaction. <em>Linked Research</em> is the outcome of this framework, and we make our contributions by defining its principles and requirements, cultural change, and building tools for publication and consumption. This agenda encompasses much of the work going on in scholarly communication, Semantic Web publishing, and decentralised social Web, today, while posing additional research objectives and a call for better coordination.</p>
+                            <p>The future of scholarly communication involves research results, analysis and data all being produced, published, verified and reused interactively on the Web, with 'papers' linking to and from each other at a granular level. The academic process of peer-review can be open, transparent and decentralised, and the academic process becomes an ongoing conversation between experts, policy makers, implementers, and the general public.<br /></p><p>This vision is radical, and getting there requires understanding of, and change in, a number of interrelated areas. In this article we break down the problem space and define requirements for advancement towards a Web-based ecosystem for scholarly communication: <i>Linked Research</i>. We discuss our strategy for tackling each of these areas. This includes how we can build on and combine existing well-known technologies and practices for digital publishing, social interactions, decentralised data storage, and semantic data enrichment. We provide an initial assessment of our proposed strategy with an example implementation of tooling which sets out to meet the requirements.</p>
                         </div>
                     </section>
 
@@ -258,7 +258,7 @@
                         <div datatype="rdf:HTML" property="schema:description">
                             <p>We describe an <em>acid test</em> so that systems can be evaluated against the requirements of the Linked Research paradigm. The evaluation is intended to verify, approve, or test the openness, accessibility, decentralisation, interoperability of the approaches in scholarly communication. This is along the lines of a test to distinguish gold from base metals. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
 
-                            <p>This acid test is derived from <cite><a rel="prov:wasDerivedFrom" href="http://csarven.ca/enabling-accessible-knowledge#acid-test">Enabling Accessible Knowledge Acid Test</a></cite>. The non-exhaustive derivations here further describe publishing and consumption research interactions, as well as their openness and reuse.</p>
+                            <p>This acid test is derived from <cite><a href="http://csarven.ca/enabling-accessible-knowledge#acid-test" rel="prov:wasDerivedFrom">Enabling Accessible Knowledge Acid Test</a></cite>. The non-exhaustive derivations here further describe publishing and consumption research interactions, as well as their openness and reuse.</p>
 
                             <p><mark>Can we improve this whole section? "Codify" so that we can verify? Can it be like a human/machine unit test(s)?</mark></p>
 
@@ -308,7 +308,7 @@
                                         <li id="acid-test-assumption-open-standards">All interactions are according to published open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
                                         <li id="acid-test-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
                                     </ul>
-                                    <span rel="schema:hasPart" resource="#acid-test-assumption-spoon" property="schema:description" typeof="doco:Sentence" content="There is no spoon."></span>
+                                    <span content="There is no spoon." property="schema:description" rel="schema:hasPart" resource="#acid-test-assumption-spoon" typeof="doco:Sentence"></span>
                                 </dd>
                             </dl>
                         </div>
@@ -411,7 +411,7 @@
                                 <div datatype="rdf:HTML" property="schema:description">
                                     Why persistance?
                                     - Building on top of knowledge far in the future
-                                    - New discoveries -> finding the sources
+                                    - New discoveries -&gt; finding the sources
                                     - more on the vision
                                     - the role of the author/the role of the author
 
@@ -433,7 +433,7 @@
                                       - Domain name can expire
                                       - Running services may disappear
                                     - Accessibility: Not everyone has a domain name and storage
-                                    => Finally, self-archival is a single point of failure for persistance
+                                    =&gt; Finally, self-archival is a single point of failure for persistance
 
                                     There is a need of distributing the content
                                     - Distributed: Replicating the content
@@ -480,9 +480,9 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Calls<br/>Articles<br/>Reviews<br/>Comments/Annotations<br/>Data</td>
-                                        <td>Semantically annotated Text<br/>Video<br/>Audio<br/>Data<br/>Source code</td>
-                                        <td>Researchers<br/>Reviewers<br/>Funders<br/>Editors/Program Chairs<br/>Students<br/>Citizens</td>
+                                        <td>Calls<br />Articles<br />Reviews<br />Comments/Annotations<br />Data</td>
+                                        <td>Semantically annotated Text<br />Video<br />Audio<br />Data<br />Source code</td>
+                                        <td>Researchers<br />Reviewers<br />Funders<br />Editors/Program Chairs<br />Students<br />Citizens</td>
                                     </tr>
                                 </tbody>
                             </table>
