@@ -217,26 +217,7 @@
                     <section id="strategy" inlist="" rel="schema:hasPart" resource="#strategy">
                         <h2 property="schema:name">A Linked Research ecosystem</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-                            <p>Our strategy is as follows (adopted from <cite><a href="http://xml.fido.gov/stratml/references/WhyStratML.pdf">StratML</a></cite>):<br /></p>
-
-                            <dl id="strategy-intentions" rel="schema:hasPart" resource="#strategy-intentions">
-                                <dt property="schema:name">Intentions</dt>
-                                <dd datatype="rdf:HTML" property="schema:description">
-                                    <p><em>What do we aim to accomplish?</em> </p>
-                                </dd>
-                            </dl>
-
-                            <dl id="strategy-stakeholders" rel="schema:hasPart" resource="#strategy-stakeholders">
-                                <dt property="schema:name">Stakeholders</dt>
-                                <dd datatype="rdf:HTML" property="schema:description">
-                                    <p><em>Who is trying to do it and for the benefit of whom?</em> </p>
-                                </dd>
-                            </dl>
-
-                            <dl id="strategy-results" rel="schema:hasPart" resource="#strategy-results">
-                                <dt property="schema:name">Results</dt>
-                                <dd datatype="rdf:HTML" property="schema:description">
-                                    <p><em>How do we know whether we are making progress and when we have succeeded?</em></p>
+                            <p>Having defined requirements for the space as a whole based on observed problems, we change our angle to consider the ecosystem of scholarly communication. We describe aspects of the academic workflow, and indicate which of the requirements are pertinent for each stage in the process. This is summarised in Table 1 / Figure (TODO: actually improve table and/or figure 1 to summarise this). </p><p>..We are reusing existing technologies and techniques, combining them in a way that altogether releases new potential.</p><p>The Web as a publishing platform, for distribution and consumption.</p><dl id="strategy-results" rel="schema:hasPart" resource="#strategy-results"><dd datatype="rdf:HTML" property="schema:description">
                                 </dd>
                             </dl>
 
@@ -261,18 +242,25 @@
                             <figure id="figure-linked-research-ecosystem" rel="schema:hasPart" resource="#figure-linked-research-ecosystem">
                                 <object data="media/images/linked-research-ecosystem.svg" height="297" rel="schema:image" type="image/svg+xml" width="640"><a href="media/images/linked-research-ecosystem.svg"></a></object>
 
-                                <figcaption property="schema:name">Linked Research ecosystem. <mark>TODO: Sarven -- The diagram doesn't have the arrows for the relationships between the entities.</mark></figcaption></figure><section id="building-blocks" inlist="" rel="schema:hasPart" resource="#building-blocks">
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p>We are reusing existing technologies and techniques, combining them in a way that altogether releases new potential.</p>
-
-                                    <p>The Web as a publishing platform, for distribution and consumption.</p>
-                                    <p>Social media techniques and strategies; people are used to sharing stuff and receiving notifications now, so why not harness that for research.</p>
-                                    <p>Frontend Web technologies for rich, interactive experiences.</p>
-                                    <p>Linked data for machine readable stuff.</p><p>Semantic Web technologies have been widely embraced by the librarian community for organizing traditional scholarly content as well as exposing the rich terminological systems underlying such content. [Library Linked Data in the Cloud: OCLC's Experiments with New Models of Resource Description. Carol Jean Godby, Shenghui Wang, and Jeffrey K. Mixter Synthesis Lectures on the Semantic Web: Theory and Technology 2015 5:2, 1-154]. For example, the BIBFRAME initiative aims to ease the transition from MARC metadata records to web enabled metadata systems.<br /></p><p>Both CrossRef and DataCite DOIs support Content Negotiation allowing multiple representations including machine readable representations to be returned.<br /></p>
+                                <figcaption property="schema:name">Linked Research ecosystem. <mark>TODO: Sarven -- The diagram doesn't have the arrows for the relationships between the entities.</mark></figcaption>
+                            </figure>
+                            <section id="research-authoring" inlist="" rel="schema:hasPart" resource="#research-authoring">
+                                <h3 property="schema:name">Research authoring</h3>
+                                <div>
+                                  <p>Frontend Web technologies for rich, interactive experiences for authoring and consuming.</p>
+                                  <p>Linked data for machine readable stuff.</p>
+                                  <p>Semantic Web technologies have been widely embraced by the librarian community for organizing traditional scholarly content as well as exposing the rich terminological systems underlying such content. [Library Linked Data in the Cloud: OCLC's Experiments with New Models of Resource Description. Carol Jean Godby, Shenghui Wang, and Jeffrey K. Mixter Synthesis Lectures on the Semantic Web: Theory and Technology 2015 5:2, 1-154]. For example, the BIBFRAME initiative aims to ease the transition from MARC metadata records to web enabled metadata systems.</p>
+                                  <p>Both CrossRef and DataCite DOIs support Content Negotiation allowing multiple representations including machine readable representations to be returned.</p>
                                 </div>
                             </section>
-
-                            <section id="call-for-papers" inlist="" rel="schema:hasPart" resource="#call-for-papers">
+                            <section id="research-publishing" inlist="" rel="schema:hasPart" resource="#research-publishing">
+                                <h3 property="schema:name">Research publishing</h3>
+                                <div>
+                                    <p>Personal data stores (eg. Solid) and URLs for distribution.</p>
+                                    <p>Licensing. Technology impacts culture around sharing.</p>
+                                </div>
+                            </section>
+                            <section id="call-for-papers">
                                 <h3 property="schema:name">Call for Papers</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites: http://semstats.org/ , http://semstats.org/2013/call-for-papers</p>
@@ -287,14 +275,14 @@
                             </section>
 
                             <section id="data-ownership" inlist="" rel="schema:hasPart" resource="#data-ownership">
-                                <h3 property="schema:name">Data ownership</h3>
+                                <h3 property="schema:name">Archives and preservation</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p>Personal data stores (eg. Solid) and URLs for distribution.</p>
+                                    <p>Collections, hubs, indexes. </p><p>Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates #def456<br /></p>
                                 </div>
                             </section>
 
                             <section id="trust-and-attribution" inlist="" rel="schema:hasPart" resource="#trust-and-attribution">
-                                <h3 property="schema:name"><br /></h3><div datatype="rdf:HTML" property="schema:description">
+                                <h3 property="schema:name">Interactions</h3><p>Social media techniques and strategies; people are used to sharing stuff and receiving notifications now, so why not harness that for research.<br /></p><div datatype="rdf:HTML" property="schema:description">
                                 </div>
 
                                 <aside class="note">
@@ -312,69 +300,60 @@
                                 </aside>
                             </section>
 
-                            <section id="license" inlist="" rel="schema:hasPart" resource="#license">
-                                <h3 property="schema:name">License</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p>CC</p>
-                                    <p>Technology impacts culture around sharing.</p>
-                                </div>
-                            </section>
-
                             <section id="persistence" inlist="" rel="schema:hasPart" resource="#persistence">
                                 <h3 property="schema:name">Persistence</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    Why persistance? </div><p> - Building on top of knowledge far in the future </p><p> - New discoveries -&gt; finding the sources
-                                    - more on the vision
-                                    - the role of the author/the role of the author
+                                    <p><strong>Why persistance?</strong></p>
+                                    <ul>
+                                      <li>- Building on top of knowledge far in the future</li>
+                                      <li>- New discoveries -&gt; finding the sources</li>
+                                      <li>- more on the vision</li>
+                                      <li>- the role of the author/the role of the author</li>
+                                    </ul>
 
-                                    survivability on the web
-                                    - personal data archival
-                                    - distributed storage
+                                    <p><strong>survivability on the web</strong></p>
+                                    <ul>
+                                      <li>- personal data archival</li>
+                                      <li>- distributed storage</li>
+                                    </ul>
 
-                                    Problems of centralized archival
-                                    - Self-archival is difficult
-                                    - The maintainer and their responsibilities
-                                      - Self-hosted require mantainance (not accessible to those with no technical knowledge)
-                                      - Third-party depend on the persistence of the service (it may have a cost)
-                                    - URLs could be unreacheable and Web pages may disappear
-                                      - downtime
-                                      - censorship
-                                      - under attack [find case]
-                                      - expiration
-                                    - Expiration
-                                      - Domain name can expire
-                                      - Running services may disappear
-                                    - Accessibility: Not everyone has a domain name and storage
-                                    =&gt; Finally, self-archival is a single point of failure for persistance
+                                    <p><strong>Problems of centralized archival</strong></p>
+                                    <ul>
+                                      <li>- Self-archival is difficult</li>
+                                      <li>- The maintainer and their responsibilities</li>
+                                      <li>  - Self-hosted require mantainance (not accessible to those with no technical knowledge)</li>
+                                      <li>  - Third-party depend on the persistence of the service (it may have a cost)</li>
+                                      <li>- URLs could be unreacheable and Web pages may disappear</li>
+                                      <li>  - downtime</li>
+                                      <li>  - censorship</li>
+                                      <li>  - under attack [find case]</li>
+                                      <li>  - expiration</li>
+                                      <li>- Expiration</li>
+                                      <li>  - Domain name can expire</li>
+                                      <li>  - Running services may disappear</li>
+                                      <li>- Accessibility: Not everyone has a domain name and storage</li>
+                                      <li>=&gt; Finally, self-archival is a single point of failure for persistance</li>
+                                    </ul>
 
-                                    There is a need of distributing the content
-                                    - Distributed: Replicating the content
-                                      - There is a need to make the content easy to distribute.
-                                      - Hosted in multiple places
-                                      - LOCKSS (Lot of copies keep stuff safe) - used by many libraries and projects: e.g. Perma.cc
-                                      - Having the ability to retrieve it, point to it in case one of the place is down
-                                    - the open problem of naming
-                                      - current system using centralized naming
-                                      - distribute naming (that everyone agrees upon)
-                                        - hashing (DHT, see IPFS)
-                                        - consensus (mostly built by offloading blockchains see BlockStore)
-                                      - who has the data? trusty uris can come handy
+                                    <p><strong>There is a need of distributing the content</strong></p>
+                                    <ul>
+                                      <li>- Distributed: Replicating the content</li>
+                                      <li>  - There is a need to make the content easy to distribute.</li>
+                                      <li>  - Hosted in multiple places</li>
+                                      <li>  - LOCKSS (Lot of copies keep stuff safe) - used by many libraries and projects: e.g. Perma.cc</li>
+                                      <li>  - Having the ability to retrieve it, point to it in case one of the place is down</li>
+                                      <li>- the open problem of naming</li>
+                                      <li>  - current system using centralized naming</li>
+                                      <li>  - distribute naming (that everyone agrees upon)</li>
+                                      <li>    - hashing (DHT, see IPFS)</li>
+                                      <li>    - consensus (mostly built by offloading blockchains see BlockStore)</li>
+                                      <li>  - who has the data? trusty uris can come handy</li>
+                                    </ul>
                                 </p>
                             </section>
 
-                            <section id="preservation" inlist="" rel="schema:hasPart" resource="#preservation">
-                                <h3 property="schema:name">Preservation</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Anchalee</mark></p>
-                                    <p>libraries, archives)</p><p>Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates #def456<br /></p>
-                                </div>
-                            </section>
-
-                            <section id="provenance" inlist="" rel="schema:hasPart" resource="#provenance">
-                                <h3 property="schema:name">Provenance</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Paul</mark></p>
-                                </div>
+                            <section id="profiles-and-reputation" inlist="" rel="schema:hasPart" resource="#profiles-and-reputation">
+                                <h3 property="schema:name">Profiles and reputation</h3><p>TODO: Amy</p>
                             </section>
                         </div>
                     </section>
