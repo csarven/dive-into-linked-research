@@ -446,13 +446,6 @@
                             <p><mark>TODO: Sarven</mark></p>
                             <p><mark>Here we describe the more technical stuff that is ongoing work. There is more detail on our proposed architecture and example implementation in the dokieli paper.</mark></p>
 
-                            <section id="connections-and-interactions" inlist="" rel="schema:hasPart" resource="#connections-and-interactions">
-                                <h3 property="schema:name">Connections and interactions</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>Social notifications for collaboration, annotation, citations, linking research with CfP etc. Annotations WG stuff but not in too much depth.</mark></p>
-                                </div>
-                            </section>
-
                             <section id="authoring-tools" inlist="" rel="schema:hasPart" resource="#authoring-tools">
                                 <h3 property="schema:name">Authoring tools</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
@@ -477,6 +470,90 @@
                                     </ul>
                                 </div>
                             </section>
+
+                            <section id="vocabularies" inlist="" rel="schema:hasPart" resource="#vocabularies">
+                                <h3 property="schema:name">Vocabularies</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p>dokieli does not mandate the use of any particular RDF vocabularies as the content of an article dictates how it is best described. By default, dokieli documents make use of the following; these are replaced or more can be added at the discretion of the author.</p>
+
+                                    <ul>
+                                        <li>General-purpose: <a href="https://schema.org/">schema.org</a></li>
+                                        <li>Publishing and referencing: <a href="http://purl.org/spar">SPAR Ontologies</a></li>
+                                        <li>Annotations: <a href="http://www.w3.org/ns/oa">Web Annotations</a></li>
+                                        <li>Social notifications: <a href="http://www.w3.org/ns/activitystreams">ActivityStreams</a> and <a href="http://purl.org/net/pingback/">Pingback</a></li>
+                                        <li>Links to personal storage and user preferences: <a href="http://www.w3.org/ns/ldp">LDP</a> and <a href="https://github.com/solid/vocab">Solid</a></li>
+                                        <li>Access control: <a href="https://www.w3.org/wiki/WebAccessControl">WebAccessControl</a>/<a href="http://www.w3.org/ns/auth/acl">ACL</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section id="connections-and-interactions" inlist="" rel="schema:hasPart" resource="#connections-and-interactions">
+                                <h3 property="schema:name">Connections and interactions</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>Social notifications for collaboration, annotation, citations, linking research with CfP etc. Annotations WG's data model and / SoActivityStreams stuff but not in too much depth.</mark></p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <section id="profiling-systems-against-linked-research" inlist="" rel="schema:hasPart" resource="#profiling-systems-against-linked-research">
+                        <h2 property="schema:name">Profiling systems against Linked Research</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p><mark>TODO: Maybe a shorter/better section title?</mark></p>
+
+<!--
+- metadata of a research object is exposed using open machine interoperable standards
+- data can be retrieved using HTTP protocols
+- authors are uniquely identified according to community standards
+….
+Paul Groth
+
+What one could then do is look at current systems and profile them according to whether they categorize as linked research
+-->
+                            <table>
+                                <caption>Profiling publishing and consuming systems</caption>
+                                <thead>
+                                    <tr>
+                                        <th>System and tooling</th>
+                                        <th>Decentralised authoring and publishing</th>
+                                        <th>Access control and attribution</th>
+                                        <th>Provenance and accountability</th>
+                                        <th>Persistence and preservation</th>
+                                        <th>Sharing and social interactions</th>
+                                        <th>Commentary and feedback</th>
+                                        <th>Human and machine-readability</th>
+                                        <th>Integration of semantics</th>
+                                        <th>Entity identifiers</th>
+                                        <th>Data integration</th>
+                                        <th>authoring and publication workflow</th>
+                                        <th>Feedback and interactions</th>
+                                        <th>Different views and media</th>
+                                        <th>Adaptation to audiences</th>
+                                        <th>Interactive content</th>
+                                        <th>Multimedia</th>
+                                        <th>Impact metrics and reward system</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="19">
+                                            <dl>
+                                                <dt id="profile-open-science-framework-foot">*</dt>
+                                                <dd>Open Science Framework "one centralized location" ... Integrates with dropbox, github, amazon web services, box, google drive, figshare, the dataverse project, mendeley</dd>
+                                            </dl>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr id="profile-pdf-easychair"><th></th></tr>
+                                    <tr id="profile-solid-dokieli"><th>dokieli + Solid</th></tr>
+                                    <tr id="profile-open-science-framework"><th>Open Science Framework<sup><a class="ref-footnote" href="#profile-open-science-framework-foot">*</a></sup></th></tr>
+                                    <tr id="profile-wordlift"><th>WordLift</th></tr>
+                                    <tr id="profile-authorea"><th>Authorea</th></tr>
+                                    <tr id="profile-google-docs"><th>Google Docs</th></tr>
+                                    <tr><th><mark>Add..</mark></th></tr>
+                                </tbody>
+                            </table>
                         </div>
                     </section>
 
