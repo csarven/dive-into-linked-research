@@ -83,9 +83,15 @@
                     <section id="abstract">
                         <h2>Abstract</h2>
                         <div datatype="rdf:HTML" property="schema:abstract">
-                            <p>The future of scholarly communication involves research results, analysis and data all being produced, published, verified and reused interactively on the Web, with 'papers' linking to and from each other at a granular level. The academic process of peer-review can be open, transparent and decentralised, and the mechanism for global knowledge sharing becomes an ongoing collaborative conversation between experts, policy makers, implementers, and the general public.</p>
+                          <p>The future of scholarly communication involves research results, analysis and data all being produced, published, verified and reused interactively on the Web, with ‘papers’ linking to and from each other at a granular level.
+                            The academic process of peer review is increasingly becoming open, transparent and decentralised.
+                            More broadly, the mechanism for global knowledge sharing is becoming an ongoing <mark>CL: Isn't “collaborative” and “conversation” redundant?</mark>collaborative conversation between experts, policy makers, implementers, and the general public.</p>
 
-                            <p>This vision is radical, and getting there requires understanding of, and change in, a number of interrelated areas. In this article we break down the problem space and define requirements for advancement towards a Web-based ecosystem for scholarly communication: <em>Linked Research</em>. We discuss our strategy for tackling each of these areas. This includes how we can build on and combine existing well-known technologies and practices for digital publishing, social interactions, decentralised data storage, and semantic data enrichment. We provide an initial assessment of our proposed strategy with an example implementation of tooling which sets out to meet the requirements.</p>
+                          <p>This vision is radical, and getting there requires understanding of, and change in, a number of interrelated areas.
+                            In this article we break down the problem space and define requirements for advancement towards a Web-based ecosystem for scholarly communication: <em>Linked Research</em>.
+                            We discuss our strategy for tackling each of these areas.
+                            This includes how we can build on and combine existing well-known technologies and practices for digital publishing, social interactions, decentralised data storage, and semantic data enrichment.
+                            We provide an initial assessment of our proposed strategy with an example implementation of tooling which sets out to meet the requirements.</p>
                         </div>
                     </section>
 
@@ -105,6 +111,7 @@
 
                     <section id="categories-and-subject-descriptors">
                         <h2>Categories and Subject Descriptors</h2>
+                        <mark>CL: Is ACM Hypertext even in 2016 still using the 1998 classification scheme, or rather the 2012 one?</mark>
                         <div>
                             <ul rel="schema:about">
                                 <li><a href="http://www.acm.org/about/class/ccs98-html#H.1.2" resource="http://acm.rkbexplorer.com/ontologies/acm#H.1.2">H.1.2</a> [<strong>Information Systems</strong>]: Human information processing</li>
@@ -118,12 +125,19 @@
                     <section id="introduction" inlist="" rel="schema:hasPart" resource="#introduction">
                         <h2 about="#introduction" property="schema:name" typeof="deo:Introduction">Introduction</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-                            <p><q about="" cite="http://example.org/quote#123" rel="cito:agreesWith" resource="http://example.org/quote#123">You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete</q> - attributed to <cite><a href="https://en.wikipedia.org/wiki/Buckminster_Fuller">Buckminster Fuller</a></cite>.</p>
+                            <p><q about="" cite="http://example.org/quote#123" rel="cito:agreesWith" resource="http://example.org/quote#123">You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete</q> – attributed to <cite><a href="https://en.wikipedia.org/wiki/Buckminster_Fuller">Buckminster Fuller</a></cite>.</p>
 
-                            <p>One of the most widely debated questions in the scientific community is the impact of digitisation on scholarly communication and knowledge exchange; the Internet and the Web have radically changed the the processes of scholarship [Borgman 2007 Scholarship in the Digital Age: Information, Infrastructure, and the Internet].
-                            In this article, we propose that digitising, and indeed <em>Webizing</em>[cite], scholarly communication can provide greater coherency between and within academic fields, as well as make knowledge more accessible to researchers and citizens alike. Many forms of scholarship are enabled by these technology changes whether it is the ability to perform social science using social media traces, to large scale data processing for physics. Despite efforts through Open Access movements and increasing availability of online publications, the formal communications mechanisms used by scholars do little to take full advantage of either the capabilities of online media, or the cultural shift towards sharing and public commentary on social networks [Adoption and use of Web 2.0 in scholarly communications. Rob Procter, Robin Williams, James Stewart, Meik Poschen, Helene Snee, Alex Voss, Marzieh Asgari-Targhi Phil. Trans. R. Soc. A 2010 368 4039-4056; DOI: 10.1098/rsta.2010.0155. Published 2 August 2010 , Calvi, Licia, and Maria Cassella. "Scholarship 2.0: analyzing scholars’ use of Web 2.0 tools in research and teaching activity." Liber Quarterly 23.2 (2013): 110-133.].</p>
+                            <p>One of the most widely debated questions in the scientific community is the impact of digitisation on scholarly communication and knowledge exchange; the Internet and the Web have radically changed the processes of scholarship [Borgman 2007 Scholarship in the Digital Age: Information, Infrastructure, and the Internet]<mark>← CL: some bibliographic metadata missing</mark>.
+                              In this article, we propose that digitising, and indeed <em>Webizing</em>[cite], scholarly communication can provide greater coherency between and within academic fields, as well as make knowledge more accessible to researchers and citizens alike.
+                              Many forms of scholarship are enabled by these technology changes, be it the ability to perform social science using social media traces, or large scale data processing for physics.
+                              Despite efforts through Open Access movements and increasing availability of online publications, the formal communications mechanisms used by scholars do little to take full advantage of either the capabilities of online media, or the cultural shift towards sharing and public commentary on social networks [Adoption and use of Web 2.0 in scholarly communications. Rob Procter, Robin Williams, James Stewart, Meik Poschen, Helene Snee, Alex Voss, Marzieh Asgari-Targhi Phil. Trans. R. Soc. <mark>CL: What's the following number?  It looks strange to me.</mark>A 2010 368 4039-4056; DOI: 10.1098/rsta.2010.0155. Published 2 August 2010 , Calvi, Licia, and Maria Cassella. "Scholarship 2.0: analyzing scholars’ use of Web 2.0 tools in research and teaching activity." Liber Quarterly 23.2 (2013): 110-133.].</p>
 
-                            <p>On examination, it becomes clear that there are many interrelated problems to be tackled before it will be possible to fully realise the possibilities offered by modern Web technologies in the academic space. Many of these problems are relevant in a number of domains outside of scholarly publishing, and they are each to different degrees being considered in existing or ongoing work, in both academia and industry. However, work in the different areas is often disconnected. Our first contribution is an overview of different issues, and how they relate to and depend upon one another, in the context of scholarly communication. We attempt to articulate a complete picture of the space by defining <em>requirements</em> in response to the problems described in existing literature, or observed 'in the field'. These requirements fall into three broad categories:</p>
+                            <p>On examination, it becomes clear that there are many interrelated problems to be tackled before it will be possible to fully realise the possibilities offered by modern Web technologies in the academic space.
+                              Many of these problems are relevant in a number of domains outside of scholarly publishing, and they are each to different degrees being considered in existing or ongoing work, in both academia and industry.
+                              <mark>CL: This sentence is somewhat unspecific; what do you mean by “different areas” (academia and industry?), and what “work” are you referring to? →</mark>However, work in the different areas is often disconnected.
+                              Our first contribution is an overview of different issues, and how they relate to and depend upon one another, in the context of scholarly communication.
+                              We attempt to articulate a complete picture of the space by defining <em>requirements</em> in response to the problems described in existing literature, or observed ‘in the field’.
+                              These requirements fall into three broad categories:</p>
 
                             <ul>
                                 <li>Publishing and ownership of documents and data.</li>
@@ -131,34 +145,51 @@
                                 <li>User experience and tooling.</li>
                             </ul>
 
-                            <p>From these requirements, we derive user stories, and explain how these may be repurposed as an <em>acid test</em> or criteria against which to evaluate proposed solutions. Our strategy for addressing the problems identified involves building upon existing technologies, standards and common practices, each of which we discuss in detail in section 4. </p>
+                            <p>From these requirements, we derive user stories, and explain how these may be repurposed as an <em>acid test</em> or criteria against which to evaluate proposed solutions.
+                              Our strategy for addressing the problems identified involves building upon existing technologies, standards and <mark>CL: or rather speak of <em>best</em> practices? →</mark>common practices, each of which we discuss in detail in section 4.</p>
 
-                            <p>Finally, we describe an implementation of tooling for authoring, publishing and annotating research articles in a decentralised manner, based on native Web technologies. We demonstrate how multimodal content such as video, audio, code examples and runnable experiments can be embedded into research publications, and showcase how different views of the content can be rendered for different devices (e.g. screen, print, mobile) or audiences (e.g. slideshows). A particular strength of our approach is the integration and linking of data, which can automatically update tables and diagrams when the underlying data changes. All content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration, retrieval and linking of concepts and ideas. Development is ongoing, and we use this as a starting point to demonstrate the feasibility of our strategy.</p>
+                            <p>Finally, we describe an implementation of tooling for authoring, publishing and annotating research articles in a decentralised manner, based on native Web technologies.
+                              We demonstrate how multimodal content such as video, audio, code examples and runnable experiments can be embedded into research publications, and showcase how different views of the content can be rendered for different devices (e.g. screen, print, mobile) or audiences (e.g. slideshows).
+                              A particular strength of our approach is the integration and linking of data, which can automatically update tables and diagrams when the underlying data changes.
+                              All content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration, retrieval and linking of concepts and ideas.
+                              <mark>CL: not sure ACM Hypertext welcomes work in progress; should we give this impression? →</mark>Development is ongoing, and we use this as a starting point to demonstrate the feasibility of our strategy.</p>
                         </div>
                     </section>
 
                     <section id="requirements" inlist="" rel="schema:hasPart" resource="#requirements">
                         <h2 property="schema:name">Requirements</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-                            <p>The Linked Research requirements provide a framework for thinking about how each of the various parts of the problem space fit together. By establishing a framework, Linked Research can be seen as a both a benchmarking exercise as well as a technique to connect various technologies and approaches. This has allowed us to recognise several interdependencies between the areas, whereby aspects of one problem are much more easily solved alongside of or on the back of another.</p>
+                          <p>The Linked Research requirements provide a framework for thinking about how each of the various parts of the problem space fit together.
+                            By establishing a framework, Linked Research can be seen as both a benchmarking exercise as well as a technique to connect various technologies and approaches.
+                            This has allowed us to recognise several interdependencies between the areas<mark>← CL: try to be more specific; what do you mean by “areas”?</mark>, whereby aspects of one problem are much more easily solved alongside of or on the back of another.</p>
 
-                            <p>Socially, Linked Research is embedded within the Open Science movement [Neylon C, Wu S. Open Science: tools, approaches, and implications. Pac Symp Biocomput. 2009:540-4]. However, it explicitly calls out the role of technical choices in meeting open science goals.</p>
+                          <p>Socially, Linked Research is embedded within the Open Science movement [<mark>CL: citation style not consistent with previous citations →</mark>Neylon C, Wu S. Open Science: tools, approaches, and implications. Pac Symp Biocomput. 2009:540-4].
+                            However, it explicitly calls out the role of technical choices in meeting open science goals.</p>
 
                             <p><mark>TODO: Back *everything* up with citations (notes inline)</mark></p>
-                            <p><mark>Idea: a diagram of dependencies; how solving one of these areas would facilitate the next etc?</mark></p>
+                            <p><mark>Idea: a diagram of dependencies; how solving one of these areas would facilitate the next etc?<br/>
+CL: yes, why not</mark></p>
 
                             <section id="publishing-and-ownership" rel="schema:hasPart" resource="#publishing-and-ownership">
                                 <h3 property="schema:name">Publishing and ownership</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><b>Open Access.</b> To better enable scientific progress, research work, from raw results to completed analysis, should be widely available and accessible by anyone, anywhere, at any time. Maximising reach in this way increases the likelihood of further scientific progress and new discoveries [cite: someone who says something about research 'accidents' and unexpected connections and reuse of work]. Ideally this is achieved by way of free-access and reuse of all material, including code, media, source text, data and metadata. This requirement is borrowed from the well-known Open Access movement, however this still often contains restrictions imposed by third parties such as publishers, inhibiting the distribution of knowledge to any demographic; regardless of wealth, social status, or geographical location of either the researcher or the consumer [cite: criticism of OA].</p>
+                                  <p><b>Open Access.</b> To better enable scientific progress, research work, from raw results to completed analysis, should be widely available and accessible by anyone, anywhere, at any time.<mark>← CL: can this be backed by a citation?  The “anyone/anywhere/anytime” reminds me of something you frequently read about open <em>courseware</em>; maybe it's also been mentioned for open <em>science</em>?</mark>
+                                    Maximising reach in this way increases the likelihood of further scientific progress and new discoveries [cite: someone who says something about research 'accidents' and unexpected connections and reuse of work].
+                                    Ideally this is achieved by way of free-of-charge access and reuse of all material, including code, media, source text, data and metadata.
+                                    This requirement is borrowed from the well-known <em>Open</em> Access movement, however this still often contains restrictions imposed by third parties such as publishers, inhibiting the distribution of knowledge to any demographic, regardless of wealth, social status, or geographical location of either the researcher or the consumer [cite: criticism of OA].</p>
 
-                                    <p><b>Support for decentralised authoring and publishing.</b> Research is commonly published through centralised services. Publishers of journals or conference proceedings act as gatekeepers to work, which may only be available behind a paywall, and is required to meet certain criteria before it is published. Services which allow researchers to upload their own work directly to a database require proprietary processing (eg. to extract metadata), account creations, and may distribute work only to other users of that service. If such a service shuts down, links to the work and any additional value extracted from it by the service, are lost [cite? has an academic social network gone down yet?] In both cases, control over access and distribution of the work is taken out of the hands of the original author, and the author may additionally be required to give up their rights to distribute their work by other means [cite]. We propose that it must be possible for authors to opt out of such information silos [cite: for term 'information silos'] and publish work on their own terms, in a storage location controlled by themselves or someone they trust, without being excluded from the wider community.</p>
+                                  <p><b>Support for decentralised authoring and publishing.</b> Research is commonly published through centralised services today.
+                                    Publishers of journals or conference proceedings act as gatekeepers to work, which may only be available behind a paywall, and is required to meet certain criteria before it is published<mark>← CL: even most progressive people would probably still agree that papers should meet certain <em>quality</em> criteria before published.  We could certainly advocate complete openness, i.e. that you publish first, and that the big community rather than a few gatekeepers <em>then</em> assesses quality.  However I do not yet see the term “quality” in this paper.</mark>.
+                                    Existing services which allow researchers to upload their own work directly to a database require proprietary processing (e.g. to extract metadata), account creation, and may distribute work only to other users of that service.<mark>← CL: would be good to mention at least one example</mark>
+                                    If such a service shuts down, links to the work and any additional value extracted from it by the service, are lost [cite? has an academic social network gone down yet?].
+                                    In both cases, control over access and distribution of the work is taken out of the hands of the original author, and the author may additionally be required to give up their rights to distribute their work by other means [cite].
+                                    We propose that it must be possible for authors to opt out of such information silos [cite: for term 'information silos'] and publish work on their own terms, in a storage location controlled by themselves or someone they trust, without being excluded from the wider community.</p>
 
                                     <p><b>Access control and attribution.</b> In many fields, researchers are discouraged from publishing unfinished, inconclusive or ongoing work, or publishing outside of 'official' venues by the risk that their work will be plagiarised or reused by another without permission or due credit [cite]. To facilitate open scientific discourse, technologies for publishing must afford a trust that sharing work will not disadvantage the author. Thus the author must have means to unambiguously attach their identifying information to their own work, and selectively grant and revoke access to others during the research process. Presently there are many services offering identifiers to creators of scholarly work: Library of Congress Linked Data Service for personal and family names and corporate bodies, Virtual International Authority File (VIAF), International Standard Name Identifier (ISNI), the Getty’s Union List of Artist Names (ULAN), ResearchGate, Google Scholar, Scopus Author Identifier (Elsevier), ResearcherID (Thomson Reuters) and ORCID. These systems are minimally, if at all, interoperable, so creating multiple profiles is common practice. Authors must be empowered to choose an identity provider they trust, and use a single preferred identifier across their publications.</p>
 
                                     <p><b>Provenance and accountability of information.</b> Trust and confidence in data and results can be fostered by enabling reproducibility of experiments, and demonstrating a coherent explanation of the derivation of conclusions, and the agents responsible; however this tends to be difficult under current practices [cite]. Capturing scientific processes, workflows and data origins in a machine-readable way will further improve the utility of researchers' work.</p>
 
-                                    <p><b>Persistence and long term preservation.</b> Research work must be made available in such a way that access to it is reliable and consistent over time, and irrespective of place. Broken links, missing data, authors who move institution, organisations which close or merge or rename, and regimes which censor can all hamper access to and reuse of knowledge [cite if poss]. A Linked Research ecosystem strives for persistent, long-term access to information as a technical and social norm.</p>
+                                    <p><b>Persistence and long term preservation.</b> Research work must be made available in such a way that access to it is reliable and consistent over time, and irrespective of place. Broken links, missing data, authors who move institution, organisations which close or merge or rename, and regimes which censor can all hamper access to and reuse of knowledge [cite if poss]. A Linked Research ecosystem strives for persistent, long-term access to information as a technical and social norm.</p>
 
                                     <p><b>Sharing and social interactions.</b> Authors largely rely on third-parties , including publishers and the media, to distribute and raise awareness their work [cite]. However, increasing numbers of academics are making use of social media to this end, and sharing on the Web has become a normal part of daily life for many [cite, cite, http://crctcs.openum.ca/files/sites/60/2015/12/SSHRC_SocialMediainScholarlyCommunication.pdf]. Linked Research will capitalise on this trend.</p>
 
@@ -180,7 +211,7 @@
                                         <li>all kinds of data (examples, experiment results).</li>
                                     </ul>
 
-                                    <p>Notably, [Joint Declaration of Data Citation Principles Data Citation Synthesis Group: Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11; 2014 [https://www.force11.org/datacitation], endorsed by over 100 organisations, explicitly calls for data to be treated the same as papers in the scholarly ecosystem, and for machine readability of the data. Similarly, the FAIR Data principles for findable, accessible, interoperable and reusable data encourage the semantically interoperable reuse of data.</p>
+                                    <p>Notably, [Joint Declaration of Data Citation Principles Data Citation Synthesis Group: Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11; 2014 [https://www.force11.org/datacitation], endorsed by over 100 organisations, explicitly calls for data to be treated the same as papers in the scholarly ecosystem, and for machine readability of the data. Similarly, the FAIR Data principles for findable, accessible, interoperable and reusable data encourage the semantically interoperable reuse of data.</p>
 
                                     <p>Making this level of semantic structure available to machines for querying (and ultimately automated reasoning), facilitates development of intelligent support services for scholars, such as recommendation, search and even comparison for related work.</p>
 
@@ -277,14 +308,14 @@
                             <section id="call-for-papers">
                                 <h3 property="schema:name">Call for Papers</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph, Sarven</mark> - Workshop sites: http://semstats.org/ , http://semstats.org/2013/call-for-papers</p>
+                                    <p><mark>TODO: Christoph, Sarven</mark> – Workshop sites: http://semstats.org/ , http://semstats.org/2013/call-for-papers</p>
                                 </div>
                             </section>
 
                             <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
                                 <h3 property="schema:name">Proceedings</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph</mark> - CEUR-WS.org/ceur-make , http://semstats.org/2013/proceedings</p>
+                                    <p><mark>TODO: Christoph</mark> – CEUR-WS.org/ceur-make , http://semstats.org/2013/proceedings</p>
                                 </div>
                             </section>
 
@@ -292,7 +323,7 @@
                                 <h3 property="schema:name">Archives and preservation</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Anchalee?</mark></p>
-                                    <p>Collections, hubs, indexes. </p>
+                                    <p>Collections, hubs, indexes.</p>
                                     <p>Web archives e.g., http://www.openarchives.org/ , http://archive.org/ and specific to libraries and archives: https://archive-it.org/ , maybe http://arxiv.org/</p>
                                     <p>Scholars also tend to deposit their research in different systems and with inconsistency and irregularity of updates #def456</p>
                                 </div>
@@ -384,7 +415,7 @@
                         <div datatype="rdf:HTML" property="schema:description">
                             <p>We describe an <em>acid test</em> so that systems can be evaluated against the requirements of Linked Research previously outlined. The evaluation is intended to verify the openness, accessibility, decentralisation, interoperability of approaches in scholarly communication, and takes the form of a series of user stories which must be feasible to carry out with the proposed system. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
 
-                            <p>This acid test is derived from <cite><a href="http://csarven.ca/enabling-accessible-knowledge#acid-test" rel="prov:wasDerivedFrom">Enabling Accessible Knowledge Acid Test</a></cite>. </p>
+                            <p>This acid test is derived from <cite><a href="http://csarven.ca/enabling-accessible-knowledge#acid-test" rel="prov:wasDerivedFrom">Enabling Accessible Knowledge Acid Test</a></cite>.</p>
 
                             <p><mark>Can we improve this whole section? "Codify" so that we can verify? Can it be like a human/machine unit test(s)?</mark></p>
 
@@ -421,7 +452,7 @@
                                 </dd>
                             </dl>
 
-                            <p>There are some assumptions (adapted from the <cite><a href="http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/SWAT0">Social Web Acid Test - Level 0</a></cite>):</p>
+                            <p>There are some assumptions (adapted from the <cite><a href="http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/SWAT0">Social Web Acid Test – Level 0</a></cite>):</p>
 
                             <dl id="acid-test-assumptions">
                                 <dt>Assumptions</dt>
@@ -466,7 +497,7 @@
                                         <li>Drag and drop to reorganize the document's sections and table of contents</li>
                                         <li>In-browser local storage, and document exporting</li>
                                         <li>Document metadata</li>
-                                        <li>Views for screen and print (e.g., ACM, LNCS) - yes, you can output to a paper user interface: PDF</li>
+                                        <li>Views for screen and print (e.g., ACM, LNCS) – yes, you can output to a paper user interface: PDF</li>
                                     </ul>
                                 </div>
                             </section>
