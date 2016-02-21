@@ -579,25 +579,30 @@ CL: yes, why not</mark></p>
                             <section id="authoring-and publishing" inlist="" rel="schema:hasPart" resource="#authoring-tools">
                                 <h3 property="schema:name">Authoring and publishing</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p>We take a look at three publication areas; research articles and objects, call for contributions, and academic proceedings.</p>
 
-                                    <p>For research articles, <a href="#dokieli">dokieli</a> and <a href="#solid">Solid</a> are employed as follows:</p>
-
-                                    <p id="dokieli"><cite><a href="http://csarven.ca/dokieli">dokieli</a></cite> [] is an open source, progressively enhanced client-side linked data application for decentralised authoring, annotations and social notifications. The editor is built on open Web standards and the documents are compliant with Linked Data best practices, allowing: decentralised storage and data ownership; fine-grained semantic structure through HTML+RDFa for prose content, and other RDF formats for data embedding; direct in-browser editing from a W3C <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a>-based personal data store; social interactions with documents (such as annotations and replies), and notifications thereof.</p>
+                                    <p id="dokieli"><cite><a href="http://csarven.ca/dokieli">dokieli</a></cite> [] is an open source, progressively enhanced client-side application for decentralised authoring, with specialisations for writing academic documents. The editor is built on open Web standards and the documents are compliant with Linked Data best practices, allowing: decentralised storage and data ownership; fine-grained semantic structure through HTML+RDFa for prose content, and other RDF formats for data embedding; direct in-browser editing from a W3C <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a>-based personal data store; social interactions with documents (such as annotations and replies), and notifications thereof.</p>
 
                                     <p id="solid">dokieli is compliant with <cite><a href="https://github.com/solid/solid-spec">Solid</a></cite>, a set of protocols and conventions based on the LDP recommendation. This incorporates authentication, access control and read and write access to a personal datastore. Hosting a dokieli document on a Solid server allows the author to edit the document directly from a space they control, and grant permissions to collaborators to do so as well. There are a number of open source Solid server implementations already, and users may host their own or choose a provider. There also exist <a href="https://github.com/solid/solid-platform">Solid tools and libraries</a> to help developers to build their own Solid-compliant datastore.</p>
+                                    
+                                    <p id="rich-editing"><strong>Rich editing.</strong> The current implementation of dokieli makes use of the open source <a href="https://github.com/yabwe/medium-editor">Medium Editor</a> for the features one would expect from a WYSIWYG editor (<a href="#figure-dokieli-edit-menu">figure dokieli-edit-menu</a>). We have extended this with buttons for RDFa embedding, annotations and other interactions. The edit menu itself is loosely coupled with the rest of the application logic, so the choice of edit menu can be changed in future if better libraries become available.</p>
 
                                     <p id="semantics-and-linking"><strong>Semantics and linking</strong>. The data format of dokieli documents is designed to encourage machine-readable description of ideas and knowledge, which becomes particularly powerful when these individual ideas can be linked to each other with semantically meaningful relationships. A document author can assign a URI to concepts at any level, permitting reference to the document as a whole, a single phrase, or anything in between. Concepts within a single document can be related to each other with the appropriate RDF properties, as well as creating specific relations with external resources. dokieli takes a bottom-up approach to semantic content authoring; <a href="#figure-dokieli-rdfa">figure dokieli-rdfa</a> shows our user interface for this, whereby the author selects some text, chooses the subject, predicate and object of a statement, and the application inserts the data as RDFa, and if necessary generates a new URI fragment for the subject or object.</p>
 
                                     <p>In addition, metadata that does not easily fit into prose (for example, <a href="http://nanopub.org/">Nanopublications</a>) can be embedded as a single block of Turtle, JSON-LD, or TriG (<a href="#figure-dokieli-nanopublication">figure dokieli-nanopublication</a>).</p>
-
-                                    <p id="rich-editing"><strong>Rich editing.</strong> The current implementation of dokieli makes use of the open source <a href="https://github.com/yabwe/medium-editor">Medium Editor</a> for the features one would expect from a WYSIWYG editor (<a href="#figure-dokieli-edit-menu">figure dokieli-edit-menu</a>). We have extended this with buttons for RDFa embedding, annotations and other interactions. The edit menu itself is loosely coupled with the rest of the application logic, so the choice of edit menu can be changed in future if better libraries become available.</p>
+                                    
+                                    <p>dokieli does not mandate the use of any particular RDF vocabularies as the content of an article dictates how it is best described. By default, dokieli documents make use of <a href="https://schema.org/">schema.org</a>; common terms for Web documents, <a href="http://purl.org/spar">SPAR Ontologies</a>; publishing and referencing, <a href="http://www.w3.org/ns/oa">Web Annotations</a>; comments and peer-reviews, <a href="http://www.w3.org/ns/activitystreams">ActivityStreams</a>; social inbox notifications, <a href="http://www.w3.org/ns/ldp">Linked Data Platform</a> and <a href="https://github.com/solid/vocab">Solid</a>; personal storage and user preferences, <a href="http://www.w3.org/ns/auth/acl">ACL</a>.</p>
 
                                     <p id="authentication-and-access-control"><strong>Authentication and access control.</strong> People can identify themselves to a dokieli document through <a href="https://www.w3.org/2005/Incubator/webid/spec/tls/">WebID-TLS</a>. Users with a browser certificate installed and a matching FOAF profile containing the certificate public key are authenticated against their own Solid server if found, with a fallback to a known Solid authentication endpoint. This allows the dokieli instance to write to any Solid-compliant dataspace which the user is authorised to write to. This is how users can, for example, save changes to a document, or store interactions such as comments.</p>
 
                                     <p id="storage"><strong>Storage.</strong> Articles may be stored on user’s local filesystem or hosted from ordinary Web servers which can serve static HTML files, for example: university user pages, code repositories, personal or company webspace, or any file hosting.</p>
+                                </div>
+                            </section>
+                            
+                            <section id="peer-review-and-interactions" inlist="" rel="schema:hasPart" resource="#peer-review-and-interactions">
+                                <h3 property="schema:name">Peer review & interactions</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
 
-                                    <p id="interactions"><strong>Interactions.</strong> We support the rights of authors to own their data, and store and publish it where they feel most comfortable. This includes the social interactions users make around existing publications. Rather than centralising these interactions around the subject document, we took the decision to default to decentralisation of all content by allowing users to authenticate with their personal dataspace, and choose the location for their interactions at the point of making them. This gives rise to the need for a mechanism to notify the original author that their document has received some interaction. We do this by allowing document authors to specify an <em>inbox</em> for either their article as a whole, or any subsection with its own URI using the Solid <code>inbox</code> predicate. Inboxes are containers in a dataspace which may be appended to by anyone, and do not need to be on the same server as the document itself; if one article has multiple inboxes they can be distributed across as many dataspaces as is convenient for the author(s). When an annotation is made, dokieli follows the appropriate <code>inbox</code> link and writes a notification there (see <a href="#figure-interactions-create">figure 17</a> for this process and <a href="#solid-notification">listing 1</a> for notification contents). When the document is loaded, links are followed to all inboxes in order to retrieve interactions there have been notifications about, so that these can be displayed along with the document (<a href="#figure-interactions-display">figure 18</a> and <a href="#figure-dokieli-interactions">figure 19</a>).</p>
+                                    <p id="interactions">We support the rights of authors to own their data, and store and publish it where they feel most comfortable. This includes the social interactions and feedback users make around existing publications. Rather than centralising these interactions around the subject document, we took the decision to default to decentralisation of all content by allowing users to authenticate with their personal dataspace, and choose the location for their interactions at the point of making them. This gives rise to the need for a mechanism to notify the original author that their document has received some interaction. We do this by allowing document authors to specify an <em>inbox</em> for either their article as a whole, or any subsection with its own URI using the Solid <code>inbox</code> predicate. Inboxes are containers in a dataspace which may be appended to by anyone, and do not need to be on the same server as the document itself; if one article has multiple inboxes they can be distributed across as many dataspaces as is convenient for the author(s). When an annotation is made, dokieli follows the appropriate <code>inbox</code> link and writes a notification there (see <a href="#figure-interactions-create">figure 17</a> for this process and <a href="#solid-notification">listing 1</a> for notification contents). When the document is loaded, links are followed to all inboxes in order to retrieve interactions there have been notifications about, so that these can be displayed along with the document (<a href="#figure-interactions-display">figure 18</a> and <a href="#figure-dokieli-interactions">figure 19</a>).</p>
 
                                     <p id="dokieli-notifications">Although providing enriched (meta)data is voluntary, provenance level data like the date on which the request was submitted, who by, and its license, can be purposed towards the verification process as well as for displaying. An example Solid inbox <strong class="highlight-notification">Notification</strong> is shown in Listing [<a href="#solid-notification">1</a>], in which <strong class="highlight-object">object</strong> is the URL of an annotation, and <strong class="highlight-context">context</strong> is the type of relation to the <strong class="highlight-target">target</strong> (the conclusions section of an article).</p>
 
@@ -626,9 +631,7 @@ CL: yes, why not</mark></p>
 
                                     <p>An author can also opt to allow anonymous interactions with their documents by pointing to a publicly writeable storage location in their own space, and store interactions on behalf of their audience.</p>
 
-
-
-                                    <p><mark>TODO: Sarven</mark> Bring this up a level. Copied form https://github.com/linkeddata/dokieli</p>
+                                    <!--<p><mark>TODO: Sarven</mark> Bring this up a level. Copied form https://github.com/linkeddata/dokieli</p>
 
                                     <ul>
                                         <li>In-browser document authoring and formatting, and semantic enrichments</li>
@@ -646,14 +649,8 @@ CL: yes, why not</mark></p>
                                         <li>In-browser local storage, and document exporting</li>
                                         <li>Document metadata</li>
                                         <li>Views for screen and print (e.g., ACM, LNCS) – yes, you can output to a paper user interface: PDF</li>
-                                    </ul>
+                                    </ul>-->
 
-                                    <section id="vocabularies" inlist="" rel="schema:hasPart" resource="#vocabularies">
-                                        <h3 property="schema:name">Vocabularies</h3>
-                                        <div datatype="rdf:HTML" property="schema:description">
-                                            <p>dokieli does not mandate the use of any particular RDF vocabularies as the content of an article dictates how it is best described. By default, dokieli documents make use of <a href="https://schema.org/">schema.org</a>; common terms for Web documents, <a href="http://purl.org/spar">SPAR Ontologies</a>; publishing and referencing, <a href="http://www.w3.org/ns/oa">Web Annotations</a>; comments and peer-reviews, <a href="http://www.w3.org/ns/activitystreams">ActivityStreams</a>; social inbox notifications, <a href="http://www.w3.org/ns/ldp">Linked Data Platform</a> and <a href="https://github.com/solid/vocab">Solid</a>; personal storage and user preferences, <a href="http://www.w3.org/ns/auth/acl">ACL</a>.</p>
-                                        </div>
-                                    </section>
                                 </div>
                             </section>
 
@@ -666,12 +663,29 @@ CL: yes, why not</mark></p>
                                 </div>
                             </section>
 
-                            <section id="connections-and-interactions" inlist="" rel="schema:hasPart" resource="#connections-and-interactions">
-                                <h3 property="schema:name">Connections and interactions</h3>
+                            <section id="ceur-proceedings" inlist="" rel="schema:hasPart" resource="#ceur-proceedings">
+                                <h3 property="schema:name">CEUR Proceedings</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>Social notifications for collaboration, annotation, citations, linking research with CfP etc. Annotations WG's data model and / SoActivityStreams stuff but not in too much depth.</mark></p>
+                                    <p><mark>TODO: Sarven, Christoph</mark></p>
+                                    
                                 </div>
                             </section>
+                            
+                            <section id="archives" inlist="" rel="schema:hasPart" resource="#archives">
+                                <h3 property="schema:name">Archives</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Anything on the verge of being implemented that can be talked about?</mark></p>
+                                    <p>Maybe worth mentioning personal collections (indexes plan) here?</p>
+                                </div>
+                            </section>
+                            
+                            <section id="profiles" inlist="" rel="schema:hasPart" resource="#profiles">
+                                <h3 property="schema:name">Profiles</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p><mark>TODO: Anything on the verge of being implemented that can be talked about?</mark></p>
+                                </div>
+                            </section>
+                            
                         </div>
                     </section>
 
