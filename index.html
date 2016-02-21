@@ -404,7 +404,9 @@ CL: yes, why not</mark></p>
                             <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
                                 <h3 property="schema:name">Proceedings</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph</mark> – CEUR-WS.org/ceur-make , http://semstats.org/2013/proceedings</p><p>Editors and committees who issue calls for contributions are able to take into account reviews and discussion on work they were notified about, and select the articles to aggregate and formally endorse as part of their journal or proceedings. The same Web-based tooling which allowed authoring of articles, calls and reviews and notifications of responses in the first place can be purposed to automatically assemble and re-publish the chosen work as a collection, which can in turn be shared and responded to.</p>
+                                    <p><mark>TODO: Christoph</mark></p>
+
+                                    <p>Editors and committees who issue calls for contributions are able to take into account reviews and discussion on work they were notified about, and select the articles to aggregate and formally endorse as part of their journal or proceedings. The same Web-based tooling which allowed authoring of articles, calls and reviews and notifications of responses in the first place can be purposed to automatically assemble and re-publish the chosen work as a collection, which can in turn be shared and responded to.</p>
                                 </div>
                             </section>
 
@@ -583,13 +585,13 @@ CL: yes, why not</mark></p>
                                     <p id="dokieli"><cite><a href="http://csarven.ca/dokieli">dokieli</a></cite> [] is an open source, progressively enhanced client-side application for decentralised authoring, with specialisations for writing academic documents. The editor is built on open Web standards and the documents are compliant with Linked Data best practices, allowing: decentralised storage and data ownership; fine-grained semantic structure through HTML+RDFa for prose content, and other RDF formats for data embedding; direct in-browser editing from a W3C <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a>-based personal data store; social interactions with documents (such as annotations and replies), and notifications thereof.</p>
 
                                     <p id="solid">dokieli is compliant with <cite><a href="https://github.com/solid/solid-spec">Solid</a></cite>, a set of protocols and conventions based on the LDP recommendation. This incorporates authentication, access control and read and write access to a personal datastore. Hosting a dokieli document on a Solid server allows the author to edit the document directly from a space they control, and grant permissions to collaborators to do so as well. There are a number of open source Solid server implementations already, and users may host their own or choose a provider. There also exist <a href="https://github.com/solid/solid-platform">Solid tools and libraries</a> to help developers to build their own Solid-compliant datastore.</p>
-                                    
+
                                     <p id="rich-editing"><strong>Rich editing.</strong> The current implementation of dokieli makes use of the open source <a href="https://github.com/yabwe/medium-editor">Medium Editor</a> for the features one would expect from a WYSIWYG editor (<a href="#figure-dokieli-edit-menu">figure dokieli-edit-menu</a>). We have extended this with buttons for RDFa embedding, annotations and other interactions. The edit menu itself is loosely coupled with the rest of the application logic, so the choice of edit menu can be changed in future if better libraries become available.</p>
 
                                     <p id="semantics-and-linking"><strong>Semantics and linking</strong>. The data format of dokieli documents is designed to encourage machine-readable description of ideas and knowledge, which becomes particularly powerful when these individual ideas can be linked to each other with semantically meaningful relationships. A document author can assign a URI to concepts at any level, permitting reference to the document as a whole, a single phrase, or anything in between. Concepts within a single document can be related to each other with the appropriate RDF properties, as well as creating specific relations with external resources. dokieli takes a bottom-up approach to semantic content authoring; <a href="#figure-dokieli-rdfa">figure dokieli-rdfa</a> shows our user interface for this, whereby the author selects some text, chooses the subject, predicate and object of a statement, and the application inserts the data as RDFa, and if necessary generates a new URI fragment for the subject or object.</p>
 
                                     <p>In addition, metadata that does not easily fit into prose (for example, <a href="http://nanopub.org/">Nanopublications</a>) can be embedded as a single block of Turtle, JSON-LD, or TriG (<a href="#figure-dokieli-nanopublication">figure dokieli-nanopublication</a>).</p>
-                                    
+
                                     <p>dokieli does not mandate the use of any particular RDF vocabularies as the content of an article dictates how it is best described. By default, dokieli documents make use of <a href="https://schema.org/">schema.org</a>; common terms for Web documents, <a href="http://purl.org/spar">SPAR Ontologies</a>; publishing and referencing, <a href="http://www.w3.org/ns/oa">Web Annotations</a>; comments and peer-reviews, <a href="http://www.w3.org/ns/activitystreams">ActivityStreams</a>; social inbox notifications, <a href="http://www.w3.org/ns/ldp">Linked Data Platform</a> and <a href="https://github.com/solid/vocab">Solid</a>; personal storage and user preferences, <a href="http://www.w3.org/ns/auth/acl">ACL</a>.</p>
 
                                     <p id="authentication-and-access-control"><strong>Authentication and access control.</strong> People can identify themselves to a dokieli document through <a href="https://www.w3.org/2005/Incubator/webid/spec/tls/">WebID-TLS</a>. Users with a browser certificate installed and a matching FOAF profile containing the certificate public key are authenticated against their own Solid server if found, with a fallback to a known Solid authentication endpoint. This allows the dokieli instance to write to any Solid-compliant dataspace which the user is authorised to write to. This is how users can, for example, save changes to a document, or store interactions such as comments.</p>
@@ -597,9 +599,9 @@ CL: yes, why not</mark></p>
                                     <p id="storage"><strong>Storage.</strong> Articles may be stored on user’s local filesystem or hosted from ordinary Web servers which can serve static HTML files, for example: university user pages, code repositories, personal or company webspace, or any file hosting.</p>
                                 </div>
                             </section>
-                            
+
                             <section id="peer-review-and-interactions" inlist="" rel="schema:hasPart" resource="#peer-review-and-interactions">
-                                <h3 property="schema:name">Peer review & interactions</h3>
+                                <h3 property="schema:name">Peer review &amp; interactions</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
 
                                     <p id="interactions">We support the rights of authors to own their data, and store and publish it where they feel most comfortable. This includes the social interactions and feedback users make around existing publications. Rather than centralising these interactions around the subject document, we took the decision to default to decentralisation of all content by allowing users to authenticate with their personal dataspace, and choose the location for their interactions at the point of making them. This gives rise to the need for a mechanism to notify the original author that their document has received some interaction. We do this by allowing document authors to specify an <em>inbox</em> for either their article as a whole, or any subsection with its own URI using the Solid <code>inbox</code> predicate. Inboxes are containers in a dataspace which may be appended to by anyone, and do not need to be on the same server as the document itself; if one article has multiple inboxes they can be distributed across as many dataspaces as is convenient for the author(s). When an annotation is made, dokieli follows the appropriate <code>inbox</code> link and writes a notification there (see <a href="#figure-interactions-create">figure 17</a> for this process and <a href="#solid-notification">listing 1</a> for notification contents). When the document is loaded, links are followed to all inboxes in order to retrieve interactions there have been notifications about, so that these can be displayed along with the document (<a href="#figure-interactions-display">figure 18</a> and <a href="#figure-dokieli-interactions">figure 19</a>).</p>
@@ -622,7 +624,20 @@ CL: yes, why not</mark></p>
                                     </figure>
 
                                     <figure class="listing" id="solid-notification" rel="schema:hasPart" resource="#solid-notification">
-                                        <pre about="#solid-notification" property="schema:description" typeof="fabio:Script"><code>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</code><code>@prefix schema: &lt;https://schema.org/&gt; .</code><code>@prefix solid: &lt;http://www.w3.org/ns/solid/terms#&gt; .</code><code>@prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .</code><code>@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .</code><code>@prefix c: &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; .</code><code>&lt;&gt; a solid:<strong class="highlight-notification">Notification</strong> , as:Announce ;</code><code>  as:<strong class="highlight-object">object</strong> &lt;http://example.net/foo/abc123&gt; ;</code><code>  as:<strong class="highlight-context">context</strong> oa:hasTarget ;</code><code>  as:<strong class="highlight-target">target</strong> &lt;http://example.org/article#conclusions&gt; ;</code><code>  as:updated "2016-01-24T00:00:00Z"^^xsd:dateTime ;</code><code>  as:actor &lt;http://csarven.ca/#i&gt; ;</code><code>  schema:license c: .</code>
+                                        <pre about="#solid-notification" property="schema:description" typeof="fabio:Script">
+<code>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</code>
+<code>@prefix schema: &lt;https://schema.org/&gt; .</code>
+<code>@prefix solid: &lt;http://www.w3.org/ns/solid/terms#&gt; .</code>
+<code>@prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .</code>
+<code>@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .</code>
+<code>@prefix c: &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; .</code>
+<code>&lt;&gt; a solid:<strong class="highlight-notification">Notification</strong> , as:Announce ;</code>
+<code>  as:<strong class="highlight-object">object</strong> &lt;http://example.net/foo/abc123&gt; ;</code>
+<code>  as:<strong class="highlight-context">context</strong> oa:hasTarget ;</code>
+<code>  as:<strong class="highlight-target">target</strong> &lt;http://example.org/article#conclusions&gt; ;</code>
+<code>  as:updated "2016-01-24T00:00:00Z"^^xsd:dateTime ;</code>
+<code>  as:actor &lt;http://csarven.ca/#i&gt; ;</code>
+<code>  schema:license c: .</code>
                                         </pre>
                                         <figcaption property="schema:name">A Solid inbox notification.</figcaption>
                                     </figure>
@@ -654,23 +669,45 @@ CL: yes, why not</mark></p>
                                 </div>
                             </section>
 
-                            <section id="semstats-call-for-contributions" inlist="" rel="schema:hasPart" resource="#semstats-call-for-contributions">
+                            <section id="semstats-call-for-contributions" inlist="" rel="schema:hasPart" resource="#semstats-for-contributions">
                                 <h3 property="schema:name">SemStats Call for Contributions</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><cite><a href="http://semstats.org/">SemStats</a></cite> is a workshop that explores and strengthens the relationship between the Semantic Web and statistical communities.</p>
-
-                                    <p>Workshop sites: http://semstats.org/ , http://semstats.org/2013/call-for-papers</p>
+                                    <p><cite><a href="http://semstats.org/">SemStats</a></cite> is a workshop that explores and strengthens the relationship between the Semantic Web and statistical communities. We have published the call for contributions for the years 2013, 2014, and 2015. The <cite><a href="http://semstats.org/2013/call-for-papers">SemStats 2013 Call for Papers</a></cite> is an HTML+RDFa document using dokieli's templates.</p>
                                 </div>
                             </section>
 
                             <section id="ceur-proceedings" inlist="" rel="schema:hasPart" resource="#ceur-proceedings">
-                                <h3 property="schema:name">CEUR Proceedings</h3>
+                                <h3 property="schema:name">SemStats CEUR Proceedings</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Sarven, Christoph</mark></p>
-                                    
+
+                                    <p>Use http://ceur-ws.org/Vol-1549/ as example</p>
                                 </div>
                             </section>
-                            
+
+                            <p>Figure below demonstrates the interlinks between the peer-reviewed research article; <cite>Linked Statistical Data Analysis</cite>, SemStats 2013 call for contributions, ISWC 2013 call for workshops, and the proceedings of the SemStats workshop at CEUR-WS.ORG.</p>
+
+                            <figure class="listing" id="article-call-for-paper-proceedings" rel="schema:hasPart" resource="#article-call-for-paper-proceedings">
+                                <pre about="#article-call-for-paper-proceedings" property="schema:description" typeof="fabio:Script">
+<code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
+<code>@prefix schema: &lt;https://schema.org/&gt; .</code>
+<code>@prefix bibo: &lt;http://purl.org/ontology/bibo/&gt; .</code>
+<code>&lt;http://semstats.org/2013/&gt;</code>
+<code>  sioc:reply_of &lt;http://iswc2013.semanticweb.org/content/call-workshops.html&gt;</code>
+<code>  schema:hasPart &lt;http://semstats.org/2013/call-for-papers&gt;</code>
+<code>&lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
+<code>  sioc:reply_of &lt;http://semstats.org/2013/call-for-papers&gt;</code>
+<code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt;</code>
+<code>&lt;http://ceur-ws.org/Vol-1549&gt;</code>
+<code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
+<code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
+<code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
+                                </pre>
+                                <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings</figcaption>
+                            </figure>
+
+
+
                             <section id="archives" inlist="" rel="schema:hasPart" resource="#archives">
                                 <h3 property="schema:name">Archives</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
@@ -678,14 +715,14 @@ CL: yes, why not</mark></p>
                                     <p>Maybe worth mentioning personal collections (indexes plan) here?</p>
                                 </div>
                             </section>
-                            
+
                             <section id="profiles" inlist="" rel="schema:hasPart" resource="#profiles">
                                 <h3 property="schema:name">Profiles</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Anything on the verge of being implemented that can be talked about?</mark></p>
                                 </div>
                             </section>
-                            
+
                         </div>
                     </section>
 
