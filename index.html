@@ -690,8 +690,10 @@ CL: yes, why not</mark></p>
 
                             <p>Figure below demonstrates the interlinks between the peer-reviewed research article; <cite>Linked Statistical Data Analysis</cite>, SemStats 2013 call for contributions, ISWC 2013 call for workshops, and the proceedings of the SemStats workshop at CEUR-WS.ORG.</p>
 
-                            <figure class="listing" id="article-call-for-paper-proceedings" rel="schema:hasPart" resource="#article-call-for-paper-proceedings">
-                                <pre about="#article-call-for-paper-proceedings" property="schema:description" typeof="fabio:Script">
+                            <p><mark>TODO: Use Turtle below or the graph view?</mark></p>
+
+                            <figure class="listing" id="article-calls-proceedings" rel="schema:hasPart" resource="#article-calls-proceedings">
+                                <pre about="#article-calls-proceedings" property="schema:description" typeof="fabio:Script">
 <code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
 <code>@prefix schema: &lt;https://schema.org/&gt; .</code>
 <code>@prefix bibo: &lt;http://purl.org/ontology/bibo/&gt; .</code>
@@ -706,7 +708,12 @@ CL: yes, why not</mark></p>
 <code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
 <code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
                                 </pre>
-                                <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings</figcaption>
+                                <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings.</figcaption>
+                            </figure>
+
+                            <figure id="figure-article-calls-proceedings" rel="schema:hasPart" resource="#figure-article-calls-proceedings">
+                                <img rel="schema:image" src="media/images/calls-and-proceedings-graph.svg" />
+                                <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings.</figcaption>
                             </figure>
 
 
