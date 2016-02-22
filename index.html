@@ -150,9 +150,9 @@
                             <p>Finally, we describe an implementation of tooling for authoring, publishing and annotating research articles in a decentralised manner, based on native Web technologies.
                               We demonstrate how multi-modal content such as video, audio, code examples and runnable experiments can be embedded into research publications, and showcase how different views of the content can be rendered for different devices (e.g. screen, print, mobile) or audiences (e.g. slide shows).
                               A particular strength of our approach is the integration and linking of data, which can automatically update tables and diagrams when the underlying data changes.
-                              
-                              All content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration, retrieval and linking of concepts and ideas. 
-							  Further, our implementation takes advantage of common social media practices to enable sharing and commentary around scholarly work in both ongoing dialogue between interested parties, and more formal conference and workshop settings. 
+
+                              All content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration, retrieval and linking of concepts and ideas.
+							  Further, our implementation takes advantage of common social media practices to enable sharing and commentary around scholarly work in both ongoing dialogue between interested parties, and more formal conference and workshop settings.
 							  We build upon emerging standards in personal data stores, annotations and social notifications to allow our implementation to be completely decentralised, reliant on no central system or hub.</p>
                         </div>
                     </section>
@@ -297,17 +297,31 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     This test does not mandate a specific technology, therefore the challenge can be met by different solutions.
                                     It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
 
-                                    <p>This acid test is derived from <cite><a href="http://csarven.ca/enabling-accessible-knowledge#acid-test" rel="prov:wasDerivedFrom">Enabling Accessible Knowledge Acid Test</a></cite>.</p>
+                                    <p>This acid test is extended from <cite><a href="http://csarven.ca/enabling-accessible-knowledge#acid-test" rel="prov:wasDerivedFrom">Enabling Accessible Knowledge Acid Test</a></cite> to encompass more aspects of the academic workflow, beyond authoring and publishing research articles. The acid test constitutes <em>assumptions</em> about proposed solutions and <em>challenges</em> that proposed solutions must meet one or more of.</p>
+
+                                    <dl id="user-stories-assumption">
+                                        <dt>Assumptions</dt>
+                                        <dd>
+                                            <ul>
+                                                <li id="user-stories-assumption-publishing">All mechanisms are available through at least two different tool stacks.</li>
+                                                <li id="user-stories-assumption-free-and-open-access">Information and interactions are available for free and open access with suitable licensing and attribution for retrieval and reuse.</li>
+                                                <li id="user-stories-assumption-human-machine-readable">Information is both human and machine-readable.</li>
+                                                <li id="user-stories-assumption-open-standards">All interactions conform with open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
+                                                <li id="user-stories-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
+                                            </ul>
+                                            <span content="There is no spoon." property="schema:description" rel="schema:hasPart" resource="#user-stories-assumption-spoon" typeof="doco:Sentence"></span>
+                                        </dd>
+                                    </dl>
 
                                     <dl id="user-stories-challenges">
                                         <dt>Challenges</dt>
                                         <dd>
                                             <ol>
-                                                <li id="user-stories-challenge-availability">Alice makes her article available on the Web with the research objects available at fine granularity, e.g., variables of a hypothesis.</li>
+                                                <li id="user-stories-challenge-availability">Alexander makes his article available on the Web with the research objects available at fine granularity, e.g., variables of a hypothesis.</li>
 
-                                                <li id="user-stories-challenge-reference">Beverly refers to and discusses Alice’s research objects from her own research article, e.g., an argument against a methodological step.</li>
+                                                <li id="user-stories-challenge-reference">Beverly refers to and discusses Alexander’s research objects from her own research article, e.g., an argument against a methodological step.</li>
 
-                                                <li id="user-stories-challenge-annotation">Carol annotates Beverly’s argument on Alice’s work by suggesting that it was misinterpreted, and stores the note publicly at her own personal content store.</li>
+                                                <li id="user-stories-challenge-annotation">Carol annotates Beverly’s argument on Alexander’s work by suggesting that it was misinterpreted, and stores the note publicly at her own personal content store.</li>
 
                                                 <li id="user-stories-challenge-review">Darmok and Eve write reviews for Beverly’s article and store them at their preferred locations respectively; Beverly is notified about the reviews.</li>
 
@@ -320,13 +334,13 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                                 <li id="user-stories-challenge-peer-review">Frank assigns Herman, Inigo, and Jean-Luc to peer-review Guinan’s work.
                                                   Herman and Inigo both write their reviews so that only Frank (and Guinan?) may read them; meanwhile Jean-Luc makes his review public.</li>
 
-                                                <li id="user-stories-challenge-proceedings">Kuhn is assisting Frank, and compiles a list of articles which meet the requirements and standards of Frank’s call for contributions based on reviews and public feedback. He sends alerts to various institutions that the proceedings are ready to be archived.</li>
+                                                <li id="user-stories-challenge-proceedings">Keiko is assisting Frank, and compiles a list of articles which meet the requirements and standards of Frank’s call for contributions based on reviews and public feedback. He sends alerts to various institutions that the proceedings are ready to be archived.</li>
 
-                                                <li id="user-stories-challenge-library">Leo manages scholarly archiving at his institution; he retrieves and catalogues the articles which were mentioned for library indexing.</li>
+                                                <li id="user-stories-challenge-library">Liz manages scholarly archiving at her institution; she retrieves and catalogues the articles which were mentioned for library indexing.</li>
 
                                                 <li id="user-stories-challenge-interaction">Marshall is a PhD student; he uses the interactive components in Beverly’s article by changing the parameters and rerunning an experiment and decides to expand on this for his own work.</li>
 
-                                                <li id="user-stories-challenge-views">Nelson reads Alice’s article from his handheld device, and prints a single page summary.</li>
+                                                <li id="user-stories-challenge-views">Nelson reads Alexander’s article from his handheld device, and prints a single page summary.</li>
 
                                                 <li id="user-stories-challenge-archives">Ophelia notices the new index of articles in response to Frank's call and selects the ones she is interested in for her personal collection of potential references.</li>
 
@@ -337,20 +351,6 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                         </dd>
                                     </dl>
 
-                                    <dl id="user-stories-assumption">
-                                        <dt>Assumptions</dt>
-                                        <dd>
-                                            <ul>
-                                                <li id="user-stories-assumption-publishing">Authoring and publishing mechanisms have at least two different tool stacks.</li>
-                                                <li id="user-stories-assumption-consuming">Consuming applications have at least two different tool stacks.</li>
-                                                <li id="user-stories-assumption-free-and-open-access">Information and interactions are available for free with open access with attribution for retrieval and reuse.</li>
-                                                <li id="user-stories-assumption-human-machine-readable">Information is both human and machine-readable.</li>
-                                                <li id="user-stories-assumption-open-standards">All interactions conform with open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
-                                                <li id="user-stories-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
-                                            </ul>
-                                            <span content="There is no spoon." property="schema:description" rel="schema:hasPart" resource="#user-stories-assumption-spoon" typeof="doco:Sentence"></span>
-                                        </dd>
-                                    </dl>
                                 </div>
                             </section>
                         </div>
@@ -601,7 +601,8 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                 <h3 property="schema:name">Authoring and publishing</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
 
-                                  <p id="dokieli"><cite><a href="http://csarven.ca/dokieli">dokieli</a></cite> [<mark>Capadisli, S., Guy, A., Auer S., Berners-Lee, T.: dokieli: decentralised authoring, annotations and social notifications, 2016, http://csarven.ca/dokieli</mark>] is an open source rich-client application for decentralised authoring, with specialisations for writing academic documents.
+                                  <p id="dokieli"><cite><a href="http://csarven.ca/dokieli">dokieli</a></cite> [<mark>Capadisli, S., Guy, A., Auer S., Berners-Lee, T.: dokieli: decentralised authoring, annotations and social notifications, 2016, http://csarven.ca/dokieli</mark>] is an open source, progressively enhanced client application for decentralised authoring, with specialisations for writing academic documents.
+
                                     The editor is built on open Web standards and the documents are compliant with Linked Data best practices, allowing: decentralised storage and data ownership; fine-grained semantic structure through HTML+RDFa for prose content, and other RDF formats for data embedding; direct in-browser editing from a W3C <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a> (LDP) based personal data store; social interactions with documents (such as annotations and replies), and notifications thereof.</p>
 
                                   <p id="solid">dokieli is compliant with <cite><a href="https://github.com/solid/solid-spec">Solid</a></cite>, a set of protocols and conventions based on the LDP recommendation.
@@ -798,7 +799,7 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                           <p>Taking the Linked Research requirements as a baseline and the acid test as a tool, we reviewed different related systems with regard to how well they satisfy the requirements.
                             Table <mark>TODO cross-reference</mark> shows the results of profiling the systems against the requirements using the acid test.</p>
 
-                            <table>
+                            <table class="columns-based">
                                 <caption>Profiling publishing and consuming systems</caption>
                                 <thead>
                                     <tr>
@@ -852,7 +853,6 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr><th></th></tr>
                                     <tr><th>dokieli + Solid</th></tr>
                                     <tr><th>Open Science Framework<sup><a class="ref-footnote" href="#profile-open-science-framework-foot">*</a></sup></th></tr>
                                     <tr><th>WordLift</th></tr>
