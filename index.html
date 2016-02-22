@@ -150,8 +150,10 @@
                             <p>Finally, we describe an implementation of tooling for authoring, publishing and annotating research articles in a decentralised manner, based on native Web technologies.
                               We demonstrate how multi-modal content such as video, audio, code examples and runnable experiments can be embedded into research publications, and showcase how different views of the content can be rendered for different devices (e.g. screen, print, mobile) or audiences (e.g. slide shows).
                               A particular strength of our approach is the integration and linking of data, which can automatically update tables and diagrams when the underlying data changes.
-                              <mark>Sören, are we actually demonstrating this? or just mention that "this 'paper' is a demo" does some of those things?</mark>
-                              All content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration, retrieval and linking of concepts and ideas. Further, our implementation takes advantage of common social media practices to enable sharing and commentary around scholarly work in both ongoing dialogue between interested parties, and more formal conference and workshop settings. We build upon emerging standards in personal data stores, annotations and social notifications to allow our implementation to be completely decentralised, reliant on no central system or hub.</p>
+                              
+                              All content can be annotated and represented using semantic knowledge representation formalisms to facilitate better search, exploration, retrieval and linking of concepts and ideas. 
+							  Further, our implementation takes advantage of common social media practices to enable sharing and commentary around scholarly work in both ongoing dialogue between interested parties, and more formal conference and workshop settings. 
+							  We build upon emerging standards in personal data stores, annotations and social notifications to allow our implementation to be completely decentralised, reliant on no central system or hub.</p>
                         </div>
                     </section>
 
@@ -522,21 +524,42 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                             <section id="persistence-and-preservation" inlist="" rel="schema:hasPart" resource="#persistence-and-preservation">
                                 <h3 property="schema:name">Persistence and Preservation</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p>Ensuring the persistence of scientific results through time is of fundamental importance: readers should be able to access articles published in the past, authors should be able to point to articles and the statements within that will be accessible in the future. As of today, archiving and preserving scientific documents are commonly considered the responsibilities of classical publishing companies. In the context of Linked Research, where decentralised authoring and publishing is promoted, the responsibility are to be re-evaluated: authors can choose where to publish their results online at a service of their choice. For example, authors may choose to provide their publications on their website - however, this does not necessarily mean that the content is going to be persistent through time. In this section we will explore the problems of centralised (and personal) archival and the need of a distributed infrastructure.</p>
+                                  <p>Ensuring the persistence of scientific results through time is of fundamental importance: readers should be able to access articles published in the past, authors should be able to point to articles and the statements within that will be accessible in the future.
+                                    As of today, archiving and preserving scientific documents are commonly considered the responsibilities of classical publishing companies.
+                                    In the context of Linked Research, where decentralised authoring and publishing is promoted, responsibilities are to be re-evaluated: authors can choose to publish their results online at a service of their choice.
+                                    For example, authors may choose to provide their publications on their own website – however, this does not necessarily mean that the content is going to be persistent through time.
+                                    In this section we will explore the problems of centralised (and personal) archival and the need of a distributed infrastructure.</p>
 
-                                    <p>Persisting academic publishing on long-term on the web has two main challenges: 1) availability on the Internet, and 2) presence on the Web. In the first case, we have to ensure that the documents and the data related to it are available on a server connected to the Internet. The challenge consist in making the server available, in other words, maintaining the server and defending it from possible attacks. In the second case, we have to provide a long-term name, in the form of URLs, that will point to these documents. The challenge consist in being present on the Web with URLs that don't change; the long-term obstacle to this is the URL expirations, revocation (in case of someone taking legal action) and finally censorship <mark>[Berners-Lee, T.: Cool URIs don't change, W3C, 1998, https://www.w3.org/Provider/Style/URI.html]</mark>.</p>
+                                  <p>Persisting academic publishing on long-term on the web has two main challenges: 1) availability on the Internet, and 2) presence on the Web.
+                                    In the first case, we have to ensure that the documents and the data related to it are available on a server connected to the Internet.
+                                    The challenge consist in making the server available, in other words, maintaining it and defending it from possible attacks.
+                                    In the second case, we have to provide a long-term name, in the form of URLs, that will point to these documents.
+                                    The challenge consists in being present on the Web with URLs that do not change; the long-term obstacle to this is the URL expirations, revocation (in case of someone taking legal action) and finally censorship <mark>[Berners-Lee, T.: Cool URIs don't change, W3C, 1998, https://www.w3.org/Provider/Style/URI.html]</mark>.</p>
 
-                                    <p>Centralised archival is a single-point of failure for long-term persistence. If we consider the case for an academic article under a particular URL, as mentioned above, this could be temporarily unavailable, under attack or the service has ceased to exist. This can have two forms: 1) self-archival, and 2) third-party archival. In the case of self-archival, the author is responsible for archival of the content maintaining his service and domain name. This strategy clearly has non-trivial disadvantages: technical expertise is required, maintenance cost, and content may disappear soon after the author post-mortem. In the case of third-party archival, although the responsibilities are delegated to the service used, this may cease to exist long term, or may eventually turn untrusted and act against the interest of the user, for example altering the content.</p>
+                                  <p>Centralised archival is a single point of failure for long-term persistence.
+                                    If we consider the case for an academic article under a particular URL, as mentioned above, this could be temporarily unavailable, under attack or the service has ceased to exist.
+                                    This can have two forms: 1) self-archival, and 2) third-party archival.
+                                    In the case of self-archival, the author is responsible for archival of the content maintaining his service and domain name.
+                                    This strategy clearly has non-trivial disadvantages: technical expertise is required, maintenance cost, and content may disappear soon after the author post-mortem.
+                                    In the case of third-party archival, although the responsibilities are delegated to the service used, this may cease to exist long term, or may eventually turn untrusted and act against the interest of the user, for example altering the content.</p>
 
-                                    <p>A well-known solution to the problem is to have a decentralised architecture where documents are replicated on multiple servers. In case the URL is not reachable the reader should be able to get the content from who else has a copy. <cite>Lots of Copies Keep Stuff Safe</cite> is the idea behind <a href="http://www.lockss.org/">LOCKSS</a>, a project that aims at creating a network of library and publishers that replicate scientific articles amongst the others.<mark>[http://www.lockss.org/locksswp/wp-content/uploads/2015/06/bfp-2015-0022-1.pdf]</mark>, based on this idea there is other work that uses existing distributed networks such as BitTorrent <mark>[http://www.dlib.org/dlib/march14/markman/03markman.html]</mark>.</p>
+                                  <p>A well-known solution to the problem is to have a decentralised architecture where documents are replicated on multiple servers.
+                                    In case the URL is not reachable the reader should be able to get the content from who else has a copy.
+                                    <cite>Lots of Copies Keep Stuff Safe</cite> is the idea behind <a href="http://www.lockss.org/">LOCKSS</a>, a project that aims at creating a network of library and publishers that replicate scientific articles amongst the others.<mark>[http://www.lockss.org/locksswp/wp-content/uploads/2015/06/bfp-2015-0022-1.pdf]</mark>, based on this idea there is other work that uses existing distributed networks such as BitTorrent <mark>[http://www.dlib.org/dlib/march14/markman/03markman.html]</mark>.</p>
 
-                                    <p>When the content is distributed across a decentralised network then documents must have pointers that the network agrees upon. This can be simply done by naming documents via their hashes. In addition to naming, hashing comes handy when proving the the file hasn't been altered by nodes in the network, since verification would mean re-hashing the file, technologies that use this are decentralised Hash tables e.g., InterPlanetary File System (IPFS). Recent work show how we can use special URIs, called <cite><a href="http://trustyuri.net/">Trusty URIs</a></cite> that benefit the same technique and still be compatible on the Web [<mark>Kuhn, T., Chichester, C., Krauthammer, M., Dumontier, M.: Publishing without Publishers: a Decentralized Approach to Dissemination, Retrieval, and Archiving of Data, ISWC 2015, http://iswc2015.semanticweb.org/sites/iswc2015.semanticweb.org/files/93660593.pdf</mark>].</p>
+                                  <p>When the content is distributed across a decentralised network then documents must have pointers that the network agrees upon.
+                                    This can be simply done by naming documents via their hashes.
+                                    In addition to naming, hashing comes handy when proving the the file hasn't been altered by nodes in the network, since verification would mean re-hashing the file, technologies that use this are decentralised Hash tables, e.g., the InterPlanetary File System (IPFS).
+                                    Recent work show how we can use special URIs, called <cite><a href="http://trustyuri.net/">Trusty URIs</a></cite> that use the same technique and still be compatible on the Web [<mark>Kuhn, T., Chichester, C., Krauthammer, M., Dumontier, M.: Publishing without Publishers: a Decentralized Approach to Dissemination, Retrieval, and Archiving of Data, ISWC 2015, http://iswc2015.semanticweb.org/sites/iswc2015.semanticweb.org/files/93660593.pdf</mark>].</p>
 
-                                    <p>Hashes may turn out to be problematic if collisions in the hash function are found in the future, therefore affecting all the hashes e.g., as it was the case with MD5. To get around this, different hash functions can be used simultaneously.</p>
+                                  <p>Hashes may turn out to be problematic if collisions in the hash function are found in the future, therefore affecting all the hashes, e.g., as it was the case with MD5.
+                                    To get around this, different hash functions can be used simultaneously.</p>
 
-                                    <p>Hashes are typically not human-readable i.e., a person can't infer or get a hint on what the name is a reference to since it is just a unique set of characters. However, there are services which try to map readable names to hashes, some built on consensus e.g., <a href="https://github.com/blockstack/blockstack-server">Blockstore</a>.</p>
+                                  <p>Hashes are typically not human-readable i.e., a person cannot infer or get a hint on what the name is a reference to since it is just a unique set of characters.
+                                    However, there are services which try to map readable names to hashes, some built on consensus e.g., <a href="https://github.com/blockstack/blockstack-server">Blockstore</a>.</p>
 
-                                    <p>Another potential problem with hashes is if the hash function is no longer known or tractable in the network, therefore rendering it useless. While this scenario is not likely to happen, using different has functions is also useful here.</p>
+                                  <p>Another potential problem with hashes is if the hash function is no longer known or tractable in the network, therefore rendering it useless.
+                                    While this scenario is not likely to happen, using different has functions is also useful here.</p>
 
                                     <p>In order for different parties to work towards a Linked Research ecosystem, the role of content creators act as the distributors of the content, and the role of public institutions is to preserve it in a decentralised manner.</p>
                                 </div>
@@ -784,44 +807,63 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                 <thead>
                                     <tr>
                                         <th>System and tooling</th>
-                                        <th>Decentralised authoring and publishing</th>
-                                        <th>Access control and attribution</th>
-                                        <th>Provenance and accountability</th>
-                                        <th>Persistence and preservation</th>
-                                        <th>Sharing and social interactions</th>
-                                        <th>Commentary and feedback</th>
-                                        <th>Human and machine-readability</th>
-                                        <th>Integration of semantics</th>
-                                        <th>Entity identifiers</th>
-                                        <th>Data integration</th>
-                                        <th>authoring and publication workflow</th>
-                                        <th>Feedback and interactions</th>
-                                        <th>Different views and media</th>
-                                        <th>Adaptation to audiences</th>
-                                        <th>Interactive content</th>
-                                        <th>Multimedia</th>
-                                        <th>Impact metrics and reward system</th>
+                                        <th><abbr title="Decentralised authoring and publishing">DAaP</abbr></th>
+                                        <th><abbr title="Access control and attribution">ACaA</abbr></th>
+                                        <th><abbr title="Provenance and accountability">PaA</abbr></th>
+                                        <th><abbr title="Persistence and preservation">PaP</abbr></th>
+                                        <th><abbr title="Sharing and social interactions">SaSI</abbr></th>
+                                        <th><abbr title="Commentary and feedback">CaF</abbr></th>
+                                        <th><abbr title="Human and machine-readability">HaMR</abbr></th>
+                                        <th><abbr title="Integration of semantics">IoS</abbr></th>
+                                        <th><abbr title="Entity identifiers">EI</abbr></th>
+                                        <th><abbr title="Data integration">DI</abbr></th>
+                                        <th><abbr title="Authoring and publication workflow">AaPW</abbr></th>
+                                        <th><abbr title="Feedback and interactions">FaI</abbr></th>
+                                        <th><abbr title="Different views and media">DVaM</abbr></th>
+                                        <th><abbr title="Adaptation to audiences">AtA</abbr></th>
+                                        <th><abbr title="Interactive content">IC</abbr></th>
+                                        <th><abbr title="Multimedia">M</abbr></th>
+                                        <th><abbr title="Impact metrics and reward system">IMaRS</abbr></th>
                                     </tr>
                                 </thead>
                                 <tfoot>
                                     <tr>
-                                        <th colspan="19">
-                                            <dl>
-                                                <dt id="profile-open-science-framework-foot">*</dt>
-                                                <dd>Open Science Framework "one centralised location" ... Integrates with Dropbox, GitHub, amazon web services, box, Google drive, figshare, the dataverse project, mendeley</dd>
+                                        <td colspan="18">
+                                            <dl class="abbr">
+                                                <dt>CaF</dt><dd>Commentary and feedback</dd>
+                                                <dt>ACaA</dt><dd>Access control and attribution</dd>
+                                                <dt>AaPW</dt><dd>Authoring and publication workflow</dd>
+                                                <dt>AtA</dt><dd>Adaptation to audiences</dd>
+                                                <dt>DAaP</dt><dd>Decentralised authoring and publishing</dd>
+                                                <dt>DI</dt><dd>Data integration</dd>
+                                                <dt>DVaM</dt><dd>Different views and media</dd>
+                                                <dt>EI</dt><dd>Entity identifiers</dd>
+                                                <dt>FaI</dt><dd>Feedback and interactions</dd>
+                                                <dt>HaMR</dt><dd>Human and machine-readability</dd>
+                                                <dt>IC</dt><dd>Interactive content</dd>
+                                                <dt>IMaRS</dt><dd>Impact metrics and reward system</dd>
+                                                <dt>IoS</dt><dd>Integration of semantics</dd>
+                                                <dt>M</dt><dd>Multimedia</dd><dt>PaA</dt>
+                                                <dd>Provenance and accountability</dd>
+                                                <dt>PaP</dt><dd>Persistence and preservation</dd>
+                                                <dt>SaSI</dt><dd>Sharing and social interactions</dd>
                                             </dl>
-                                        </th>
+
+                                            <dl class="legend">
+                                                <dt>*</dt><dd>Open Science Framework "one centralised location" ... Integrates with Dropbox, GitHub, amazon web services, box, Google drive, figshare, the dataverse project, mendeley</dd>
+                                            </dl>
+                                        </td>
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr id="profile-pdf-easychair"><th></th></tr>
-                                    <tr id="profile-solid-dokieli"><th>dokieli + Solid</th></tr>
-                                    <tr id="profile-open-science-framework"><th>Open Science Framework<sup><a class="ref-footnote" href="#profile-open-science-framework-foot">*</a></sup></th></tr>
-                                    <tr id="profile-wordlift"><th>WordLift</th></tr>
-                                    <tr id="profile-authorea"><th>Authorea</th></tr>
-                                    <tr id="profile-google-docs"><th>Google Docs</th></tr>
-                                    <tr id="profile-myexperiment"><th>myExperiment</th></tr>
-                                    <tr id="profile-elife"><th>eLifescience</th></tr>
+                                    <tr><th></th></tr>
+                                    <tr><th>dokieli + Solid</th></tr>
+                                    <tr><th>Open Science Framework<sup><a class="ref-footnote" href="#profile-open-science-framework-foot">*</a></sup></th></tr>
+                                    <tr><th>WordLift</th></tr>
+                                    <tr><th>Authorea</th></tr>
+                                    <tr><th>Google Docs</th></tr>
+                                    <tr><th>myExperiment</th></tr>
+                                    <tr><th>eLifescience</th></tr>
                                     <tr><th><mark>Add..</mark></th></tr>
                                 </tbody>
                             </table>
