@@ -463,54 +463,29 @@ CL: yes, why not</mark></p>
 
 
                             <section id="persistence" inlist="" rel="schema:hasPart" resource="#persistence">
-                                <h3 property="schema:name">Persistence</h3>
+                                <h3 property="schema:name">Persistence and Preservation</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>CL: What's the difference between persistence and “archiving and preservation”?</mark><strong>Why persistance?</strong></p>
-                                    <ul>
-                                      <li>- Building on top of knowledge far in the future</li>
-                                      <li>- New discoveries -&gt; finding the sources</li>
-                                      <li>- more on the vision</li>
-                                      <li>- the role of the author/the role of the author</li>
-                                    </ul>
+                                    <p><mark>CL: What's the difference between persistence and “archiving and preservation”?</mark></p>
+                                    <p>Ensuring the persistence of scientific results through time is of fundamental importance: readers should be able to access articles published in the past, authors should be able to point to articles <mark>(or statements?)</mark> that will be accessible in the future. As of today, archiving and preserving scientific documents are commonly considered the responsabilities of classical publishing companies. In the context of Linked Research, where decentralized authoring and publishing is promoted, the responsibility are to be re-evaluated: authors can choose where to publish their results online at a service of their choice. For example, authors may choose to provide their publications on their website - however, this does not necessarely means that the content is going to be persistent through time. In this section we will explore the problems of centralized (and personal) archival and the need of a distributed infrastructure.</p>
 
-                                    <p><strong>survivability on the Web</strong></p>
-                                    <ul>
-                                      <li>- personal data archival</li>
-                                      <li>- distributed storage</li>
-                                    </ul>
+                                    <p>Persisting academic publishing on long-term on the web has two main challenges: (1) availability on the Internet (2) presence on the Web. In the first case, we have to ensure that the documents and the data related to it are available on a server connected to the Internet. The challenge consist in making the server available, in other words, mantaining the server and defending it from possible attacks. In the second case, we have to provide a long-term name, in the form of URLs, that will point to these documents. The challenge consist in being present on the Web with URLs that don't change; the long-term obstacle to this is the URL expirations, <mark>revokation (in case of someone taking legal action)</mark> and finally censorship. <mark>[Reference to cool uris dont change]<mark></p>
 
-                                    <p><strong>Problems of centralized archival</strong></p>
-                                    <ul>
-                                      <li>- Self-archival is difficult</li>
-                                      <li>- The maintainer and their responsibilities</li>
-                                      <li>  - Self-hosted require maintenance (not accessible to those with no technical knowledge)</li>
-                                      <li>  - Third-party depend on the persistence of the service (it may have a cost)</li>
-                                      <li>- URLs could be unreacheable and Web pages may disappear</li>
-                                      <li>  - downtime</li>
-                                      <li>  - censorship</li>
-                                      <li>  - under attack [find case]</li>
-                                      <li>  - expiration</li>
-                                      <li>- Expiration</li>
-                                      <li>  - Domain name can expire</li>
-                                      <li>  - Running services may disappear</li>
-                                      <li>- Accessibility: Not everyone has a domain name and storage</li>
-                                      <li>=&gt; Finally, self-archival is a single point of failure for persistance</li>
-                                    </ul>
+                                    <p>Centralized archival is a single-point of failure. Consider the case an academic article is under a particular URL, as mentioned above, this could be temporarely unavailable, under attack or the service has ceised to exist. This can have two forms: (1) self-archival and (2) third-party archival. In the case of self-archival, the author is responsible for archival of the content mantaining his service and domain name. This strategy clearly has non-trivial disadvantages: techical expertise is required, mantainance cost, and content may disappear soon after the author post-mortem. In the case of third-party archival, although the responsibilities are delegated to the service used, this may ceise to exist long term, or may eventually turn untrusted and act against the interest of the user, for example altering the content.</p>
 
-                                    <p><strong>There is a need of distributing the content</strong></p>
-                                    <ul>
-                                      <li>- Distributed: Replicating the content</li>
-                                      <li>  - There is a need to make the content easy to distribute.</li>
-                                      <li>  - Hosted in multiple places</li>
-                                      <li>  - LOCKSS (Lot of copies keep stuff safe) - used by many libraries and projects: e.g. Perma.cc</li>
-                                      <li>  - Having the ability to retrieve it, point to it in case one of the place is down</li>
-                                      <li>- the open problem of naming</li>
-                                      <li>  - current system using centralized naming</li>
-                                      <li>  - distribute naming (that everyone agrees upon)</li>
-                                      <li>    - hashing (DHT, see IPFS)</li>
-                                      <li>    - consensus (mostly built by offloading blockchains see BlockStore)</li>
-                                      <li>  - who has the data? trusty uris can come handy</li>
-                                    </ul>
+
+                                    <p>##### There is a need of distributing the content
+                                    - Distributed: Replicating the content
+                                      - There is a need to make the content easy to distribute.
+                                      - Hosted in multiple places
+                                      - LOCKSS (Lot of copies keep stuff safe) - used by many libraries and projects: e.g. Perma.cc
+                                      - Having the ability to retrieve it, point to it in case one of the place is down
+                                    - the open problem of naming
+                                      - current system using centralized naming
+                                      - distribute naming (that everyone agrees upon)
+                                        - hashing (DHT, see IPFS)
+                                        - consensus (mostly built by offloading blockchains see BlockStore)
+                                      - who has the data? trusty uris can come handy</p>
+
                                 </div>
                             </section>
 
@@ -531,7 +506,8 @@ CL: yes, why not</mark></p>
 
                             <section id="reuse-and-referencing" inlist="" rel="schema:hasPart" resource="#reuse-and-referencing">
                                 <h3 property="schema:name">Reuse and Referencing</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
+                                <div datatype="rdf:HTML" property="schema:description">
+
                                     <p>Linking to data and granular statements.</p>
                                     <p>How articles can show when another academic article has linked to a specific part, and the semantics of the link.</p>
                                     <p>Personal collections of references. How this can be integrated into tooling.</p>
