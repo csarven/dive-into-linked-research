@@ -128,7 +128,7 @@
                             <p><q about="" cite="http://example.org/quote#123" rel="cito:agreesWith" resource="http://example.org/quote#123">You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete</q> – attributed to <cite><a href="https://en.wikipedia.org/wiki/Buckminster_Fuller">Buckminster Fuller</a></cite>.</p>
 
                             <p>One of the most widely debated questions in the scientific community is the impact of digitisation on scholarly communication and knowledge exchange; the Internet and the Web have radically changed the processes of scholarship [Borgman 2007 Scholarship in the Digital Age: Information, Infrastructure, and the Internet].
-                              In this article, we propose that digitising, and indeed <em>Webizing</em>[https://www.w3.org/DesignIssues/Webize.html], scholarly communication can provide greater coherency between and within academic fields, as well as make knowledge more accessible to researchers and citizens alike.
+                              In this article, we propose that digitising, and indeed <em>Webizing </em>[https://www.w3.org/DesignIssues/Webize.html], scholarly communication can provide greater coherency between and within academic fields, as well as make knowledge more accessible to researchers and citizens alike.
                               Many forms of scholarship are enabled by these technology changes, be it the ability to perform social science using social media traces, or large scale data processing for physics.
                               Despite efforts through Open Access movements and increasing availability of online publications, the formal communications mechanisms used by scholars do little to take full advantage of either the capabilities of online media, or the cultural shift towards sharing and public commentary on social networks [Adoption and use of Web 2.0 in scholarly communications. Rob Procter, Robin Williams, James Stewart, Meik Poschen, Helene Snee, Alex Voss, Marzieh Asgari-Targhi Phil. Trans. R. Soc. A 2010 368 4039-4056; DOI: 10.1098/rsta.2010.0155. Published 2 August 2010 , Calvi, Licia, and Maria Cassella. http://rsta.royalsocietypublishing.org/content/368/1926/4039 "Scholarship 2.0: analyzing scholars’ use of Web 2.0 tools in research and teaching activity." Liber Quarterly 23.2 (2013): 110-133, https://www.liberquarterly.eu/articles/10.18352/lq.8108/].</p>
 
@@ -294,9 +294,7 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                         <div datatype="rdf:HTML" property="schema:description">
                             <p><mark>Todo: rewrite this intro so it actually makes sense, and find a better name for this section.</mark></p>
 
-                            <p>Having defined requirements for the problem space of scholarly communication as a whole based on observed problems, we now consider how each topic area fits into the overall scholarly communication workflow, and indicate which of the requirements are pertinent for each stage of the process of scholarly communication.
-                              This is summarised in Table 1 / Figure <mark>(TODO: actually improve table and/or figure 1 to summarise this)</mark>.
-                              We propose technical solutions and methods for each stage of the process, aiming at meeting the related requirements.</p>
+                            <p>Having defined requirements for the problem space of scholarly communication as a whole based on observed problems, we now consider how each topic area fits into the overall scholarly communication workflow, and indicate which of the requirements are pertinent for each stage of the process of scholarly communication. We propose technical solutions and methods for each stage of the process, aiming at meeting the related requirements. The Linked Research concepts and how they relate to one another is shown in Figure 1, and their relation to the requirements, technologies and stakeholders are visualised in Figure 2. <mark>(TODO: turn table into figure 2)</mark>. </p>
 
                             <p>Our primary approach is to reuse existing technologies, techniques and specifications, combined in novel ways to meet the needs we have identified.
                               We focus on the Web as a publishing platform for distribution and consumption and content and data in a decentralised way.</p>
@@ -613,20 +611,7 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     </figure>
 
                                     <figure class="listing" id="solid-notification" rel="schema:hasPart" resource="#solid-notification">
-                                        <pre about="#solid-notification" property="schema:description" typeof="fabio:Script">
-<code>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</code>
-<code>@prefix schema: &lt;https://schema.org/&gt; .</code>
-<code>@prefix solid: &lt;http://www.w3.org/ns/solid/terms#&gt; .</code>
-<code>@prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .</code>
-<code>@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .</code>
-<code>@prefix c: &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; .</code>
-<code>&lt;&gt; a solid:<strong class="highlight-notification">Notification</strong> , as:Announce ;</code>
-<code>  as:<strong class="highlight-object">object</strong> &lt;http://example.net/foo/abc123&gt; ;</code>
-<code>  as:<strong class="highlight-context">context</strong> oa:hasTarget ;</code>
-<code>  as:<strong class="highlight-target">target</strong> &lt;http://example.org/article#conclusions&gt; ;</code>
-<code>  as:updated "2016-01-24T00:00:00Z"^^xsd:dateTime ;</code>
-<code>  as:actor &lt;http://csarven.ca/#i&gt; ;</code>
-<code>  schema:license c: .</code>
+                                        <pre about="#solid-notification" property="schema:description" typeof="fabio:Script"><code>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</code><code>@prefix schema: &lt;https://schema.org/&gt; .</code><code>@prefix solid: &lt;http://www.w3.org/ns/solid/terms#&gt; .</code><code>@prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .</code><code>@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .</code><code>@prefix c: &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; .</code><code>&lt;&gt; a solid:<strong class="highlight-notification">Notification</strong> , as:Announce ;</code><code>  as:<strong class="highlight-object">object</strong> &lt;http://example.net/foo/abc123&gt; ;</code><code>  as:<strong class="highlight-context">context</strong> oa:hasTarget ;</code><code>  as:<strong class="highlight-target">target</strong> &lt;http://example.org/article#conclusions&gt; ;</code><code>  as:updated "2016-01-24T00:00:00Z"^^xsd:dateTime ;</code><code>  as:actor &lt;http://csarven.ca/#i&gt; ;</code><code>  schema:license c: .</code>
                                         </pre>
                                         <figcaption property="schema:name">A Solid inbox notification.</figcaption>
                                     </figure>
@@ -638,10 +623,7 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     <p>A dokieli research article can contain a relationship e.g., <code class="highlight-reply_of">sioc:reply_of</code>, to the call for contributions. That is, every scholarly article can be written in context of the conferences’ or journals’ call for contributions e.g, the current article on Linked Research is a reply to <a href="http://ht.acm.org/ht2016/calls">ACM Hypertext 2016 Calls for Contributions</a>, and contains an RDF statement as follows:</p>
 
                                     <figure class="listing" id="linked-research-in-reply-to-acm-hypertext" rel="schema:hasPart" resource="#linked-research-in-reply-to-acm-hypertext">
-                                        <pre about="#linked-research-in-reply-to-acm-hypertext" property="schema:description" typeof="fabio:Script">
-<code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
-<code>&lt;http://csarven.ca/linked-research-scholarly-communication&gt;</code>
-<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://ht.acm.org/ht2016/calls&gt; .</code>
+                                        <pre about="#linked-research-in-reply-to-acm-hypertext" property="schema:description" typeof="fabio:Script"><code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code><code>&lt;http://csarven.ca/linked-research-scholarly-communication&gt;</code><code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://ht.acm.org/ht2016/calls&gt; .</code>
                                         </pre>
                                         <figcaption property="schema:name">Current article in reply to ACM Hypertext 2016 Call for Contributions (shown using the RDF Turtle syntax).</figcaption>
                                     </figure>
@@ -695,20 +677,7 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                             <p><mark>TODO: Use Turtle below or the graph view?</mark></p>
 
                             <figure class="listing" id="article-calls-proceedings" rel="schema:hasPart" resource="#article-calls-proceedings">
-                                <pre about="#article-calls-proceedings" property="schema:description" typeof="fabio:Script">
-<code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
-<code>@prefix schema: &lt;https://schema.org/&gt; .</code>
-<code>@prefix bibo: &lt;http://purl.org/ontology/bibo/&gt; .</code>
-<code>&lt;http://semstats.org/2013/&gt;</code>
-<code>  sioc:reply_of &lt;http://iswc2013.semanticweb.org/content/call-workshops.html&gt; ;</code>
-<code>  <strong class="highlight-hasPart">schema:hasPart</strong> &lt;http://semstats.org/2013/call-for-papers&gt; .</code>
-<code>&lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
-<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://semstats.org/2013/call-for-papers&gt; ;</code>
-<code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt; .</code>
-<code>&lt;http://ceur-ws.org/Vol-1549&gt;</code>
-<code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt; .</code>
-<code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
-<code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt; .</code>
+                                <pre about="#article-calls-proceedings" property="schema:description" typeof="fabio:Script"><code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code><code>@prefix schema: &lt;https://schema.org/&gt; .</code><code>@prefix bibo: &lt;http://purl.org/ontology/bibo/&gt; .</code><code>&lt;http://semstats.org/2013/&gt;</code><code>  sioc:reply_of &lt;http://iswc2013.semanticweb.org/content/call-workshops.html&gt; ;</code><code>  <strong class="highlight-hasPart">schema:hasPart</strong> &lt;http://semstats.org/2013/call-for-papers&gt; .</code><code>&lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code><code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://semstats.org/2013/call-for-papers&gt; ;</code><code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt; .</code><code>&lt;http://ceur-ws.org/Vol-1549&gt;</code><code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt; .</code><code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code><code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt; .</code>
                                 </pre>
                                 <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings.</figcaption>
                             </figure>
