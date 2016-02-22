@@ -525,32 +525,29 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                 <h3 property="schema:name">Persistence and Preservation</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                   <p>Ensuring the persistence of scientific results through time is of fundamental importance: readers should be able to access articles published in the past, authors should be able to point to articles and the statements within that will be accessible in the future.
-                                    As of today, archiving and preserving scientific documents are commonly considered the responsibilities of classical publishing companies.
+                                    As of today, archiving and preserving scientific documents are commonly considered the responsibilities of publishers.
                                     In the context of Linked Research, where decentralised authoring and publishing is promoted, responsibilities are to be re-evaluated: authors can choose to publish their results online at a service of their choice.
                                     For example, authors may choose to provide their publications on their own website – however, this does not necessarily mean that the content is going to be persistent through time.
-                                    In this section we will explore the problems of centralised (and personal) archival and the need of a distributed infrastructure.</p>
+                                    This section explores the problems of centralised (and personal) archival and the need of a distributed infrastructure.</p>
 
                                   <p>Persisting academic publishing on long-term on the web has two main challenges: 1) availability on the Internet, and 2) presence on the Web.
-                                    In the first case, we have to ensure that the documents and the data related to it are available on a server connected to the Internet.
-                                    The challenge consist in making the server available, in other words, maintaining it and defending it from possible attacks.
-                                    In the second case, we have to provide a long-term name, in the form of URLs, that will point to these documents.
-                                    The challenge consists in being present on the Web with URLs that do not change; the long-term obstacle to this is the URL expirations, revocation (in case of someone taking legal action) and finally censorship <mark>[Berners-Lee, T.: Cool URIs don't change, W3C, 1998, https://www.w3.org/Provider/Style/URI.html]</mark>.</p>
+                                    Regarding availability, the challenge is to keep the document/data server available, in other words, maintaining it and defending it from possible attacks.
+                                    Regarding presence, the challenge consists in maintaining a URL that points to the document/data and that does not change; long-term obstacles to this is include URL expiration, revocation (in case of someone taking legal action) and finally censorship <mark>[Berners-Lee, T.: Cool URIs don't change, W3C, 1998, https://www.w3.org/Provider/Style/URI.html]</mark>.</p>
 
                                   <p>Centralised archival is a single point of failure for long-term persistence.
-                                    If we consider the case for an academic article under a particular URL, as mentioned above, this could be temporarily unavailable, under attack or the service has ceased to exist.
-                                    This can have two forms: 1) self-archival, and 2) third-party archival.
+                                    If we consider the case for an academic article under a particular URL, as mentioned above, this could be temporarily unavailable, under attack or the service may have ceased to exist.
                                     In the case of self-archival, the author is responsible for archival of the content maintaining his service and domain name.
                                     This strategy clearly has non-trivial disadvantages: technical expertise is required, maintenance cost, and content may disappear soon after the author post-mortem.
                                     In the case of third-party archival, although the responsibilities are delegated to the service used, this may cease to exist long term, or may eventually turn untrusted and act against the interest of the user, for example altering the content.</p>
 
-                                  <p>A well-known solution to the problem is to have a decentralised architecture where documents are replicated on multiple servers.
+                                  <p>A well-known solution to the problem is a <em>decentralised architecture</em> with documents replicated on multiple servers.
                                     In case the URL is not reachable the reader should be able to get the content from who else has a copy.
                                     <cite>Lots of Copies Keep Stuff Safe</cite> is the idea behind <a href="http://www.lockss.org/">LOCKSS</a>, a project that aims at creating a network of library and publishers that replicate scientific articles amongst the others.<mark>[http://www.lockss.org/locksswp/wp-content/uploads/2015/06/bfp-2015-0022-1.pdf]</mark>, based on this idea there is other work that uses existing distributed networks such as BitTorrent <mark>[http://www.dlib.org/dlib/march14/markman/03markman.html]</mark>.</p>
 
-                                  <p>When the content is distributed across a decentralised network then documents must have pointers that the network agrees upon.
+                                  <p>When content is distributed across a decentralised network then documents must have pointers that the network agrees upon.
                                     This can be simply done by naming documents via their hashes.
                                     In addition to naming, hashing comes handy when proving the the file hasn't been altered by nodes in the network, since verification would mean re-hashing the file, technologies that use this are decentralised Hash tables, e.g., the InterPlanetary File System (IPFS).
-                                    Recent work show how we can use special URIs, called <cite><a href="http://trustyuri.net/">Trusty URIs</a></cite> that use the same technique and still be compatible on the Web [<mark>Kuhn, T., Chichester, C., Krauthammer, M., Dumontier, M.: Publishing without Publishers: a Decentralized Approach to Dissemination, Retrieval, and Archiving of Data, ISWC 2015, http://iswc2015.semanticweb.org/sites/iswc2015.semanticweb.org/files/93660593.pdf</mark>].</p>
+                                    Recent works show how we can use special URIs, called <cite><a href="http://trustyuri.net/">Trusty URIs</a></cite> that use the same technique and still be compatible on the Web [<mark>Kuhn, T., Chichester, C., Krauthammer, M., Dumontier, M.: Publishing without Publishers: a Decentralized Approach to Dissemination, Retrieval, and Archiving of Data, ISWC 2015, http://iswc2015.semanticweb.org/sites/iswc2015.semanticweb.org/files/93660593.pdf</mark>].</p>
 
                                   <p>Hashes may turn out to be problematic if collisions in the hash function are found in the future, therefore affecting all the hashes, e.g., as it was the case with MD5.
                                     To get around this, different hash functions can be used simultaneously.</p>
