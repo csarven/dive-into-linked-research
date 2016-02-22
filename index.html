@@ -635,6 +635,17 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
 
                                     <p>An author can also opt to allow anonymous interactions with their documents by pointing to a publicly writeable storage location in their own space, and store interactions on behalf of their audience.</p>
 
+                                    <p>A dokieli research article can contain a relationship e.g., <code class="highlight-reply_of">sioc:reply_of</code>, to the call for contributions. That is, every scholarly article can be written in context of the conferences’ or journals’ call for contributions e.g, the current article on Linked Research is a reply to <a href="http://ht.acm.org/ht2016/calls">ACM Hypertext 2016 Calls for Contributions</a>, and contains an RDF statement as follows:</p>
+
+                                    <figure class="listing" id="linked-research-in-reply-to-acm-hypertext" rel="schema:hasPart" resource="#linked-research-in-reply-to-acm-hypertext">
+                                        <pre about="#linked-research-in-reply-to-acm-hypertext" property="schema:description" typeof="fabio:Script">
+<code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
+<code>&lt;http://csarven.ca/linked-research-scholarly-communication&gt;</code>
+<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://ht.acm.org/ht2016/calls&gt; .</code>
+                                        </pre>
+                                        <figcaption property="schema:name">Current article in reply to ACM Hypertext 2016 Call for Contributions (shown using the RDF Turtle syntax).</figcaption>
+                                    </figure>
+
                                     <!--<p><mark>TODO: Sarven</mark> Bring this up a level. Copied form https://github.com/linkeddata/dokieli</p>
 
                                     <ul>
@@ -663,8 +674,8 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><cite><a href="http://semstats.org/">SemStats</a></cite> is a workshop that explores and strengthens the relationship between the Semantic Web and statistical communities. We have published all material on the site for the years 2013, 2014, and 2015 in HTML+RDFa using dokieli's tooling. It contains interlinks like:</p>
                                     <ul>
-                                        <li><cite><a href="http://semstats.org/2013/">SemStats 2013</a></cite> has relation <code>sioc:reply_of</code> to <a href="http://iswc2013.semanticweb.org/content/call-workshops.html">ISWC 2013 Call for Workshops</a></li>
-                                        <li>SemStats 2013 has relation <code>schema:hasPart</code> <cite><a href="http://semstats.org/2013/call-for-papers">SemStats 2013 Call for Papers</a></cite></li>
+                                        <li>The <cite><a href="http://semstats.org/2013/">SemStats 2013</a></cite> workshop is a <code class="highlight-reply_of">sioc:reply_of</code> to <a href="http://iswc2013.semanticweb.org/content/call-workshops.html">ISWC 2013 Call for Workshops</a></li>
+                                        <li>The SemStats 2013 workshop also <code class="highlight-hasPart">schema:hasPart</code> <cite><a href="http://semstats.org/2013/call-for-papers">SemStats 2013 Call for Papers</a></cite></li>
                                         <li>SemStats 2013 Call for Papers then contains statements like: description, topic of interest, motivation, keywords, event data, related links, organizing committee and affiliations.</li>
                                     </ul>
                                 </div>
@@ -689,15 +700,15 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
 <code>@prefix schema: &lt;https://schema.org/&gt; .</code>
 <code>@prefix bibo: &lt;http://purl.org/ontology/bibo/&gt; .</code>
 <code>&lt;http://semstats.org/2013/&gt;</code>
-<code>  sioc:reply_of &lt;http://iswc2013.semanticweb.org/content/call-workshops.html&gt;</code>
-<code>  schema:hasPart &lt;http://semstats.org/2013/call-for-papers&gt;</code>
+<code>  sioc:reply_of &lt;http://iswc2013.semanticweb.org/content/call-workshops.html&gt; ;</code>
+<code>  <strong class="highlight-hasPart">schema:hasPart</strong> &lt;http://semstats.org/2013/call-for-papers&gt; .</code>
 <code>&lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
-<code>  sioc:reply_of &lt;http://semstats.org/2013/call-for-papers&gt;</code>
-<code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt;</code>
+<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://semstats.org/2013/call-for-papers&gt; ;</code>
+<code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt; .</code>
 <code>&lt;http://ceur-ws.org/Vol-1549&gt;</code>
-<code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
+<code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt; .</code>
 <code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
-<code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
+<code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt; .</code>
                                 </pre>
                                 <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings.</figcaption>
                             </figure>
