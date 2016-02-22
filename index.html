@@ -472,19 +472,17 @@ CL: yes, why not</mark></p>
 
                                     <p>Centralized archival is a single-point of failure for long-term persistence. Consider the case an academic article is under a particular URL, as mentioned above, this could be temporarely unavailable, under attack or the service has ceised to exist. This can have two forms: (1) self-archival and (2) third-party archival. In the case of self-archival, the author is responsible for archival of the content mantaining his service and domain name. This strategy clearly has non-trivial disadvantages: techical expertise is required, mantainance cost, and content may disappear soon after the author post-mortem. In the case of third-party archival, although the responsibilities are delegated to the service used, this may ceise to exist long term, or may eventually turn untrusted and act against the interest of the user, for example altering the content.</p>
 
+                                    <p><mark>I havent completed this part, but these are the key sentences, do glue!</mark>
+                                    A well-known solution to the problem ^ is to have a decentralized architecture where documents are replicated on multiple servers. In case the URL is not reacheable the reader should be able to get the content from who else has a copy. 
 
-                                    <p>##### There is a need of distributing the content
-                                    - Distributed: Replicating the content
-                                      - There is a need to make the content easy to distribute.
-                                      - Hosted in multiple places
-                                      - LOCKSS (Lot of copies keep stuff safe) - used by many libraries and projects: e.g. Perma.cc
-                                      - Having the ability to retrieve it, point to it in case one of the place is down
-                                    - the open problem of naming
-                                      - current system using centralized naming
-                                      - distribute naming (that everyone agrees upon)
-                                        - hashing (DHT, see IPFS)
-                                        - consensus (mostly built by offloading blockchains see BlockStore)
-                                      - who has the data? trusty uris can come handy</p>
+                                    "Lot of copies keep stuff safe" is the idea behind LOCKSS, a project that aims at creating a network of library and publishers that replicate scientific articles amongst the others.<mark>(http://www.lockss.org/locksswp/wp-content/uploads/2015/06/bfp-2015-0022-1.pdf)</mark>, based on this idea there is other work that uses existing distributed networks such as Bittorrent <mark>[http://www.dlib.org/dlib/march14/markman/03markman.html]</mark>.</p>
+
+                                    <p>When the content is distributed across a decentralized network then documents must have pointers that the network agrees upon. This can be simply done by naming documents via their hashes. In addition to naming, hashing comes handy when proving the the file hasn't been altered by nodes in the network, since verification would mean re-hashing the file, technologies that use this are decentralized Hash tables (see IPFS). Recent work (http://iswc2015.semanticweb.org/sites/iswc2015.semanticweb.org/files/93660593.pdf) show how we can use special URIs, called <em>trusty-uris</em> that benefit the same technique and still be compatible on the web. (mention the problem w/ hashes)
+
+                                    There is other work on how to map readable names to hashes, some built on consensus (link to Blockstore)
+
+                                    The role of the author becomes to distribute the content, the role of academia is to preserve it in a decentralized manner
+                                    </p>
 
                                 </div>
                             </section>
