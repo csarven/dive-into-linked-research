@@ -611,7 +611,20 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     </figure>
 
                                     <figure class="listing" id="solid-notification" rel="schema:hasPart" resource="#solid-notification">
-                                        <pre about="#solid-notification" property="schema:description" typeof="fabio:Script"><code>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</code><code>@prefix schema: &lt;https://schema.org/&gt; .</code><code>@prefix solid: &lt;http://www.w3.org/ns/solid/terms#&gt; .</code><code>@prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .</code><code>@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .</code><code>@prefix c: &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; .</code><code>&lt;&gt; a solid:<strong class="highlight-notification">Notification</strong> , as:Announce ;</code><code>  as:<strong class="highlight-object">object</strong> &lt;http://example.net/foo/abc123&gt; ;</code><code>  as:<strong class="highlight-context">context</strong> oa:hasTarget ;</code><code>  as:<strong class="highlight-target">target</strong> &lt;http://example.org/article#conclusions&gt; ;</code><code>  as:updated "2016-01-24T00:00:00Z"^^xsd:dateTime ;</code><code>  as:actor &lt;http://csarven.ca/#i&gt; ;</code><code>  schema:license c: .</code>
+                                        <pre about="#solid-notification" property="schema:description" typeof="fabio:Script">
+<code>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</code>
+<code>@prefix schema: &lt;https://schema.org/&gt; .</code>
+<code>@prefix solid: &lt;http://www.w3.org/ns/solid/terms#&gt; .</code>
+<code>@prefix as: &lt;http://www.w3.org/ns/activitystreams#&gt; .</code>
+<code>@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .</code>
+<code>@prefix c: &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; .</code>
+<code>&lt;&gt; a solid:<strong class="highlight-notification">Notification</strong> , as:Announce ;</code>
+<code>  as:<strong class="highlight-object">object</strong> &lt;http://example.net/foo/abc123&gt; ;</code>
+<code>  as:<strong class="highlight-context">context</strong> oa:hasTarget ;</code>
+<code>  as:<strong class="highlight-target">target</strong> &lt;http://example.org/article#conclusions&gt; ;</code>
+<code>  as:updated "2016-01-24T00:00:00Z"^^xsd:dateTime ;</code>
+<code>  as:actor &lt;http://csarven.ca/#i&gt; ;</code>
+<code>  schema:license c: .</code>
                                         </pre>
                                         <figcaption property="schema:name">A Solid inbox notification.</figcaption>
                                     </figure>
@@ -623,7 +636,10 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     <p>A dokieli research article can contain a relationship e.g., <code class="highlight-reply_of">sioc:reply_of</code>, to the call for contributions. That is, every scholarly article can be written in context of the conferences’ or journals’ call for contributions e.g, the current article on Linked Research is a reply to <a href="http://ht.acm.org/ht2016/calls">ACM Hypertext 2016 Calls for Contributions</a>, and contains an RDF statement as follows:</p>
 
                                     <figure class="listing" id="linked-research-in-reply-to-acm-hypertext" rel="schema:hasPart" resource="#linked-research-in-reply-to-acm-hypertext">
-                                        <pre about="#linked-research-in-reply-to-acm-hypertext" property="schema:description" typeof="fabio:Script"><code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code><code>&lt;http://csarven.ca/linked-research-scholarly-communication&gt;</code><code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://ht.acm.org/ht2016/calls&gt; .</code>
+                                        <pre about="#linked-research-in-reply-to-acm-hypertext" property="schema:description" typeof="fabio:Script">
+<code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
+<code>&lt;http://csarven.ca/linked-research-scholarly-communication&gt;</code>
+<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://ht.acm.org/ht2016/calls&gt; .</code>
                                         </pre>
                                         <figcaption property="schema:name">Current article in reply to ACM Hypertext 2016 Call for Contributions (shown using the RDF Turtle syntax).</figcaption>
                                     </figure>
@@ -677,7 +693,20 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                             <p><mark>TODO: Use Turtle below or the graph view?</mark></p>
 
                             <figure class="listing" id="article-calls-proceedings" rel="schema:hasPart" resource="#article-calls-proceedings">
-                                <pre about="#article-calls-proceedings" property="schema:description" typeof="fabio:Script"><code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code><code>@prefix schema: &lt;https://schema.org/&gt; .</code><code>@prefix bibo: &lt;http://purl.org/ontology/bibo/&gt; .</code><code>&lt;http://semstats.org/2013/&gt;</code><code>  sioc:reply_of &lt;http://iswc2013.semanticweb.org/content/call-workshops.html&gt; ;</code><code>  <strong class="highlight-hasPart">schema:hasPart</strong> &lt;http://semstats.org/2013/call-for-papers&gt; .</code><code>&lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code><code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://semstats.org/2013/call-for-papers&gt; ;</code><code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt; .</code><code>&lt;http://ceur-ws.org/Vol-1549&gt;</code><code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt; .</code><code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code><code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt; .</code>
+                                <pre about="#article-calls-proceedings" property="schema:description" typeof="fabio:Script">
+<code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
+<code>@prefix schema: &lt;https://schema.org/&gt; .</code>
+<code>@prefix bibo: &lt;http://purl.org/ontology/bibo/&gt; .</code>
+<code>&lt;http://semstats.org/2013/&gt;</code>
+<code>  sioc:reply_of &lt;http://iswc2013.semanticweb.org/content/call-workshops.html&gt; ;</code>
+<code>  <strong class="highlight-hasPart">schema:hasPart</strong> &lt;http://semstats.org/2013/call-for-papers&gt; .</code>
+<code>&lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
+<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://semstats.org/2013/call-for-papers&gt; ;</code>
+<code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt; .</code>
+<code>&lt;http://ceur-ws.org/Vol-1549&gt;</code>
+<code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt; .</code>
+<code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
+<code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt; .</code>
                                 </pre>
                                 <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings.</figcaption>
                             </figure>
