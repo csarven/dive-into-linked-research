@@ -286,6 +286,63 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     <mark>CL: In this context we could more generally speak about measuring <em>quality</em>.</mark></p>
                                 </div>
                             </section>
+
+                            <section id="user-stories" rel="schema:hasPart" resource="#user-stories">
+                                <h3 property="schema:name">User Stories</h3>
+                                <div datatype="rdf:HTML" property="schema:description">
+                                    <p>We describe an <em>acid test</em> so that systems can be evaluated against the requirements of Linked Research previously outlined. The evaluation is intended to verify the openness, accessibility, decentralisation, interoperability of approaches in scholarly communication, and takes the form of a series of user stories which must be feasible to carry out with the proposed system. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
+
+                                    <p>This acid test is derived from <cite><a href="http://csarven.ca/enabling-accessible-knowledge#acid-test" rel="prov:wasDerivedFrom">Enabling Accessible Knowledge Acid Test</a></cite>.</p>
+
+                                    <dl id="user-stories-challenges">
+                                        <dt>Challenges</dt>
+                                        <dd>
+                                            <ol>
+                                                <li id="user-stories-challenge-availability">Alice makes her article available on the Web with the research objects available at fine granularity e.g., variables of a hypothesis.</li>
+
+                                                <li id="user-stories-challenge-reference">Beverly refers to and discusses Alice’s research objects from her own research article e.g., an argument against a methodological step.</li>
+
+                                                <li id="user-stories-challenge-annotation">Carol annotates Beverly’s argument on Alice’s work by suggesting that it was misinterpreted, and stores the note publicly at her own personal content store.</li>
+
+                                                <li id="user-stories-challenge-review">Darmok and Eve write reviews for Beverly’s article and store them at their preferred locations respectively; Beverly is notified about the reviews.</li>
+
+                                                <li id="user-stories-challenge-call-for-contributions">Frank publicly announces a call for contributions for an academic conference. He specifies the scope of the call and desired qualities of the submissions.</li>
+
+                                                <li id="user-stories-challenge-reply-to-call">Guinan notices Frank’s call for contributions to be suitable for her research article, and submits a link to her work. In her article, Guinan states that it was a reply to the call.</li>
+
+                                                <li id="user-stories-challenge-peer-review">Frank assigns Herman, Inigo, and Jean-Luc to peer-review Guinan’s work. Herman and Inigo both write their reviews so that only Frank (and Guinan?) may read them; meanwhile Jean-Luc makes his review public.</li>
+
+                                                <li id="user-stories-challenge-proceedings">Kuhn is assisting Frank, and compiles a list of articles which meet the requirements and standards of Frank’s call for contributions based on reviews and public feedback. He sends alerts to various institutions that the proceedings are ready to be archived.</li>
+
+                                                <li id="user-stories-challenge-library">Leo manages scholarly archiving at his institution; he retrieves and catalogues the articles which were mentioned for library indexing.</li>
+
+                                                <li id="user-stories-challenge-interaction">Marshall is a PhD student; he uses the interactive components in Beverly’s article by changing the parameters and rerunning an experiment and decides to expand on this for his own work.</li>
+
+                                                <li id="user-stories-challenge-views">Nelson reads Alice’s article from his handheld device, and prints a single page summary.</li>
+
+                                                <li id="user-stories-challenge-archives">Ophelia notices the new index of articles in response to Frank's call and selects the ones she is interested in for her personal collection of potential references.</li>
+
+                                                <li id="user-stories-challenge-discovery">Picard sees the peer-reviews about Guinan's work and proceeds to discover further information about the qualifications and experience of the reviewers.</li><li id="user-stories-challenge-discovery">At Frank’s conference, Q listens to the presentations from the authors and makes personal notes about the work; he occasionally makes his observations visible to the the authors or rest of the conference audience.</li>
+                                            </ol>
+                                        </dd>
+                                    </dl>
+
+                                    <dl id="user-stories-assumption">
+                                        <dt>Assumptions</dt>
+                                        <dd>
+                                            <ul>
+                                                <li id="user-stories-assumption-publishing">Authoring and publishing mechanisms have at least two different tool stacks.</li>
+                                                <li id="user-stories-assumption-consuming">Consuming applications have at least two different tool stacks.</li>
+                                                <li id="user-stories-assumption-free-and-open-access">Information and interactions are available for free with open access with attribution for retrieval and reuse.</li>
+                                                <li id="user-stories-assumption-human-machine-readable">Information are both human and machine-readable.</li>
+                                                <li id="user-stories-assumption-open-standards">All interactions are according to published open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
+                                                <li id="user-stories-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
+                                            </ul>
+                                            <span content="There is no spoon." property="schema:description" rel="schema:hasPart" resource="#user-stories-assumption-spoon" typeof="doco:Sentence"></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </section>
                         </div>
                     </section>
 
@@ -391,47 +448,51 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     Linking between articles enhances discoverability, and coupling this with social notifications <cite><a href="http://www.w3.org/TR/activitystreams-core/">ActivityStreams 2.0</a></cite> is an appropriate emerging W3C standard which would enable interoperability with other decentralised social systems) allows authors to track citations, the reach of their work, and receive and display responses and feedback.</p>
                                   <p>It is important to include licensing information with published work in order to promote fair use and remixing for content creators.
                                     We do not presume to dictate the most appropriate licenses for academic work to be released under, however it is worth emphasising that establishing common practices around open licenses such as those from the Creative Commons family is important to encourage a culture of openness and reuse, which, as we previously discussed, is important for a healthy scientific progress.</p>
+
+
+                                    <section id="call-for-contributions" inlist="" rel="schema:hasPart" resource="#call-for-contributions">
+                                        <h4 property="schema:name">Calls for Contributions</h4>
+                                        <div datatype="rdf:HTML" property="schema:description">
+                                            <p><mark>TODO: Christoph, Sarven</mark></p>
+
+                                            <p>Calls for contributions to journals and conferences are usually published online, and an increasing number of venues are accepting HTML submissions.
+                                              A step further to encourage ownership and control over research work is to accept submission by URL, whereby the authors submit notifications of a ‘reply’ to a call.</p>
+
+                                            <p>While most calls for contributions are available in plain and simple HTML, they are typically not semantically enriched.
+                                              Making their semantics explicit and then publishing them in compliance with the Linked Data design principles would improve their interlinkability with other knowledge graphs such as research articles or social feedback.
+                                              Composing the call with additional structured data, for instance with concepts from controlled taxonomies (e.g., SKOS, DBpedia), topical requirements, and a list of contributors for peer-reviewing, enables better mining of such data.
+                                              It can be purposed towards discovery calls suitable for a paper draft (i.e. <em>venue recommendation</em>), relating one call with similar calls, as well as watching the evolution of topical trends in research communities.<mark>Osborne, Francesco; Scavo, Beppe and Motta, Enrico: Identifying  diachronic  topic-based  research  communities by clustering shared research trajectories, Research Track, ESWC 2014, http://oro.open.ac.uk/39666/3/ESWC2014_CR</mark></p>
+                                        </div>
+                                    </section>
+
+                                    <section id="peer-reviews-and-interactions" inlist="" rel="schema:hasPart" resource="#peer-reviews-and-interactions">
+                                        <h4 property="schema:name">Peer-reviews and Interactions</h4>
+                                        <div datatype="rdf:HTML" property="schema:description">
+                                          <p>Reviewers are able to see replies to a call and in turn leave their reviews as replies to the submitted articles.
+                                            Peer-reviews are valuable contributions to the academic ecosystem, and we encourage reviewers to publish in a Web space that they control (or trust) and do so publicly so that the community may benefit.</p>
+                                          <p>...Social media techniques and strategies; people are used to sharing stuff and receiving notifications now, so why not harness that for research.</p>
+                                        </div>
+                                    </section>
+
+                                    <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
+                                        <h4 property="schema:name">Proceedings</h4>
+                                        <div datatype="rdf:HTML" property="schema:description">
+                                            <p><mark>TODO: Christoph</mark></p>
+
+                                            <p>Editors and committees who issue calls for contributions are able to take into account reviews and discussion on work they were notified about, and select the articles to aggregate and formally endorse as part of their journal or event proceedings.
+                                              The same Web-based tooling which allowed authoring of articles, calls and reviews and notifications of responses in the first place can be purposed to automatically assemble and re-publish the chosen work as a collection, which can in turn be shared and responded to.</p>
+                                        </div>
+                                    </section>
+
                                 </div>
                             </section>
 
-                            <section id="call-for-contributions" inlist="" rel="schema:hasPart" resource="#call-for-contributions">
-                                <h3 property="schema:name">Calls for Contributions</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph, Sarven</mark></p>
 
-                                    <p>Calls for contributions to journals and conferences are usually published online, and an increasing number of venues are accepting HTML submissions.
-                                      A step further to encourage ownership and control over research work is to accept submission by URL, whereby the authors submit notifications of a ‘reply’ to a call.</p>
-
-                                    <p>While most calls for contributions are available in plain and simple HTML, they are typically not semantically enriched.
-                                      Making their semantics explicit and then publishing them in compliance with the Linked Data design principles would improve their interlinkability with other knowledge graphs such as research articles or social feedback.
-                                      Composing the call with additional structured data, for instance with concepts from controlled taxonomies (e.g., SKOS, DBpedia), topical requirements, and a list of contributors for peer-reviewing, enables better mining of such data.
-                                      It can be purposed towards discovery calls suitable for a paper draft (i.e. <em>venue recommendation</em>), relating one call with similar calls, as well as watching the evolution of topical trends in research communities.<mark>Osborne, Francesco; Scavo, Beppe and Motta, Enrico: Identifying  diachronic  topic-based  research  communities by clustering shared research trajectories, Research Track, ESWC 2014, http://oro.open.ac.uk/39666/3/ESWC2014_CR</mark></p>
-                                </div>
-                            </section>
-
-                            <section id="interactions" inlist="" rel="schema:hasPart" resource="#interactions">
-                                <h3 property="schema:name">Peer-reviews and Interactions</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                  <p>Reviewers are able to see replies to a call and in turn leave their reviews as replies to the submitted articles.
-                                    Peer-reviews are valuable contributions to the academic ecosystem, and we encourage reviewers to publish in a Web space that they control (or trust) and do so publicly so that the community may benefit.</p>
-                                  <p>...Social media techniques and strategies; people are used to sharing stuff and receiving notifications now, so why not harness that for research.</p>
-                                </div>
-                            </section>
 
                             <section id="provenance" inlist="" rel="schema:hasPart" resource="#provenance">
                                 <h3 property="schema:name">Provenance</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: .. </mark></p>
-                                </div>
-                            </section>
-
-                            <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
-                                <h3 property="schema:name">Proceedings</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Christoph</mark></p>
-
-                                    <p>Editors and committees who issue calls for contributions are able to take into account reviews and discussion on work they were notified about, and select the articles to aggregate and formally endorse as part of their journal or event proceedings.
-                                      The same Web-based tooling which allowed authoring of articles, calls and reviews and notifications of responses in the first place can be purposed to automatically assemble and re-publish the chosen work as a collection, which can in turn be shared and responded to.</p>
                                 </div>
                             </section>
 
@@ -498,63 +559,6 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     <p>Personal collections of references. How this can be integrated into tooling.</p>
                                 </div>
                             </section>
-                        </div>
-                    </section>
-
-                    <section id="user-stories" rel="schema:hasPart" resource="#user-stories">
-                        <h2 property="schema:name">User Stories</h2>
-                        <div datatype="rdf:HTML" property="schema:description">
-                            <p>We describe an <em>acid test</em> so that systems can be evaluated against the requirements of Linked Research previously outlined. The evaluation is intended to verify the openness, accessibility, decentralisation, interoperability of approaches in scholarly communication, and takes the form of a series of user stories which must be feasible to carry out with the proposed system. This test does not mandate a specific technology, therefore the challenge can be met by different solutions. It is intended to test the design philosophies so that different approaches may be closer to passing the <em>independent invention</em> test.</p>
-
-                            <p>This acid test is derived from <cite><a href="http://csarven.ca/enabling-accessible-knowledge#acid-test" rel="prov:wasDerivedFrom">Enabling Accessible Knowledge Acid Test</a></cite>.</p>
-
-                            <dl id="user-stories-challenges">
-                                <dt>Challenges</dt>
-                                <dd>
-                                    <ol>
-                                        <li id="user-stories-challenge-availability">Alice makes her article available on the Web with the research objects available at fine granularity e.g., variables of a hypothesis.</li>
-
-                                        <li id="user-stories-challenge-reference">Beverly refers to and discusses Alice’s research objects from her own research article e.g., an argument against a methodological step.</li>
-
-                                        <li id="user-stories-challenge-annotation">Carol annotates Beverly’s argument on Alice’s work by suggesting that it was misinterpreted, and stores the note publicly at her own personal content store.</li>
-
-                                        <li id="user-stories-challenge-review">Darmok and Eve write reviews for Beverly’s article and store them at their preferred locations respectively; Beverly is notified about the reviews.</li>
-
-                                        <li id="user-stories-challenge-call-for-contributions">Frank publicly announces a call for contributions for an academic conference. He specifies the scope of the call and desired qualities of the submissions.</li>
-
-                                        <li id="user-stories-challenge-reply-to-call">Guinan notices Frank’s call for contributions to be suitable for her research article, and submits a link to her work. In her article, Guinan states that it was a reply to the call.</li>
-
-                                        <li id="user-stories-challenge-peer-review">Frank assigns Herman, Inigo, and Jean-Luc to peer-review Guinan’s work. Herman and Inigo both write their reviews so that only Frank (and Guinan?) may read them; meanwhile Jean-Luc makes his review public.</li>
-
-                                        <li id="user-stories-challenge-proceedings">Kuhn is assisting Frank, and compiles a list of articles which meet the requirements and standards of Frank’s call for contributions based on reviews and public feedback. He sends alerts to various institutions that the proceedings are ready to be archived.</li>
-
-                                        <li id="user-stories-challenge-library">Leo manages scholarly archiving at his institution; he retrieves and catalogues the articles which were mentioned for library indexing.</li>
-
-                                        <li id="user-stories-challenge-interaction">Marshall is a PhD student; he uses the interactive components in Beverly’s article by changing the parameters and rerunning an experiment and decides to expand on this for his own work.</li>
-
-                                        <li id="user-stories-challenge-views">Nelson reads Alice’s article from his handheld device, and prints a single page summary.</li>
-
-                                        <li id="user-stories-challenge-archives">Ophelia notices the new index of articles in response to Frank's call and selects the ones she is interested in for her personal collection of potential references.</li>
-
-                                        <li id="user-stories-challenge-discovery">Picard sees the peer-reviews about Guinan's work and proceeds to discover further information about the qualifications and experience of the reviewers.</li><li id="user-stories-challenge-discovery">At Frank’s conference, Q listens to the presentations from the authors and makes personal notes about the work; he occasionally makes his observations visible to the the authors or rest of the conference audience.</li>
-                                    </ol>
-                                </dd>
-                            </dl>
-
-                            <dl id="user-stories-assumption">
-                                <dt>Assumptions</dt>
-                                <dd>
-                                    <ul>
-                                        <li id="user-stories-assumption-publishing">Authoring and publishing mechanisms have at least two different tool stacks.</li>
-                                        <li id="user-stories-assumption-consuming">Consuming applications have at least two different tool stacks.</li>
-                                        <li id="user-stories-assumption-free-and-open-access">Information and interactions are available for free with open access with attribution for retrieval and reuse.</li>
-                                        <li id="user-stories-assumption-human-machine-readable">Information are both human and machine-readable.</li>
-                                        <li id="user-stories-assumption-open-standards">All interactions are according to published open standards, with 1) no dependency on proprietary APIs, protocols, or formats, and 2) no commercial dependency or priori relationship between the groups using the workflows and tools involved.</li>
-                                        <li id="user-stories-assumption-prior-knowledge">All interactions are possible without prior knowledge of the user’s environment or configuration (within reason).</li>
-                                    </ul>
-                                    <span content="There is no spoon." property="schema:description" rel="schema:hasPart" resource="#user-stories-assumption-spoon" typeof="doco:Sentence"></span>
-                                </dd>
-                            </dl>
                         </div>
                     </section>
 
@@ -802,14 +806,14 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                     <section id="conclusions" inlist="" rel="schema:hasPart" resource="#conclusions">
                         <h2 about="#conclusions" property="schema:name" typeof="deo:Conclusion">Conclusions</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-							<p>In this article, we have described requirements for truly exploiting the possibilities of the digitization and Internet for scholarly communication. 
-							With Linked Research, we have developed a concept, which fulfils these requirements to a large extend. 
+							<p>In this article, we have described requirements for truly exploiting the possibilities of the digitization and Internet for scholarly communication.
+							With Linked Research, we have developed a concept, which fulfils these requirements to a large extend.
 							We have demonstrated a prototype implementation of the concept for authoring, publishing and consumption of scholarly content, which was already used for drafting and publishing this article.</p>
-							
+
 							<p id="the-five-stars-of-online-journal-articles" rel="schema:hasPart" resource="#the-five-stars-of-online-journal-articles">We believe that our Linked Research approach qualifies under enhanced research communication, and invite the community to verify against the proposed framework for article evaluation in <cite><a href="http://www.dlib.org/dlib/january12/shotton/01shotton.html">The Five Stars of Online Journal Articles</a></cite> [<a class="ref" href="#ref-17">17</a>] or other evaluations as appropriate.</p>
-							
+
 							<p>We see this work as the first step on a larger research and development agenda.
-							We envision a complete ecosystem of Linked Research compatible implementations and interfaces to existing systems (conference and journal management, editorial systems, OA repositories etc.) to emerge. 
+							We envision a complete ecosystem of Linked Research compatible implementations and interfaces to existing systems (conference and journal management, editorial systems, OA repositories etc.) to emerge.
 							Ultimately, we envision that such a Linked Research ecosystem can bring about a revolution in how scholarly knowledge is generated, published, shared and consumed.
 							We hope that the Linked Research concept thus contributes to making scholarly work more efficient and effective by removing media breaks, directly linking of content, ideas and people as well as building the basis for a number of targeted added-value services (e.g. querying, recommendation, adaptation of content).</p>
                         </div>
