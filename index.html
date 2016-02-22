@@ -163,8 +163,8 @@
                             The topic areas are described below, and we have identified several interdependencies between them, whereby aspects of one problem are much more easily solved alongside of or on the back of another.*</p>
 
                             <p><mark>*Idea: a diagram of dependencies; how solving one of these areas would facilitate the next etc?<br />
-CL: yes, why not</mark>
-SC: is this table 1 below "Technologies     Requirements    Concepts    Stakeholders" (and <a href="https://docs.google.com/drawings/d/16eySitamd4hHFF_Ev0y5p1ziuHRFgnAAfRe_txvFkkY/edit?usp=sharing">proposed diagram</a> which needs to be completed)?</p>
+CL: yes, why not.<br />
+SC: is this table 1 below "Technologies     Requirements    Concepts    Stakeholders" (and <a href="https://docs.google.com/drawings/d/16eySitamd4hHFF_Ev0y5p1ziuHRFgnAAfRe_txvFkkY/edit?usp=sharing">proposed diagram</a> which needs to be completed)?</mark></p>
 
                           <p>Socially, Linked Research is embedded within the Open Science movement [Neylon C, Wu S. Open Science: tools, approaches, and implications. Pac Symp Biocomput. 2009:540-4].
                             However, it explicitly calls out the role of technical choices in meeting open science goals.</p>
@@ -189,7 +189,7 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                   <p><strong>Access control and attribution.</strong> In many fields, researchers are discouraged from publishing unfinished, inconclusive or ongoing work, or publishing outside of ‘official’ venues by the risk that their work will be plagiarised or reused by another without permission or due credit [<mark>cite</mark>].
                                     To facilitate open scientific discourse, technologies for publishing must afford a trust that sharing work will not disadvantage the author.
                                     Thus the author must have means to unambiguously attach their identifying information to their own work, and selectively grant and revoke access to others during the research process.
-                                    Presently there are many services offering identifiers to creators of scholarly work: the <a href="http://id.loc.gov/">Library of Congress Linked Data Service</a> for personal and family names and corporate bodies, <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), <a href="http://isni.org/">International Standard Name Identifier</a> (ISNI) and the Getty’s <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Union List of Artist Names</a> (ULAN), ResearchGate, Google Scholar, Scopus Author Identifier (Elsevier), ResearcherID (Thomson Reuters) and ORCID (Open Researcher and Contributor ID).
+                                    Presently there are many services offering identifiers to creators of scholarly work: the <a href="http://id.loc.gov/">Library of Congress Linked Data Service</a> for personal and family names and corporate bodies, <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), <a href="http://isni.org/">International Standard Name Identifier</a> (ISNI) and the Getty’s <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Union List of Artist Names</a> (ULAN), <a href="https://www.researchgate.net/">ResearchGate</a>, Google Scholar, <a href="https://www.elsevier.com/solutions/scopus">Scopus Author Identifier</a> (Elsevier), <a href="http://www.researcherid.com/">ResearcherID</a> (Thomson Reuters) and <a href="https://orcid.org/">ORCID</a> (Open Researcher and Contributor ID).
                                     These systems are minimally, if at all, interoperable without human intervention, so creating multiple profiles is common practice.
                                     Some of these systems support – not via open standards but by individual solutions – certain others, e.g., ORCID can import data from ResearcherID.
                                     It is part of our vision to empower authors to choose an identity provider they trust, and use a single preferred identifier across their publications.</p>
@@ -396,7 +396,7 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                 </div>
                             </section>
 
-                            <section id="call-for-papers">
+                            <section id="call-for-contributions" inlist="" rel="schema:hasPart" resource="#call-for-contributions">
                                 <h3 property="schema:name">Calls for Contributions</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                     <p><mark>TODO: Christoph, Sarven</mark></p>
@@ -437,24 +437,17 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                 </div>
                             </section>
 
-                            <section id="archives-and-preservation" inlist="" rel="schema:hasPart" resource="#archives-and-preservation">
-                                <h3 property="schema:name">Archives and preservation</h3>
+                            <section id="archival" inlist="" rel="schema:hasPart" resource="#archival">
+                                <h3 property="schema:name">Archival</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: ?</mark></p>
-                                    <p>We already see many efforts to archive publications, academic and otherwise [Web archives e.g., http://www.openarchives.org/ , http://archive.org/ and specific to libraries and archives: https://archive-it.org/ , maybe http://arxiv.org/ .. and another wayback machine https://github.com/iipc/openwayback/wiki . https://www.loc.gov/webarchiving/ . tools w web archiving: http://www.archivesspace.org/overview and https://wiki.archivematica.org/Overview , and more https://www.clockss.org/ .. http://zenodo.org/].
+                                    <p><mark>TODO: This section needs to be more coherent</mark></p>
+                                    <p>We already see many efforts to archive publications, academic and otherwise [<mark>Web archives e.g., http://www.openarchives.org/ , http://archive.org/ and specific to libraries and archives: https://archive-it.org/ , maybe http://arxiv.org/ .. and another wayback machine https://github.com/iipc/openwayback/wiki . https://www.loc.gov/webarchiving/ . tools w web archiving: http://www.archivesspace.org/overview and https://wiki.archivematica.org/Overview , and more https://www.clockss.org/ .. http://zenodo.org/</mark>].
                                       In a decentralised system, these efforts are even more important to preserve copies and backups of research.</p>
                                     <p>We envision a two-way system.
                                       Organisations such as libraries and universities can actively create collections by selecting, sorting and storing published articles.
                                       Additionally, authors can submit work themselves to archives, for either consideration by curators or automatic inclusion for backup.
-                                      Currently in order to do this scholars may submit their work manually into different systems, which can result in inconsistent or infrequent updates [#def456].
+                                      Currently in order to do this scholars may submit their work manually into different systems, which can result in inconsistent or infrequent updates.
                                       To improve on this, the same open Web protocols as described for calls and proceedings can be used to automatically notify chosen archives whenever a new piece of work or dataset is ready.</p>
-                                </div>
-
-                                <div class="note">
-                                    <dl about="#def456" id="def456">
-                                        <dt property="schema:name">def456</dt>
-                                        <dd datatype="rdf:HTML" property="schema:description">Panigabutra-Roberts, Anchalee. 2015. <a href="http://swib.org/swib15/slides/panigabutra_researchers.pdf">Researcher Identity Management in the 21st Century Networked World: A Pilot Study of American University in Cairo Faculty</a>. Presented at Semantic Web in Libraries Conference, November 24, 2015, Hamburg, Germany.</dd>
-                                    </dl>
                                 </div>
                             </section>
 
@@ -462,10 +455,9 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                             <section id="persistence-and-preservation" inlist="" rel="schema:hasPart" resource="#persistence-and-preservation">
                                 <h3 property="schema:name">Persistence and Preservation</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>CL: What's the difference between persistence and “archiving and preservation”?</mark></p>
                                     <p>Ensuring the persistence of scientific results through time is of fundamental importance: readers should be able to access articles published in the past, authors should be able to point to articles <mark>(or statements?)</mark> that will be accessible in the future. As of today, archiving and preserving scientific documents are commonly considered the responsibilities of classical publishing companies. In the context of Linked Research, where decentralized authoring and publishing is promoted, the responsibility are to be re-evaluated: authors can choose where to publish their results online at a service of their choice. For example, authors may choose to provide their publications on their website - however, this does not necessarily means that the content is going to be persistent through time. In this section we will explore the problems of centralized (and personal) archival and the need of a distributed infrastructure.</p>
 
-                                    <p>Persisting academic publishing on long-term on the web has two main challenges: (1) availability on the Internet (2) presence on the Web. In the first case, we have to ensure that the documents and the data related to it are available on a server connected to the Internet. The challenge consist in making the server available, in other words, maintaining the server and defending it from possible attacks. In the second case, we have to provide a long-term name, in the form of URLs, that will point to these documents. The challenge consist in being present on the Web with URLs that don't change; the long-term obstacle to this is the URL expirations, <mark>revocation (in case of someone taking legal action)</mark> and finally censorship. <mark>[Reference to cool uris dont change]</mark></p>
+                                    <p>Persisting academic publishing on long-term on the web has two main challenges: (1) availability on the Internet (2) presence on the Web. In the first case, we have to ensure that the documents and the data related to it are available on a server connected to the Internet. The challenge consist in making the server available, in other words, maintaining the server and defending it from possible attacks. In the second case, we have to provide a long-term name, in the form of URLs, that will point to these documents. The challenge consist in being present on the Web with URLs that don't change; the long-term obstacle to this is the URL expirations, <mark>revocation (in case of someone taking legal action)</mark> and finally censorship. <mark>[Berners-Lee, T.: Cool URIs don't change, W3C, 1998, https://www.w3.org/Provider/Style/URI.html]</mark></p>
 
                                     <p>Centralized archival is a single-point of failure for long-term persistence. Consider the case an academic article is under a particular URL, as mentioned above, this could be temporarily unavailable, under attack or the service has ceased to exist. This can have two forms: (1) self-archival and (2) third-party archival. In the case of self-archival, the author is responsible for archival of the content maintaining his service and domain name. This strategy clearly has non-trivial disadvantages: technical expertise is required, maintenance cost, and content may disappear soon after the author post-mortem. In the case of third-party archival, although the responsibilities are delegated to the service used, this may cease to exist long term, or may eventually turn untrusted and act against the interest of the user, for example altering the content.</p>
 
