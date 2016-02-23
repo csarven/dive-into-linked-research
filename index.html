@@ -51,7 +51,7 @@
 
                 <dl id="document-identifier">
                     <dt>Document ID</dt>
-                    <dd><a href="http://example.org/article" rel="owl:sameAs">http://example.org/article</a></dd>
+                    <dd><a href="http://csarven.ca/linked-research-scholarly-communication" rel="owl:sameAs">http://csarven.ca/linked-research-scholarly-communication</a></dd>
                 </dl>
 
                 <dl id="document-inbox">
@@ -713,13 +713,13 @@
                         <h2 property="schema:name">Related Implementations</h2>
                         <div datatype="rdf:HTML" property="schema:description">
                           <p>Taking the Linked Research requirements as a baseline and the acid test as a tool, we reviewed existing related systems with regard to how well they satisfy the requirements.
-                            Table <mark>TODO cross-reference</mark> shows the results of profiling the systems against the requirements using the acid test.</p>
+                            Table <a href="#comparison-publishing-consuming-systems">1</a> shows the results of profiling the systems against the requirements using the acid test.</p>
 
-                            <table class="columns-based">
+                            <table id="table-comparison-publishing-consuming-systems" class="comparison-columns">
                                 <caption>Comparison of publishing and consuming systems</caption>
                                 <thead>
                                     <tr>
-                                        <th>System and tooling</th>
+                                        <th>System/tooling</th>
                                         <th><abbr title="Decentralised authoring and publishing">DAaP</abbr></th>
                                         <th><abbr title="Access control and attribution">ACaA</abbr></th>
                                         <th><abbr title="Provenance and accountability">PaA</abbr></th>
@@ -742,6 +742,8 @@
                                 <tfoot>
                                     <tr>
                                         <td colspan="18">
+                                            <p>* Open Science Framework (OSF) is <q>one centralised location</q> which integrates with Dropbox, GitHub, Amazon Web Services, Box, Google Drive, Figshare, the Dataverse project, Mendeley</p>
+
                                             <dl class="abbr">
                                                 <dt>ACaA</dt><dd>Access control and attribution</dd>
                                                 <dt>AaPW</dt><dd>Authoring and publication workflow</dd>
@@ -756,26 +758,50 @@
                                                 <dt>IC</dt><dd>Interactive content</dd>
                                                 <dt>IMaRS</dt><dd>Impact metrics and reward system</dd>
                                                 <dt>IoS</dt><dd>Integration of semantics</dd>
-                                                <dt>M</dt><dd>Multimedia</dd><dt>PaA</dt>
-                                                <dd>Provenance and accountability</dd>
+                                                <dt>M</dt><dd>Multimedia</dd>
+                                                <dt>PaA</dt><dd>Provenance and accountability</dd>
                                                 <dt>PaP</dt><dd>Persistence and preservation</dd>
                                                 <dt>SaSI</dt><dd>Sharing and social interactions</dd>
                                             </dl>
-
-                                            <p>* Open Science Framework "one centralised location" ... Integrates with Dropbox, GitHub, Amazon Web Services, Box, Google Drive, Figshare, the Dataverse project, Mendeley</p>
                                         </td>
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr><th>dokieli + Solid</th></tr>
-                                    <tr><th>Open Science Framework<sup><a class="ref-footnote" href="#profile-open-science-framework-foot">*</a></sup></th></tr>
-                                    <tr><th>WordLift</th></tr>
-                                    <tr><th>Authorea</th></tr>
-                                    <tr><th>Google Docs</th></tr>
-                                    <tr><th>myExperiment</th></tr>
-                                    <tr><th>eLifescience</th></tr>
-                                    <tr><th>Thinklab</th></tr>
-                                    <tr><th><mark>Add..</mark></th></tr>
+                                    <tr><th><a href="https://dokie.li/">dokieli</a> + <a href="https;//github.com/solid">Solid</a></th>
+                                        <td>✓</td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+                                        <td>✓</td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td></td></tr>
+                                    <tr><th><a href="http://myexperiment.org/">myExperiment</a></th>
+                                        <td></td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+                                        <td>✓</td><td>✓</td><td></td><td></td><td></td>
+                                        <td>✓</td><td></td></tr>
+                                    <tr><th><a href="http://elifesciences.org/">eLife</a></th>
+                                        <td></td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td></td><td></td><td></td><td>✓</td>
+                                        <td>✓</td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td></td></tr>
+                                    <tr><th><a href="https://osf.io/">OSF</a><sup>*</sup></th>
+                                        <td></td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td></td><td></td><td></td><td>✓</td>
+                                        <td>✓</td><td>✓</td><td></td><td></td><td>✓</td>
+                                        <td>✓</td><td></td></tr>
+                                    <tr><th><a href="https://drive.google.com/">Google Drive</a></th>
+                                        <td></td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td></td><td></td><td></td><td>✓</td>
+                                        <td>✓</td><td>✓</td><td></td><td></td><td></td>
+                                        <td>✓</td><td></td></tr>
+                                    <tr><th><a href="https://www.authorea.com/">Authorea</a></th>
+                                        <td></td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td></td><td></td><td></td><td></td>
+                                        <td>✓</td><td>✓</td><td></td><td></td><td></td>
+                                        <td>✓</td><td></td></tr>
+                                    <tr><th><a href="http://thinklab.com/">Thinklab</a></th>
+                                        <td></td><td>✓</td><td>✓</td><td></td><td>✓</td>
+                                        <td>✓</td><td></td><td></td><td></td><td></td>
+                                        <td>✓</td><td>✓</td><td></td><td></td><td></td>
+                                        <td></td><td></td></tr>
                                 </tbody>
                             </table>
                         </div>
