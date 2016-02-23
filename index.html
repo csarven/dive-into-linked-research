@@ -406,7 +406,6 @@
                                     <section id="call-for-contributions" inlist="" rel="schema:hasPart" resource="#call-for-contributions">
                                         <h4 property="schema:name">Calls for Contributions</h4>
                                         <div datatype="rdf:HTML" property="schema:description">
-                                            <p><mark>TODO: Christoph, Sarven</mark></p>
 
                                             <p>Calls for contributions to journals and conferences are usually published online, and an increasing number of venues are accepting HTML submissions.
                                               A step further to encourage ownership and control over research work is to accept submission by URL, whereby the authors submit notifications of a ‘reply’ to a call.</p>
@@ -414,6 +413,7 @@
                                             <p>While most calls for contributions are available in plain and simple HTML, they are typically not semantically enriched.
                                               Making their semantics explicit and then publishing them in compliance with the Linked Data design principles would improve their interlinkability with other knowledge graphs such as research articles or social feedback.
                                               Composing the call with additional structured data, for instance with concepts from controlled taxonomies (e.g., SKOS, DBpedia), topical requirements, and a list of contributors for peer-reviewing, enables better mining of such data.
+
                                               It can be purposed towards discovery calls suitable for a paper draft (i.e. <em>venue recommendation</em>), relating one call with similar calls, as well as watching the evolution of topical trends in research communities [<mark>Osborne, F., Scavo, G., Motta, E.: Identifying  diachronic  topic-based research communities by clustering shared research trajectories, Research Track, ESWC (2014), <a href="http://oro.open.ac.uk/39666/3/ESWC2014_CR">http://oro.open.ac.uk/39666/3/ESWC2014_CR</a></mark>].</p>
                                         </div>
                                     </section>
@@ -421,6 +421,7 @@
                                     <section id="peer-reviews-and-interactions" inlist="" rel="schema:hasPart" resource="#peer-reviews-and-interactions">
                                         <h4 property="schema:name">Peer-reviews and Interactions</h4>
                                         <div datatype="rdf:HTML" property="schema:description">
+                                          <p><mark>TODO</mark></p>
                                           <p>Reviewers are able to see replies to a call and in turn leave their reviews as replies to the submitted articles.
                                             Peer-reviews are valuable contributions to the academic ecosystem, and we encourage reviewers to publish in a Web space that they control (or trust) and do so publicly so that the community may benefit.</p>
                                           <p>...Social media techniques and strategies; people are used to sharing stuff and receiving notifications now, so why not harness that for research.</p>
@@ -470,37 +471,38 @@
                             </section>
 
                             <section id="profiles-and-reputation" inlist="" rel="schema:hasPart" resource="#profiles-and-reputation">
-                                <h3 property="schema:name">Profiles and reputation</h3>
+                                <h3 property="schema:name">Profiles</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>If this section is intended to cover contributor identifiers, it should definitely mention ORCID (strengths and weaknesses...), and maybe even VIAF.</mark></p>
-
-                                    <p><mark>Perhaps mention profile services like https://impactstory.org/ , https://www.researchgate.net/ , https://scholar.google.com/ , https://zenodo.org/ and probably picked random from zillion other services which are ready to hand out an id/account for you . Maybe mention that some services extract the author information from biblio and link that across their systems e.g., http://dblp.uni-trier.de/ . Maybe even contrast to profiles like from GitHub account, given that it is a nice way to see a researcher's work/actual progress.</mark></p>
 
                                     <p>Just as authors can choose domains they trust to identify their work, they can also create URIs to identify themselves. By connecting this identifier to all of their publications, results and impact of the work they are involved with can be traced directly back to them. Researchers can build a profile which automatically includes their published work and their feedback on the work of others.</p>
-
-                                    <p>..Something about current social sites/communities for academics being not interoperable and requiring the same data filled out over and over., and there being no way to aggregate interactions across sites.</p>
-
-                                    <p>... Something about impact metrics for reputation, and there are definitely some references that say social media sharing stuff is actually being considered by institutions now. Mention WebID here or not?</p>
+                                    
+                                    <p>Currently, many academics choose to create professional profiles on centralised systems such as <a href="http://impactstory.com">ImpactStory</a>, <a href="https://scholar.google.com">Google Scholar</a>, <a href="https://researchgate.net">ResearchGate</a>, <a href="https://zenodo.org">Zenodo</a> or <a href="http://academia.edu">Academia.edu</a>. Such systems are poorly integrated with each other, and users frequenty must enter their details repeatedly or choose one system and miss out on potentially connecting with members of others. Similarly from within one system, users cannot see the activities of users in other systems, even though many of the types of social activities afforded by the systems (reading or recommending a paper for example) are the same.</p>
+                                   
+                                   <!-- <p><mark>If this section is intended to cover contributor identifiers, it should definitely mention ORCID (strengths and weaknesses...), and maybe even VIAF.</mark></p>-->
+                                   
+                                   <!--<p><mark>TODO: find reference about impact being measured by social media buzz and write about that when poss</mark></p>-->
                                 </div>
                             </section>
-
+<!--
                             <section id="reuse-and-referencing" inlist="" rel="schema:hasPart" resource="#reuse-and-referencing">
                                 <h3 property="schema:name">Reuse and Referencing</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-
+                                    <p><mark>TODO</mark></p>
                                     <p>Linking to data and granular statements.</p>
+                                    <p>Rerunning experiments and repurposing underlying data.</p>
                                     <p>How articles can show when another academic article has linked to a specific part, and the semantics of the link.</p>
                                     <p>Personal collections of references. How this can be integrated into tooling.</p>
                                 </div>
                             </section>
+-->
                         </div>
                     </section>
 
                     <section id="realisation" inlist="" rel="schema:hasPart" resource="#realisation">
                         <h2 property="schema:name">Realisation</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-                            <p>In this section we examine and exemplify <mark>(is 'examine' accurate? is 'exemplify' too weak or inappropriate for this section?</mark>) our existing implementations, which aim at fulfilling the requirements stated previously.
-                              We pay particular attention to authoring and publishing <mark>(should this include reuse and referencing?)</mark>, peer-reviews and interactions, calls for contributions, academic proceedings, and contributor profiles. <mark>TODO: Expand this intro.</mark></p>
+                            <p>In this section we describe our own implementations, which aim at fulfilling some of the requirements stated previously.
+                              We pay particular attention to rich, semantic authoring, and decentralised publishing of both content, data and feedback. We describe the technologies we used to meet each requirement, and how we combined certain technologies and approaches in novel ways. We conclude with a brief discussion of requirements yet to be met and how we plan to go about tackling these.</p>
 
                             <section id="authoring-and publishing" inlist="" rel="schema:hasPart" resource="#authoring-tools">
                                 <h3 property="schema:name">Authoring and publishing</h3>
@@ -795,16 +797,12 @@
                     <section id="conclusions" inlist="" rel="schema:hasPart" resource="#conclusions">
                         <h2 about="#conclusions" property="schema:name" typeof="deo:Conclusion">Conclusions</h2>
                         <div datatype="rdf:HTML" property="schema:description">
-							<p>In this article, we have described requirements for truly exploiting the possibilities of the digitisation and Internet for scholarly communication.
-							With Linked Research, we have developed a concept, which fulfils these requirements to a large extend.
-							We have demonstrated a prototype implementation of the concept for authoring, publishing and consumption of scholarly content, which was already used for drafting and publishing this article.</p>
+							<p>In this article, we have described requirements for exploiting the possibilities of digitisation and the Web for scholarly communication.
+							Linked Research contains concepts which can be realised by meeting these requirements, and we propose technical solutions for doing so. We demonstrate the feasability of these proposals with a prototype implementation that covers several of the Linked Research concepts, and compare this coverage with existing tooling. We used this prototype, dokieli, for draftind and publishing this article.</p>
 
-							<p id="the-five-stars-of-online-journal-articles" rel="schema:hasPart" resource="#the-five-stars-of-online-journal-articles">We believe that our Linked Research approach qualifies under enhanced research communication, and invite the community to verify against the proposed framework for article evaluation in <cite><a href="http://www.dlib.org/dlib/january12/shotton/01shotton.html">The Five Stars of Online Journal Articles</a></cite> [<a class="ref" href="#ref-17">17</a>] or other evaluations as appropriate.</p>
-
-							<p>We see this work as the first step on a larger research and development agenda.
-							We envision a complete ecosystem of Linked Research compatible implementations and interfaces to existing systems (conference and journal management, editorial systems, OA repositories etc.) to emerge.
-							Ultimately, we envision that such a Linked Research ecosystem can bring about a revolution in how scholarly knowledge is generated, published, shared and consumed.
-							We hope that the Linked Research concept thus contributes to making scholarly work more efficient and effective by removing media breaks, directly linking of content, ideas and people as well as building the basis for a number of targeted added-value services (e.g. querying, recommendation, adaptation of content).</p>
+							<p id="the-five-stars-of-online-journal-articles" rel="schema:hasPart" resource="#the-five-stars-of-online-journal-articles">Linked Research meets the criteria set forth in <cite><a href="http://www.dlib.org/dlib/january12/shotton/01shotton.html">The Five Stars of Online Journal Articles</a></cite> [<a class="ref" href="#ref-17">17</a>] and we see this work as the first step on a larger research and development agenda.
+							We envision an ecosystem of Linked Research compatible implementations and interfaces to existing systems (conference and journal management, editorial systems, OA repositories etc.).
+							Ultimately, we hope that such developments will bring about a revolution in how scholarly knowledge is generated, published, shared and consumed.</p>
                         </div>
                     </section>
 
