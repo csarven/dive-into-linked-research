@@ -368,7 +368,7 @@
 
                                 <figcaption property="schema:name">Linked Research ecosystem.</figcaption>
                             </figure>
-                            
+
                             <figure id="figure-links" rel="schema:hasPart" resource="#figure-links">
                                 <object data="media/images/links.svg" height="297" rel="schema:image" type="image/svg+xml" width="640"><a href="media/images/links.svg"></a></object>
 
@@ -552,22 +552,9 @@
                                     When an annotation is made, dokieli follows the appropriate <code>inbox</code> link and writes a notification there (see <a href="#figure-interactions-create">figure interactions-create</a> for this process and <a href="#solid-notification">listing 1</a> for notification contents).
                                     When the document is loaded, links are followed to all inboxes in order to retrieve interactions there have been notifications about, so that these can be displayed along with the document (<a href="#figure-interactions-display">figure interactions-display</a> and <a href="#figure-dokieli-interactions">figure dokieli-interactions</a>).</p>
 
-                                  <p id="dokieli-notifications">Although providing enriched (meta)data is voluntary, provenance level data like the date on which the request was submitted, who by, and its license, can be purposed towards the verification process as well as for displaying.
-                                    An example Solid inbox <strong class="highlight-notification">Notification</strong> is shown in Listing [<a href="#solid-notification">1</a>], in which <strong class="highlight-object">object</strong> is the URL of an annotation, and <strong class="highlight-context">context</strong> is the type of relation to the <strong class="highlight-target">target</strong> (the conclusions section of an article).</p>
-
                                     <figure id="figure-interactions-create" rel="schema:hasPart" resource="#figure-interactions-create">
                                         <img rel="schema:image" src="media/images/interactions-create.svg" />
                                         <figcaption property="schema:name">What happens when a user creates an interaction on an article.</figcaption>
-                                    </figure>
-
-                                    <figure id="figure-interactions-display" rel="schema:hasPart" resource="#figure-interactions-display">
-                                        <img rel="schema:image" src="media/images/interactions-display.svg" />
-                                        <figcaption property="schema:name">How interactions are displayed on an article.</figcaption>
-                                    </figure>
-
-                                    <figure id="figure-dokieli-interactions" rel="schema:hasPart" resource="#figure-dokieli-interactions">
-                                        <img rel="schema:image" src="media/images/dokieli-interactions.png" />
-                                        <figcaption property="schema:name">Interactions on a document.</figcaption>
                                     </figure>
 
                                     <figure class="listing" id="solid-notification" rel="schema:hasPart" resource="#solid-notification">
@@ -588,6 +575,19 @@
                                         </pre>
                                         <figcaption property="schema:name">A Solid inbox notification.</figcaption>
                                     </figure>
+
+                                    <figure id="figure-interactions-display" rel="schema:hasPart" resource="#figure-interactions-display">
+                                        <img rel="schema:image" src="media/images/interactions-display.svg" />
+                                        <figcaption property="schema:name">How interactions are displayed on an article.</figcaption>
+                                    </figure>
+
+                                    <figure id="figure-dokieli-interactions" rel="schema:hasPart" resource="#figure-dokieli-interactions">
+                                        <img rel="schema:image" src="media/images/dokieli-interactions.png" />
+                                        <figcaption property="schema:name">Interactions on a document.</figcaption>
+                                    </figure>
+
+                                  <p id="dokieli-notifications">Although providing enriched (meta)data is voluntary, provenance level data like the date on which the request was submitted, who by, and its license, can be purposed towards the verification process as well as for displaying.
+                                    An example Solid inbox <strong class="highlight-notification">Notification</strong> is shown in Listing [<a href="#solid-notification">1</a>], in which <strong class="highlight-object">object</strong> is the URL of an annotation, and <strong class="highlight-context">context</strong> is the type of relation to the <strong class="highlight-target">target</strong> (the conclusions section of an article).</p>
 
                                     <p>dokieli itself does not offer a mechanism for authors to manage their notifications or choose which interactions appear, as other applications which are specialised for these tasks are under development as part of the Solid application ecosystem.</p>
 
