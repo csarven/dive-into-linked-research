@@ -496,38 +496,14 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                 </div>
                             </section>
 
-
-
-                            <section id="provenance" inlist="" rel="schema:hasPart" resource="#provenance">
-                                <h3 property="schema:name">Provenance</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: .. </mark></p>
-                                </div>
-                            </section>
-
-                            <section id="archival" inlist="" rel="schema:hasPart" resource="#archival">
-                                <h3 property="schema:name">Archival</h3>
-                                <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: This section needs to be more coherent</mark></p>
-                                    <p>We already see many efforts to archive publications, academic and otherwise [<mark>Web archives e.g., http://www.openarchives.org/ , http://archive.org/ and specific to libraries and archives: https://archive-it.org/ , maybe http://arxiv.org/ .. and another wayback machine https://github.com/iipc/openwayback/wiki . https://www.loc.gov/webarchiving/ . tools w web archiving: http://www.archivesspace.org/overview and https://wiki.archivematica.org/Overview , and more https://www.clockss.org/ .. http://zenodo.org/</mark>].
-                                      In a decentralised system, these efforts are even more important to preserve copies and backups of research.</p>
-                                    <p>We envision a two-way system.
-                                      Organisations such as libraries and universities can actively create collections by selecting, sorting and storing published articles.
-                                      Additionally, authors can submit work themselves to archives, for either consideration by curators or automatic inclusion for backup.
-                                      Currently in order to do this scholars may submit their work manually into different systems, which can result in inconsistent or infrequent updates.
-                                      To improve on this, the same open Web protocols as described for calls and proceedings can be used to automatically notify chosen archives whenever a new piece of work or dataset is ready.</p>
-                                </div>
-                            </section>
-
-
                             <section id="persistence-and-preservation" inlist="" rel="schema:hasPart" resource="#persistence-and-preservation">
-                                <h3 property="schema:name">Persistence and Preservation</h3>
+                                <h3 property="schema:name">Persistence and Archival Preservation</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
                                   <p>Ensuring the persistence of scientific results through time is of fundamental importance: readers should be able to access articles published in the past, authors should be able to point to articles and the statements within that will continue to be accessible in the future.
                                     As of today, archiving and preserving scientific documents are commonly considered the responsibilities of publishers.
                                     In the context of Linked Research, where decentralised authoring and publishing is promoted, responsibilities are to be re-evaluated: authors can publish their results online at a service of their choice, such as their own website. However, persisting academic publishing on long-term on the web has two main challenges which may be difficult for individuals to solve when hosting content themselves: 1) availability on the Internet (keeping the document/data server available, maintaining it, and defending it from attacks), and 2) presence on the Web; namely, maintaining a URL that points to the document/data and that does not change. Long-term obstacles to this include URL expiration, revocation (in case of someone taking legal action) and censorship <mark>[Berners-Lee, T.: Cool URIs don't change, W3C, 1998, https://www.w3.org/Provider/Style/URI.html]</mark>.</p>
 
-                                  <p>Centralised archives are a single point of failure for long-term persistence.
+                                  <p>We already see many efforts at centralised archives, [<mark>Web archives e.g., http://www.openarchives.org/ , http://archive.org/ and specific to libraries and archives: https://archive-it.org/ , maybe http://arxiv.org/ .. and another wayback machine https://github.com/iipc/openwayback/wiki . https://www.loc.gov/webarchiving/ . tools w web archiving: http://www.archivesspace.org/overview and https://wiki.archivematica.org/Overview , and more https://www.clockss.org/ .. http://zenodo.org/</mark>], however these are each a single point of failure for long-term persistence.
                                     In the case of self-archiving, the author is responsible for maintaining their service and domain name.
                                     This strategy clearly has non-trivial disadvantages: technical expertise is required, there are maintenance costs, and content may disappear if the author loses the ability to keep this up.
                                     In the case of third-party archival, although the responsibilities are delegated a service, this may cease to exist long term, or may act against the interest of the user, for example altering the content.</p>
@@ -541,7 +517,11 @@ SC: is this table 1 below "Technologies     Requirements    Concepts    Stakehol
                                     This also allows proof that the the file hasn't been altered by nodes in the network, since verification would mean re-hashing the file.
                                     Recent works show how we can use <cite><a href="http://trustyuri.net/">Trusty URIs</a></cite> to employ hasing techniques whilst remaining compatible on the Web [<mark>Kuhn, T., Chichester, C., Krauthammer, M., Dumontier, M.: Publishing without Publishers: a Decentralized Approach to Dissemination, Retrieval, and Archiving of Data, ISWC 2015, http://iswc2015.semanticweb.org/sites/iswc2015.semanticweb.org/files/93660593.pdf</mark>].</p>
 
-                                    <p>Ultimately in a Linked Research ecosystem, the role of content creators is also to distribute the content, and a role of public institutions in supporting preservation is to provide reliable hosting, addressing and backup in a decentralised manner.</p>
+                                    <p>Ultimately in a Linked Research ecosystem, the role of content creators is also to distribute the content, and a role of public institutions in supporting preservation is to provide reliable hosting, addressing and backup in a decentralised manner. We envision a two-way system.
+                                      Organisations such as libraries and universities can actively create collections by selecting, sorting and storing published articles.
+                                      Additionally, authors can submit work themselves to archives, for either consideration by curators or automatic inclusion for backup.
+                                      Currently in order to do this scholars may submit their work manually into different systems, which can result in inconsistent or infrequent updates.
+                                      To improve on this, the same open Web protocols as described for calls and proceedings can be used to automatically notify chosen archives whenever a new piece of work or dataset is ready.</p>
                                 </div>
                             </section>
 
