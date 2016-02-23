@@ -108,9 +108,9 @@
                         </div>
                     </section>
 
+<!-- TODO: Use CCS 2012
                     <section id="categories-and-subject-descriptors">
                         <h2>Categories and Subject Descriptors</h2>
-                        <!-- mark>CL: Is ACM Hypertext even in 2016 still using the 1998 classification scheme, or rather the 2012 one?</mark -->
                         <div>
                             <ul rel="schema:about">
                                 <li><a href="http://www.acm.org/about/class/ccs98-html#H.1.2" resource="http://acm.rkbexplorer.com/ontologies/acm#H.1.2">H.1.2</a> [<strong>Information Systems</strong>]: Human information processing</li>
@@ -120,6 +120,7 @@
                             </ul>
                         </div>
                     </section>
+-->
 
                     <section id="introduction" inlist="" rel="schema:hasPart" resource="#introduction">
                         <h2 about="#introduction" property="schema:name" typeof="deo:Introduction">Introduction</h2>
@@ -419,19 +420,16 @@
                                     <section id="peer-reviews-and-interactions" inlist="" rel="schema:hasPart" resource="#peer-reviews-and-interactions">
                                         <h4 property="schema:name">Peer-reviews and Interactions</h4>
                                         <div datatype="rdf:HTML" property="schema:description">
-                                          <p><mark>TODO</mark></p>
-                                          <p>Reviewers are able to see replies to a call and in turn leave their reviews as replies to the submitted articles.
-                                            Peer-reviews are valuable contributions to the academic ecosystem, and we encourage reviewers to publish in a Web space that they control (or trust) and do so publicly so that the community may benefit.</p>
-                                          <p>...Social media techniques and strategies; people are used to sharing stuff and receiving notifications now, so why not harness that for research.</p>
+                                          <p>In a Linked Research community, reviewers are able to see replies to a call they have, or have <em>been</em>, subscribed to, and in turn leave their reviews as replies to the submitted articles.
+                                            Rather than centralistic submission and review management systems such as EasyChair<mark>TODO <mark><cite><a href="http://www.easychair.org">http://www.easychair.org</a></cite></mark> we employ workflows for ‘sharing’ that people are nowadays used to from social media.
+                                            As peer reviews are valuable contributions to the academic ecosystem, we finally encourage reviewers to <em>publish</em> their reviews in a Web space that they control (or trust), for the benefit of the community.</p>
                                         </div>
                                     </section>
 
                                     <section id="proceedings" inlist="" rel="schema:hasPart" resource="#proceedings">
                                         <h4 property="schema:name">Proceedings</h4>
                                         <div datatype="rdf:HTML" property="schema:description">
-                                            <p><mark>TODO: Christoph</mark></p>
-
-                                            <p>Editors and committees who issue calls for contributions are able to take into account reviews and discussion on work they were notified about, and select the articles to aggregate and formally endorse as part of their journal or event proceedings.
+                                            <p>Editors and committees who have issued calls for contributions are able to take into account reviews and discussion on work they have been notified about, and select the articles to aggregate and formally endorse them as part of their journal or event proceedings.
                                               The same Web-based tooling which allowed authoring of articles, calls and reviews and notifications of responses in the first place can be purposed to automatically assemble and re-publish the chosen work as a collection, which can in turn be shared and responded to.</p>
                                         </div>
                                     </section>
@@ -446,7 +444,7 @@
                                     As of today, archiving and preserving scientific documents are commonly considered the responsibilities of publishers.
                                     In the context of Linked Research, where decentralised authoring and publishing is promoted, responsibilities are to be re-evaluated: authors can publish their results online at a service of their choice, such as their own website. However, persisting academic publishing on long-term on the web has two main challenges which may be difficult for individuals to solve when hosting content themselves: 1) availability on the Internet (keeping the document/data server available, maintaining it, and defending it from attacks), and 2) presence on the Web; namely, maintaining a URL that points to the document/data and that does not change. Long-term obstacles to this include URL expiration, revocation (in case of someone taking legal action) and censorship <mark>[Berners-Lee, T.: Cool URIs don't change, W3C (1998), <a href="https://www.w3.org/Provider/Style/URI.html">https://www.w3.org/Provider/Style/URI.html</a>]</mark>.</p>
 
-                                  <p>We already see many efforts at centralised archives, [<mark>Web archives e.g., http://www.openarchives.org/ , http://archive.org/ and specific to libraries and archives: https://archive-it.org/ , maybe http://arxiv.org/ .. and another wayback machine https://github.com/iipc/openwayback/wiki . https://www.loc.gov/webarchiving/ . tools w web archiving: http://www.archivesspace.org/overview and https://wiki.archivematica.org/Overview , and more https://www.clockss.org/ .. http://zenodo.org/</mark>], however these are each a single point of failure for long-term persistence.
+                                  <p>We already see many efforts at centralised archives - <cite><a href="http://archive.org/">Internet Archive</a></cite>, <cite><a href="https://archive-it.org/">Archive-It</a></cite>, <cite><a href="http://arxiv.org/">arXiv</a></cite>, <cite><a href="https://www.clockss.org/">CLOCKSS</a></cite>, <cite><a href="http://zenodo.org/">Zenodo</a></cite> - however these are each a single point of failure for long-term persistence.
                                     In the case of self-archiving, the author is responsible for maintaining their service and domain name.
                                     This strategy clearly has non-trivial disadvantages: technical expertise is required, there are maintenance costs, and content may disappear if the author loses the ability to keep this up.
                                     In the case of third-party archival, although the responsibilities are delegated a service, this may cease to exist long term, or may act against the interest of the user, for example altering the content.</p>
@@ -644,13 +642,13 @@
                             <section id="semstats-ceur-proceedings" inlist="" rel="schema:hasPart" resource="#semstats-ceur-proceedings">
                                 <h3 property="schema:name">SemStats CEUR Proceedings</h3>
                                 <div datatype="rdf:HTML" property="schema:description">
-                                    <p><mark>TODO: Sarven, Christoph</mark></p>
-
-                                    <p>Use http://ceur-ws.org/Vol-1549/ as example</p>
+                                  <p>In response to the SemStats 2013–2015 calls for papers, several papers have been submitted to the workshop.
+                                    Those that were accepted for publication became part of the proceedings.
+                                    Still, if one such paper had previously been published at its own URI, the proceedings version points there.
+                                    We have published the SemStats proceedings at CEUR-WS.org (see, e.g., <a href="http://ceur-ws.org/Vol-1549/">http://ceur-ws.org/Vol-1549/</a>) and at the same time introduced a modernised version of the CEUR-WS.org proceedings template based on dokieli's HTML and CSS (but without JavaScript, which is not permitted by the CEUR-WS.org policy).
+                                    Figure <mark>TODO cross-reference</mark> below demonstrates the interlinks between the peer-reviewed research article; <cite><a href="http://csarven.ca/linked-statistical-data-analysis">Linked Statistical Data Analysis</a></cite>, SemStats 2013 call for contributions, ISWC 2013 call for workshops, and the proceedings of the SemStats workshop at CEUR-WS.org.</p>
                                 </div>
                             </section>
-
-                            <p>Figure <mark>TODO cross-reference</mark> below demonstrates the interlinks between the peer-reviewed research article; <cite><a href="http://csarven.ca/linked-statistical-data-analysis">Linked Statistical Data Analysis</a></cite>, SemStats 2013 call for contributions, ISWC 2013 call for workshops, and the proceedings of the SemStats workshop at CEUR-WS.org.</p>
 
                             <div id="article-calls-proceedings" class="tabs">
                                 <nav>
@@ -675,10 +673,10 @@
 <code>  <strong class="highlight-hasPart">schema:hasPart</strong> &lt;http://semstats.org/2013/call-for-papers&gt; .</code>
 <code>&lt;http://csarven.ca/linked-statistical-data-analysis&gt;</code>
 <code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://semstats.org/2013/call-for-papers&gt; ;</code>
-<code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549&gt; .</code>
-<code>&lt;http://ceur-ws.org/Vol-1549&gt;</code>
-<code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549#paper-06&gt; .</code>
-<code>&lt;http://ceur-ws.org/Vol-1549#paper-06&gt;</code>
+<code>  bibo:citedBy &lt;http://ceur-ws.org/Vol-1549/&gt; .</code>
+<code>&lt;http://ceur-ws.org/Vol-1549/&gt;</code>
+<code>  schema:hasPart &lt;http://ceur-ws.org/Vol-1549/#paper-06&gt; .</code>
+<code>&lt;http://ceur-ws.org/Vol-1549/#paper-06&gt;</code>
 <code>  bibo:uri &lt;http://csarven.ca/linked-statistical-data-analysis&gt; .</code>
                                     </pre>
                                     <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings.</figcaption>
