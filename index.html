@@ -93,6 +93,7 @@
                             <ul rel="schema:about">
                                 <li><a href="https://en.wikipedia.org/wiki/Human-computer_interaction" resource="http://dbpedia.org/resource/Human-computer_interaction">Human-computer interaction</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Linked_Data" resource="http://dbpedia.org/resource/Linked_Data">Linked Data</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Open_access" resource="http://dbpedia.org/resource/Open_access">Open Access</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Semantic_publishing" resource="http://dbpedia.org/resource/Semantic_publishing">Semantic publishing</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Social_machine" resource="http://dbpedia.org/resource/Social_machine">Social machine</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Social_web" resource="http://dbpedia.org/resource/Social_web">Social web</a></li>
@@ -454,7 +455,7 @@
                                     </figure>
 
                                     <figure id="figure-dokieli-interactions" rel="schema:hasPart" resource="#figure-dokieli-interactions">
-                                        <img rel="schema:image" src="media/images/dokieli-interactions.png" />
+                                        <img height="350" rel="schema:image" src="media/images/dokieli-interactions.png" width="480" />
                                         <figcaption property="schema:name">Interactions on a document.</figcaption>
                                     </figure>
 
@@ -469,8 +470,8 @@
                                     <figure class="listing" id="linked-research-in-reply-to-acm-hypertext" rel="schema:hasPart" resource="#linked-research-in-reply-to-acm-hypertext">
                                         <pre about="#linked-research-in-reply-to-acm-hypertext" property="schema:description" typeof="fabio:Script">
 <code>@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .</code>
-<code>&lt;http://csarven.ca/linked-research-scholarly-communication&gt;</code>
-<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;http://ht.acm.org/ht2016/calls&gt; .</code>
+<code>&lt;<a href="http://csarven.ca/linked-research-scholarly-communication">http://csarven.ca/linked-research-scholarly-communication</a>&gt;</code>
+<code>  <strong class="highlight-reply_of">sioc:reply_of</strong> &lt;<a href="http://ht.acm.org/ht2016/calls">http://ht.acm.org/ht2016/calls</a>&gt; .</code>
                                         </pre>
                                         <figcaption property="schema:name">Current article in reply to ACM Hypertext 2016 Call for Contributions (shown using the RDF Turtle syntax).</figcaption>
                                     </figure>
@@ -508,7 +509,7 @@
                                 </nav>
 
                                 <figure class="selected" id="figure-article-calls-proceedings" rel="schema:hasPart" resource="#figure-article-calls-proceedings">
-                                    <object type="image/svg+xml" data="media/images/calls-and-proceedings-graph.svg" rel="schema:image"></object>
+                                    <object data="media/images/calls-and-proceedings-graph.svg" rel="schema:image" type="image/svg+xml"></object>
                                     <figcaption property="schema:name">RDF statements interlinking a research article, call for contributions and workshops, and proceedings.</figcaption>
                                 </figure>
 
@@ -556,12 +557,7 @@
                         <h2 property="schema:name">Related Implementations</h2>
                         <div datatype="rdf:HTML" property="schema:description">
                             <p>Taking the Linked Research requirements as a baseline and the acid test as a tool, we reviewed existing related systems with regard to how well they satisfy the requirements. Table <a href="#comparison-publishing-consuming-systems">1</a> shows the results of profiling the systems against the requirements using the acid test.</p>
-                        </div>
-                    </section>
-                </div>
 
-<!-- EXPERIMENTAL - Sarven zone -->
-                <div>
                             <table id="table-comparison-publishing-consuming-systems" class="comparison-columns">
                                 <caption>Comparison of publishing and consuming systems</caption>
                                 <thead>
@@ -651,9 +647,8 @@
                                         <td></td><td></td></tr>
                                 </tbody>
                             </table>
-                </div>
-
-                <div id="content">
+                        </div>
+                    </section>
 
 <!--                     <section id="situating-linked-research" inlist="" rel="schema:hasPart" resource="#situating-linked-research">
                         <h2 property="schema:name">Content to sort</h2>
@@ -680,7 +675,7 @@
 
                     <section id="acknowledgements" inlist="" rel="schema:hasPart" resource="#acknowledgements">
                         <h2 about="#acknowledgements" property="schema:name" typeof="deo:Acknowledgements">Acknowledgements</h2>
-                        <div property="schema:description">
+                        <div property="schema:description" datatype="rdf:HTML">
                             <p>The motivation and work on Linked Research is inspired by Marshall McLuhan, Ted Nelson, James Burke, and Tim Berners-Lee.</p>
 
                             <p>Special thanks to many colleagues whom helped one way or another during the course of this work (not implying any endorsement); in no particular order: Richard Cyganiak, Kingsley Idehen, Jodi Schneider, Paul Groth, Stian Soiland-Reyes, Raphaël Troncy, Anchalee Panigabutra-Roberts, as well as colleagues at <span about="" id="funding-recipient" prefix="scoro: http://purl.org/spar/scoro/" rel="scoro:funding-recipient"><a about="http://dbpedia.org/resource/Massachusetts_Institute_of_Technology" href="https://mit.edu/" property="schema:name" rel="schema:url" typeof="schema:Organization">MIT</a></span>/<a href="https://www.w3.org/">W3C</a>.</p>
@@ -688,15 +683,7 @@
                             <p>This research was supported in part by <span about="" id="funder" prefix="scoro: http://purl.org/spar/scoro/" rel="scoro:funder"><a about="http://dbpedia.org/Qatar_Computing_Research_Institute" href="http://qcri.org.qa/" property="schema:name" rel="schema:url" typeof="schema:Organization">Qatar Computing Research Institute</a></span>, HBKU through the <a href="http://crosscloud.org/">Crosscloud</a> project.</p>
                         </div>
                     </section>
-<!--- EXPERIMENTAL - Sarven zone -->
-<style>
-#conclusions h2:before {
-content: "6.\00a0\00a0\00a0\00a0" !important;
-}
-#acknowledgements h2:before {
-content: "7.\00a0\00a0\00a0\00a0" !important;
-}
-</style>
+
                     <section id="references">
                         <h2>References</h2>
                         <div>
