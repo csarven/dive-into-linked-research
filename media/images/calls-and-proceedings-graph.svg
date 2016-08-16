@@ -321,28 +321,23 @@
        id="a5770"
        xlink:href="http://iswc2013.semanticweb.org/content/call-workshops.html"
        target="_blank">
-      <a
-         id="a5775"
-         xlink:href="http://iswc2013.semanticweb.org/content/call-workshops.html"
-         target="_blank">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="25.768417"
+         y="66.568481"
+         id="text4273"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4275"
            x="25.768417"
            y="66.568481"
-           id="text4273"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan4275"
-             x="25.768417"
-             y="66.568481"
-             style="font-weight:bold;font-size:17.5px;line-height:125%">http://iswc2013.semanticweb.org/</tspan><tspan
-             sodipodi:role="line"
-             x="25.768417"
-             y="88.443481"
-             style="font-weight:bold;font-size:17.5px;line-height:125%"
-             id="tspan4277">content/call-workshops.html</tspan></text>
-      </a>
+           style="font-weight:bold;font-size:17.5px;line-height:125%">http://iswc2013.semanticweb.org/</tspan><tspan
+           sodipodi:role="line"
+           x="25.768417"
+           y="88.443481"
+           style="font-weight:bold;font-size:17.5px;line-height:125%"
+           id="tspan4277">content/call-workshops.html</tspan></text>
     </a>
     <a
        id="a5780"
